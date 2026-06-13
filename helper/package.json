@@ -1,0 +1,19 @@
+{
+  "name": "skylanders-portal-helper",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Local helper that talks to console Skylanders portals via HidD_SetOutputReport (control pipe), bridging them to the web app over localhost.",
+  "bin": {
+    "skylanders-portal-helper": "server.mjs"
+  },
+  "scripts": {
+    "probe": "node probe.mjs",
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "koffi": "^2.9.0",
+    "node-hid": "^3.1.2",
+    "ws": "^8.21.0"
+  }
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal Tracker — live Skylanders figure reader</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Portal Tracker</h1>
+        <p class="tagline">Drop a figure on your Portal of Power — it identifies itself.</p>
+        <div class="toolbar">
+          <button id="connect" type="button">Connect portal</button>
+          <span id="portal-status" class="portal-status">No portal connected</span>
+        </div>
+        <p id="unsupported" class="unsupported" hidden>
+          This browser doesn't support WebHID. Use <strong>Chrome</strong> or
+          <strong>Edge</strong> on a desktop computer.
+        </p>
+      </header>
+
+      <main>
+        <section>
+          <h2>Portal slots</h2>
+          <div id="slots" class="slots"></div>
+        </section>
+
+        <section>
+          <h2>On the portal now</h2>
+          <div id="figures" class="figures">
+            <p class="empty" id="figures-empty">Nothing scanned yet.</p>
+          </div>
+        </section>
+
+        <section>
+          <div class="collection-head">
+            <h2>Collection</h2>
+            <div class="collection-actions">
+              <button id="export" type="button" class="ghost" title="Download a JSON backup">Export</button>
+              <button id="import" type="button" class="ghost" title="Restore from a JSON backup">Import</button>
+              <input id="import-file" type="file" accept="application/json,.json" hidden />
+            </div>
+          </div>
+          <p id="collection-summary" class="collection-summary">No figures collected yet.</p>
+          <div id="completeness" class="completeness"></div>
+          <div id="collection" class="collection"></div>
+        </section>
+
+        <section>
+          <h2>Log</h2>
+          <pre id="log" class="log"></pre>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          Free &amp; open source. Not affiliated with or endorsed by Activision.
+          Skylanders is a trademark of Activision Publishing, Inc.
+        </p>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

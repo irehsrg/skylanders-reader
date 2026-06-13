@@ -1,0 +1,4148 @@
+[
+ {
+  "name": "Whirlwind",
+  "charId": 0,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Whirlwind (Series 2)",
+  "charId": 0,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Polar Whirlwind",
+  "charId": 0,
+  "variantId": 7170,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Whirlwind (Stone)",
+  "charId": 0,
+  "variantId": 6162,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Horn Blast Whirlwind",
+  "charId": 0,
+  "variantId": 10245,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Whirlwind (Eon's Elite)",
+  "charId": 0,
+  "variantId": 14352,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Sonic Boom",
+  "charId": 1,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Sonic Boom (Series 2)",
+  "charId": 1,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Sonic Boom (Glow in the Dark)",
+  "charId": 1,
+  "variantId": 6161,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Sonic Boom (Sparkle/Glitter)",
+  "charId": 1,
+  "variantId": 6163,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Warnado",
+  "charId": 2,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Warnado (LightCore)",
+  "charId": 2,
+  "variantId": 8710,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Lightning Rod",
+  "charId": 3,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Lightning Rod (Series 2)",
+  "charId": 3,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Lightning Rod (Iridescent)",
+  "charId": 3,
+  "variantId": 6164,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Bash",
+  "charId": 4,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Bash (Series 2)",
+  "charId": 4,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Terrafin",
+  "charId": 5,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Terrafin (Series 2)",
+  "charId": 5,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Knockout Terrafin",
+  "charId": 5,
+  "variantId": 10245,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Terrafin (Eon's Elite)",
+  "charId": 5,
+  "variantId": 14352,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Dino-Rang",
+  "charId": 6,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Dino-Rang (Eon's Elite)",
+  "charId": 6,
+  "variantId": 18448,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Prism Break",
+  "charId": 7,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Prism Break (LightCore)",
+  "charId": 7,
+  "variantId": 4614,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Prism Break (LightCore Rare)",
+  "charId": 7,
+  "variantId": 4628,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Prism Break (Series 2)",
+  "charId": 7,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Hyper Beam Prism Break",
+  "charId": 7,
+  "variantId": 10245,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Sunburn",
+  "charId": 8,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Eruptor",
+  "charId": 9,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Eruptor (LightCore)",
+  "charId": 9,
+  "variantId": 4614,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Eruptor (Series 2)",
+  "charId": 9,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Eruptor (White Flocked)",
+  "charId": 9,
+  "variantId": 6164,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Lava Barf Eruptor",
+  "charId": 9,
+  "variantId": 10245,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Volcanic Eruptor",
+  "charId": 9,
+  "variantId": 11266,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Eruptor (UNRELEASED Macy Day?)",
+  "charId": 9,
+  "variantId": 14340,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Eruptor (Eon's Elite)",
+  "charId": 9,
+  "variantId": 14352,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Ignitor",
+  "charId": 10,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Ignitor (Series 2)",
+  "charId": 10,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Legendary Ignitor",
+  "charId": 10,
+  "variantId": 7171,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Flameslinger",
+  "charId": 11,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Flameslinger (Series 2)",
+  "charId": 11,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Flameslinger (Golden/Bronze)",
+  "charId": 11,
+  "variantId": 6146,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Zap",
+  "charId": 12,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Zap (Series 2)",
+  "charId": 12,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Wham-Shell",
+  "charId": 13,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Wham-Shell (LightCore)",
+  "charId": 13,
+  "variantId": 8710,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Gill Grunt",
+  "charId": 14,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Gill Grunt (Series 2)",
+  "charId": 14,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Gill Grunt (Metallic)",
+  "charId": 14,
+  "variantId": 6167,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Anchors Away Gill Grunt",
+  "charId": 14,
+  "variantId": 10245,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Tidal Wave Gill Grunt",
+  "charId": 14,
+  "variantId": 14341,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Gill Grunt (Eon's Elite)",
+  "charId": 14,
+  "variantId": 14352,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Slam Bam",
+  "charId": 15,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Slam Bam (Series 2)",
+  "charId": 15,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Legendary Slam Bam",
+  "charId": 15,
+  "variantId": 7171,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Slam Bam (Eon's Elite)",
+  "charId": 15,
+  "variantId": 18448,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Spyro",
+  "charId": 16,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Spyro (Series 2)",
+  "charId": 16,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Mega Ram Spyro",
+  "charId": 16,
+  "variantId": 10245,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Dark Mega Ram Spyro",
+  "charId": 16,
+  "variantId": 11266,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Spyro (Eon's Elite)",
+  "charId": 16,
+  "variantId": 14352,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Voodood",
+  "charId": 17,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Voodood (Eon's Elite)",
+  "charId": 17,
+  "variantId": 18448,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Double Trouble",
+  "charId": 18,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Double Trouble (Series 2)",
+  "charId": 18,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Royal Double Trouble",
+  "charId": 18,
+  "variantId": 7170,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Trigger Happy",
+  "charId": 19,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Trigger Happy (Series 2)",
+  "charId": 19,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Big Bang Trigger Happy",
+  "charId": 19,
+  "variantId": 10245,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Springtime Trigger Happy",
+  "charId": 19,
+  "variantId": 11266,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Trigger Happy (Eon's Elite)",
+  "charId": 19,
+  "variantId": 14352,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Drobot",
+  "charId": 20,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Drobot (LightCore)",
+  "charId": 20,
+  "variantId": 4614,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Drobot (Series 2)",
+  "charId": 20,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Drill Sergeant",
+  "charId": 21,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Drill Sergeant (Series 2)",
+  "charId": 21,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Boomer",
+  "charId": 22,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Boomer (Eon's Elite)",
+  "charId": 22,
+  "variantId": 18448,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Wrecking Ball",
+  "charId": 23,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Wrecking Ball (Series 2)",
+  "charId": 23,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Wrecking Ball (Iridescent)",
+  "charId": 23,
+  "variantId": 6164,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Camo",
+  "charId": 24,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Thorn Horn Camo",
+  "charId": 24,
+  "variantId": 10245,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Zook",
+  "charId": 25,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Zook (Series 2)",
+  "charId": 25,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Zook (Stone)",
+  "charId": 25,
+  "variantId": 6162,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Zook (Eon's Elite)",
+  "charId": 25,
+  "variantId": 18448,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Stealth Elf",
+  "charId": 26,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Stealth Elf (Series 2)",
+  "charId": 26,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Legendary Stealth Elf",
+  "charId": 26,
+  "variantId": 7171,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Ninja Stealth Elf",
+  "charId": 26,
+  "variantId": 10245,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Dark Ninja Stealth Elf",
+  "charId": 26,
+  "variantId": 11266,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Stealth Elf (Eon's Elite)",
+  "charId": 26,
+  "variantId": 14352,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Stump Smash",
+  "charId": 27,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Stump Smash (Series 2)",
+  "charId": 27,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Stump Smash (White Flocked)",
+  "charId": 27,
+  "variantId": 6164,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Dark Spyro",
+  "charId": 28,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Hex",
+  "charId": 29,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Hex (LightCore)",
+  "charId": 29,
+  "variantId": 4614,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Hex (Series 2)",
+  "charId": 29,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Chop Chop",
+  "charId": 30,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Chop Chop (Series 2)",
+  "charId": 30,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Chop Chop (Metallic Blue)",
+  "charId": 30,
+  "variantId": 6148,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Twin Blade Chop Chop",
+  "charId": 30,
+  "variantId": 10245,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Chop Chop (Green)",
+  "charId": 30,
+  "variantId": 10262,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Chop Chop (Eon's Elite)",
+  "charId": 30,
+  "variantId": 14352,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Ghost Roaster",
+  "charId": 31,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Ghost Roaster (Eon's Elite)",
+  "charId": 31,
+  "variantId": 18448,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Cynder",
+  "charId": 32,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Cynder (Series 2)",
+  "charId": 32,
+  "variantId": 6145,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Cynder (Glow in the Dark)",
+  "charId": 32,
+  "variantId": 6161,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Phantom Cynder",
+  "charId": 32,
+  "variantId": 10245,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Cynder (UNRELEASED Series 4)",
+  "charId": 32,
+  "variantId": 14345,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Cynder (UNRELEASED Eon's Elite)",
+  "charId": 32,
+  "variantId": 14352,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "DEBUG Minion",
+  "charId": 999,
+  "variantId": 0,
+  "section": "Spyro's Adventure"
+ },
+ {
+  "name": "Jet-Vac",
+  "charId": 100,
+  "variantId": 4096,
+  "section": "Giants"
+ },
+ {
+  "name": "Jet-Vac (LightCore)",
+  "charId": 100,
+  "variantId": 4614,
+  "section": "Giants"
+ },
+ {
+  "name": "Legendary Jet-Vac",
+  "charId": 100,
+  "variantId": 5123,
+  "section": "Giants"
+ },
+ {
+  "name": "Turbo Jet-Vac",
+  "charId": 100,
+  "variantId": 10245,
+  "section": "Giants"
+ },
+ {
+  "name": "Full Blast Jet-Vac",
+  "charId": 100,
+  "variantId": 14341,
+  "section": "Giants"
+ },
+ {
+  "name": "Swarm",
+  "charId": 101,
+  "variantId": 4614,
+  "section": "Giants"
+ },
+ {
+  "name": "Crusher",
+  "charId": 102,
+  "variantId": 4614,
+  "section": "Giants"
+ },
+ {
+  "name": "Granite Crusher",
+  "charId": 102,
+  "variantId": 5634,
+  "section": "Giants"
+ },
+ {
+  "name": "Flashwing",
+  "charId": 103,
+  "variantId": 4096,
+  "section": "Giants"
+ },
+ {
+  "name": "Jade Flashwing",
+  "charId": 103,
+  "variantId": 5122,
+  "section": "Giants"
+ },
+ {
+  "name": "Flashwing (LightCore)",
+  "charId": 103,
+  "variantId": 8710,
+  "section": "Giants"
+ },
+ {
+  "name": "Flashwing (UNRELEASED Series 2)",
+  "charId": 103,
+  "variantId": 14337,
+  "section": "Giants"
+ },
+ {
+  "name": "Hot Head",
+  "charId": 104,
+  "variantId": 4614,
+  "section": "Giants"
+ },
+ {
+  "name": "Hot Head (Sparkle/Glitter)",
+  "charId": 104,
+  "variantId": 4627,
+  "section": "Giants"
+ },
+ {
+  "name": "Hot Dog",
+  "charId": 105,
+  "variantId": 4096,
+  "section": "Giants"
+ },
+ {
+  "name": "Hot Dog (Color Shift)",
+  "charId": 105,
+  "variantId": 4117,
+  "section": "Giants"
+ },
+ {
+  "name": "Molten Hot Dog",
+  "charId": 105,
+  "variantId": 5122,
+  "section": "Giants"
+ },
+ {
+  "name": "Fire Bone Hot Dog",
+  "charId": 105,
+  "variantId": 10245,
+  "section": "Giants"
+ },
+ {
+  "name": "Hot Dog (Red Frito-Lay)",
+  "charId": 105,
+  "variantId": 10266,
+  "section": "Giants"
+ },
+ {
+  "name": "Hot Dog (Green Frito-Lay)",
+  "charId": 105,
+  "variantId": 10267,
+  "section": "Giants"
+ },
+ {
+  "name": "Hot Dog (Purple Frito-Lay)",
+  "charId": 105,
+  "variantId": 10268,
+  "section": "Giants"
+ },
+ {
+  "name": "Chill",
+  "charId": 106,
+  "variantId": 4096,
+  "section": "Giants"
+ },
+ {
+  "name": "Chill (LightCore)",
+  "charId": 106,
+  "variantId": 4614,
+  "section": "Giants"
+ },
+ {
+  "name": "Legendary Chill (LightCore)",
+  "charId": 106,
+  "variantId": 5635,
+  "section": "Giants"
+ },
+ {
+  "name": "Blizzard Chill",
+  "charId": 106,
+  "variantId": 10245,
+  "section": "Giants"
+ },
+ {
+  "name": "Thumpback",
+  "charId": 107,
+  "variantId": 4614,
+  "section": "Giants"
+ },
+ {
+  "name": "Pop Fizz",
+  "charId": 108,
+  "variantId": 4096,
+  "section": "Giants"
+ },
+ {
+  "name": "Punch Pop Fizz",
+  "charId": 108,
+  "variantId": 5122,
+  "section": "Giants"
+ },
+ {
+  "name": "Super Gulp Pop Fizz",
+  "charId": 108,
+  "variantId": 10245,
+  "section": "Giants"
+ },
+ {
+  "name": "Fizzy Frenzy Pop Fizz",
+  "charId": 108,
+  "variantId": 14341,
+  "section": "Giants"
+ },
+ {
+  "name": "Love Potion Pop Fizz",
+  "charId": 108,
+  "variantId": 15362,
+  "section": "Giants"
+ },
+ {
+  "name": "Ninjini",
+  "charId": 109,
+  "variantId": 4614,
+  "section": "Giants"
+ },
+ {
+  "name": "Scarlet Ninjini",
+  "charId": 109,
+  "variantId": 5634,
+  "section": "Giants"
+ },
+ {
+  "name": "Bouncer",
+  "charId": 110,
+  "variantId": 4614,
+  "section": "Giants"
+ },
+ {
+  "name": "Legendary Bouncer",
+  "charId": 110,
+  "variantId": 5635,
+  "section": "Giants"
+ },
+ {
+  "name": "Sprocket",
+  "charId": 111,
+  "variantId": 4096,
+  "section": "Giants"
+ },
+ {
+  "name": "Sprocket (Sparkle/Glitter)",
+  "charId": 111,
+  "variantId": 4115,
+  "section": "Giants"
+ },
+ {
+  "name": "Heavy Duty Sprocket",
+  "charId": 111,
+  "variantId": 10245,
+  "section": "Giants"
+ },
+ {
+  "name": "Sprocket (Heavy Metal)",
+  "charId": 111,
+  "variantId": 10265,
+  "section": "Giants"
+ },
+ {
+  "name": "Tree Rex",
+  "charId": 112,
+  "variantId": 4614,
+  "section": "Giants"
+ },
+ {
+  "name": "Gnarly Tree Rex",
+  "charId": 112,
+  "variantId": 5634,
+  "section": "Giants"
+ },
+ {
+  "name": "Shroomboom",
+  "charId": 113,
+  "variantId": 4096,
+  "section": "Giants"
+ },
+ {
+  "name": "Shroomboom (Metallic)",
+  "charId": 113,
+  "variantId": 4119,
+  "section": "Giants"
+ },
+ {
+  "name": "Shroomboom (LightCore)",
+  "charId": 113,
+  "variantId": 4614,
+  "section": "Giants"
+ },
+ {
+  "name": "Sure Shot Shroomboom",
+  "charId": 113,
+  "variantId": 14341,
+  "section": "Giants"
+ },
+ {
+  "name": "Eye-Brawl",
+  "charId": 114,
+  "variantId": 4614,
+  "section": "Giants"
+ },
+ {
+  "name": "Eye-Brawl (Iridescent)",
+  "charId": 114,
+  "variantId": 4628,
+  "section": "Giants"
+ },
+ {
+  "name": "Eye-Brawl (Pumpkin)",
+  "charId": 114,
+  "variantId": 4629,
+  "section": "Giants"
+ },
+ {
+  "name": "Fright Rider",
+  "charId": 115,
+  "variantId": 4096,
+  "section": "Giants"
+ },
+ {
+  "name": "Fright Rider (Glow in the Dark)",
+  "charId": 115,
+  "variantId": 4113,
+  "section": "Giants"
+ },
+ {
+  "name": "Fright Rider (Halloween)",
+  "charId": 115,
+  "variantId": 4117,
+  "section": "Giants"
+ },
+ {
+  "name": "Anvil Rain",
+  "charId": 200,
+  "variantId": 0,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Hidden Treasure",
+  "charId": 201,
+  "variantId": 0,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Platinum Treasure Chest (UNRELEASED)",
+  "charId": 201,
+  "variantId": 2,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Healing Elixir",
+  "charId": 202,
+  "variantId": 0,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Ghost Pirate Swords",
+  "charId": 203,
+  "variantId": 0,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Time Twister Hourglass",
+  "charId": 204,
+  "variantId": 0,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Sky-Iron Shield",
+  "charId": 205,
+  "variantId": 0,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Winged Boots",
+  "charId": 206,
+  "variantId": 0,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Sparx the Dragonfly",
+  "charId": 207,
+  "variantId": 0,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Dragonfire Cannon",
+  "charId": 208,
+  "variantId": 4614,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Golden Dragonfire Cannon",
+  "charId": 208,
+  "variantId": 5634,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Scorpion Striker Catapult",
+  "charId": 209,
+  "variantId": 4614,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Biter's Bane (Magic Log Holder)",
+  "charId": 210,
+  "variantId": 12290,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Sorcerous Skull (Magic Skull)",
+  "charId": 210,
+  "variantId": 12296,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Axe of Illusion (Magic Axe)",
+  "charId": 210,
+  "variantId": 12299,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Arcane Hourglass (Magic Hourglass)",
+  "charId": 210,
+  "variantId": 12302,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Spell Slapper (Magic Totem)",
+  "charId": 210,
+  "variantId": 12306,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Rune Rocket (Magic Rocket)",
+  "charId": 210,
+  "variantId": 12309,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Tidal Tiki (Water Tiki)",
+  "charId": 211,
+  "variantId": 12289,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Wet Walter (Water Log Holder)",
+  "charId": 211,
+  "variantId": 12290,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Flood Flask (Water Jughead)",
+  "charId": 211,
+  "variantId": 12294,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Legendary Flood Flask (Water Jughead)",
+  "charId": 211,
+  "variantId": 13318,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Soaking Staff (Water Angel)",
+  "charId": 211,
+  "variantId": 12295,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Aqua Axe (Water Axe)",
+  "charId": 211,
+  "variantId": 12299,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Frost Helm (Water Flying Helmet)",
+  "charId": 211,
+  "variantId": 12310,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Breezy Bird (Air Toucan)",
+  "charId": 212,
+  "variantId": 12291,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Drafty Decanter (Air Jughead)",
+  "charId": 212,
+  "variantId": 12294,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Tempest Timer (Air Hourglass)",
+  "charId": 212,
+  "variantId": 12302,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Cloudy Cobra (Air Snake)",
+  "charId": 212,
+  "variantId": 12304,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Storm Warning (Air Screamer)",
+  "charId": 212,
+  "variantId": 12305,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Cyclone Sabre (Air Sword)",
+  "charId": 212,
+  "variantId": 12312,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Spirit Sphere (Undead Orb)",
+  "charId": 213,
+  "variantId": 12292,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Legendary Spirit Sphere (Undead Orb)",
+  "charId": 213,
+  "variantId": 13316,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Spectral Skull (Undead Skull)",
+  "charId": 213,
+  "variantId": 12296,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Legendary Spectral Skull (Undead Skull)",
+  "charId": 213,
+  "variantId": 13320,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Haunted Hatchet (Undead Axe)",
+  "charId": 213,
+  "variantId": 12299,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Grim Gripper (Undead Hand)",
+  "charId": 213,
+  "variantId": 12300,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Spooky Snake (Undead Snake)",
+  "charId": 213,
+  "variantId": 12304,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Dream Piercer (Undead Captain's Hat)",
+  "charId": 213,
+  "variantId": 12311,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Tech Totem (Tech Tiki)",
+  "charId": 214,
+  "variantId": 12289,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Automatic Angel (Tech Angel)",
+  "charId": 214,
+  "variantId": 12295,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Factory Flower (Tech Scepter)",
+  "charId": 214,
+  "variantId": 12297,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Grabbing Gadget (Tech Hand)",
+  "charId": 214,
+  "variantId": 12300,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Makers Mana (Tech Flying Helmet)",
+  "charId": 214,
+  "variantId": 12310,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Topsy Techy (Tech Handstand)",
+  "charId": 214,
+  "variantId": 12314,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Eternal Flame (Fire Torch)",
+  "charId": 215,
+  "variantId": 12293,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Fire Flower (Fire Scepter)",
+  "charId": 215,
+  "variantId": 12297,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Scorching Stopper (Fire Screamer)",
+  "charId": 215,
+  "variantId": 12305,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Searing Spinner (Fire Totem)",
+  "charId": 215,
+  "variantId": 12306,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Spark Speak (Fire Captain's Hat)",
+  "charId": 215,
+  "variantId": 12311,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Blazing Belch (Fire Yawn)",
+  "charId": 215,
+  "variantId": 12315,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Rock Hawk (Earth Toucan)",
+  "charId": 216,
+  "variantId": 12291,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Banded Boulder (Earth Orb)",
+  "charId": 216,
+  "variantId": 12292,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Slag Hammer (Earth Hammer)",
+  "charId": 216,
+  "variantId": 12298,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Dust of Time (Earth Hourglass)",
+  "charId": 216,
+  "variantId": 12302,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Spinning Sandstorm (Earth Totem)",
+  "charId": 216,
+  "variantId": 12306,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Rubble Trouble (Earth Handstand)",
+  "charId": 216,
+  "variantId": 12314,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Oak Eagle (Life Toucan)",
+  "charId": 217,
+  "variantId": 12291,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Emerald Energy (Life Torch)",
+  "charId": 217,
+  "variantId": 12293,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Weed Whacker (Life Hammer)",
+  "charId": 217,
+  "variantId": 12298,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Seed Serpent (Life Snake)",
+  "charId": 217,
+  "variantId": 12304,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Jade Blade (Life Sword)",
+  "charId": 217,
+  "variantId": 12312,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Shrub Shrieker (Life Yawn)",
+  "charId": 217,
+  "variantId": 12315,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Shadow Spider (Dark Spider)",
+  "charId": 218,
+  "variantId": 12308,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Dark Dagger (Dark Sword)",
+  "charId": 218,
+  "variantId": 12312,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Ghastly Grimace (Dark Handstand)",
+  "charId": 218,
+  "variantId": 12314,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Heavenly Hawk (Light Hawk)",
+  "charId": 219,
+  "variantId": 12303,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Shining Ship (Light Rocket)",
+  "charId": 219,
+  "variantId": 12309,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Beam Scream (Light Yawn)",
+  "charId": 219,
+  "variantId": 12315,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "The Kaos Trap",
+  "charId": 220,
+  "variantId": 12318,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Ultimate Kaos Trap*",
+  "charId": 220,
+  "variantId": 13599,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Ultimate Kaos Trap (Fixed)",
+  "charId": 220,
+  "variantId": 13343,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Hand of Fate",
+  "charId": 230,
+  "variantId": 12288,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Legendary Hand of Fate",
+  "charId": 230,
+  "variantId": 13315,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Piggy Bank",
+  "charId": 231,
+  "variantId": 12288,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Rocket Ram",
+  "charId": 232,
+  "variantId": 12288,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Tiki Speaky",
+  "charId": 233,
+  "variantId": 12288,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Mystery Chest (Bronze)",
+  "charId": 235,
+  "variantId": 20481,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Mystery Chest (Silver)",
+  "charId": 235,
+  "variantId": 20482,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Mystery Chest (Gold)",
+  "charId": 235,
+  "variantId": 20483,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Mystery Chest (Cursed Tiki Temple)",
+  "charId": 235,
+  "variantId": 20503,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Mystery Chest (Lost Imaginite Mines)",
+  "charId": 235,
+  "variantId": 20505,
+  "section": "Toys For Bob Items/Traps"
+ },
+ {
+  "name": "Dragon's Peak",
+  "charId": 300,
+  "variantId": 0,
+  "section": "Toys For Bob Expansions"
+ },
+ {
+  "name": "Empire of Ice",
+  "charId": 301,
+  "variantId": 0,
+  "section": "Toys For Bob Expansions"
+ },
+ {
+  "name": "Pirate Seas",
+  "charId": 302,
+  "variantId": 0,
+  "section": "Toys For Bob Expansions"
+ },
+ {
+  "name": "Darklight Crypt",
+  "charId": 303,
+  "variantId": 0,
+  "section": "Toys For Bob Expansions"
+ },
+ {
+  "name": "Volcanic Vault",
+  "charId": 304,
+  "variantId": 0,
+  "section": "Toys For Bob Expansions"
+ },
+ {
+  "name": "Mirror of Mystery",
+  "charId": 305,
+  "variantId": 12288,
+  "section": "Toys For Bob Expansions"
+ },
+ {
+  "name": "Nightmare Express",
+  "charId": 306,
+  "variantId": 12288,
+  "section": "Toys For Bob Expansions"
+ },
+ {
+  "name": "Sunscraper Spire",
+  "charId": 307,
+  "variantId": 12806,
+  "section": "Toys For Bob Expansions"
+ },
+ {
+  "name": "Midnight Museum (non-LightCore)",
+  "charId": 308,
+  "variantId": 12288,
+  "section": "Toys For Bob Expansions"
+ },
+ {
+  "name": "Midnight Museum",
+  "charId": 308,
+  "variantId": 12806,
+  "section": "Toys For Bob Expansions"
+ },
+ {
+  "name": "Gryphon Park Observatory",
+  "charId": 310,
+  "variantId": 20480,
+  "section": "Toys For Bob Expansions"
+ },
+ {
+  "name": "Enchanted Elven Forest",
+  "charId": 311,
+  "variantId": 20480,
+  "section": "Toys For Bob Expansions"
+ },
+ {
+  "name": "Legendary Bash",
+  "charId": 404,
+  "variantId": 0,
+  "section": "SSA Legendaries"
+ },
+ {
+  "name": "Legendary Spyro",
+  "charId": 416,
+  "variantId": 0,
+  "section": "SSA Legendaries"
+ },
+ {
+  "name": "Legendary Trigger Happy",
+  "charId": 419,
+  "variantId": 0,
+  "section": "SSA Legendaries"
+ },
+ {
+  "name": "Legendary Chop Chop",
+  "charId": 430,
+  "variantId": 0,
+  "section": "SSA Legendaries"
+ },
+ {
+  "name": "Gusto",
+  "charId": 450,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Thunderbolt",
+  "charId": 451,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Thunderbolt (Clear)",
+  "charId": 451,
+  "variantId": 12317,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Fling Kong",
+  "charId": 452,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Blades",
+  "charId": 453,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Legendary Blades",
+  "charId": 453,
+  "variantId": 13315,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Wallop",
+  "charId": 454,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Head Rush",
+  "charId": 455,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Nitro Head Rush",
+  "charId": 455,
+  "variantId": 13314,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Fist Bump",
+  "charId": 456,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Rocky Roll",
+  "charId": 457,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Wildfire",
+  "charId": 458,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Dark Wildfire",
+  "charId": 458,
+  "variantId": 13314,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Ka-Boom",
+  "charId": 459,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Trail Blazer",
+  "charId": 460,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Torch",
+  "charId": 461,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Snap Shot",
+  "charId": 462,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Snap Shot (UNRELEASED Event)",
+  "charId": 462,
+  "variantId": 12292,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Dark Snap Shot",
+  "charId": 462,
+  "variantId": 13314,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Instant Snap Shot",
+  "charId": 462,
+  "variantId": 13327,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Lob-Star",
+  "charId": 463,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Winterfest Lob-Star",
+  "charId": 463,
+  "variantId": 13314,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Flip Wreck",
+  "charId": 464,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Echo",
+  "charId": 465,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Blastermind",
+  "charId": 466,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Enigma",
+  "charId": 467,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Déjà Vu",
+  "charId": 468,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Legendary Déjà Vu",
+  "charId": 468,
+  "variantId": 13315,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Cobra Cadabra",
+  "charId": 469,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "King Cobra Cadabra",
+  "charId": 469,
+  "variantId": 13314,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Jawbreaker",
+  "charId": 470,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Legendary Jawbreaker",
+  "charId": 470,
+  "variantId": 13315,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Gearshift",
+  "charId": 471,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Chopper",
+  "charId": 472,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Tread Head",
+  "charId": 473,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Bushwhack",
+  "charId": 474,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Legendary Bushwhack",
+  "charId": 474,
+  "variantId": 13315,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Tuff Luck",
+  "charId": 475,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Tuff Luck (Clear)",
+  "charId": 475,
+  "variantId": 12317,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Food Fight",
+  "charId": 476,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Dark Food Fight",
+  "charId": 476,
+  "variantId": 13314,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Instant Food Fight",
+  "charId": 476,
+  "variantId": 13327,
+  "section": "Trap Team"
+ },
+ {
+  "name": "High Five",
+  "charId": 477,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Krypt King",
+  "charId": 478,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Nitro Krypt King",
+  "charId": 478,
+  "variantId": 13314,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Short Cut",
+  "charId": 479,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Short Cut (Clear)",
+  "charId": 479,
+  "variantId": 12317,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Bat Spin",
+  "charId": 480,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Funny Bone",
+  "charId": 481,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Knight Light",
+  "charId": 482,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Spotlight",
+  "charId": 483,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Knight Mare",
+  "charId": 484,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Blackout",
+  "charId": 485,
+  "variantId": 12288,
+  "section": "Trap Team"
+ },
+ {
+  "name": "Bop",
+  "charId": 502,
+  "variantId": 12288,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Spry",
+  "charId": 503,
+  "variantId": 12288,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Hijinx",
+  "charId": 504,
+  "variantId": 12288,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Terrabite (Sidekick)",
+  "charId": 505,
+  "variantId": 0,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Terrabite (Mini)",
+  "charId": 505,
+  "variantId": 12288,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Breeze",
+  "charId": 506,
+  "variantId": 12288,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Weeruptor",
+  "charId": 507,
+  "variantId": 12288,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Eggsellent Weeruptor",
+  "charId": 507,
+  "variantId": 13314,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Pet-Vac",
+  "charId": 508,
+  "variantId": 12288,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Power Punch Pet-Vac",
+  "charId": 508,
+  "variantId": 13314,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Small Fry",
+  "charId": 509,
+  "variantId": 12288,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Drobit",
+  "charId": 510,
+  "variantId": 12288,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Gill Runt (Sidekick)",
+  "charId": 511,
+  "variantId": 0,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Gill Runt (Mini)",
+  "charId": 511,
+  "variantId": 12288,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Trigger Snappy (Sidekick)",
+  "charId": 519,
+  "variantId": 0,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Trigger Snappy (Mini)",
+  "charId": 519,
+  "variantId": 12288,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Whisper Elf (Sidekick)",
+  "charId": 526,
+  "variantId": 0,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Whisper Elf (Mini)",
+  "charId": 526,
+  "variantId": 12288,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Barkley (Sidekick)",
+  "charId": 540,
+  "variantId": 4096,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Barkley (Mini)",
+  "charId": 540,
+  "variantId": 12288,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Gnarly Barkley",
+  "charId": 540,
+  "variantId": 13314,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Thumpling (Sidekick)",
+  "charId": 541,
+  "variantId": 4096,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Thumpling (Mini)",
+  "charId": 541,
+  "variantId": 12288,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Mini-Jini (Sidekick)",
+  "charId": 542,
+  "variantId": 4096,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Mini-Jini (Mini)",
+  "charId": 542,
+  "variantId": 12288,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Eye-Small (Sidekick)",
+  "charId": 543,
+  "variantId": 4096,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "Eye-Small (Mini)",
+  "charId": 543,
+  "variantId": 12288,
+  "section": "Minis/Sidekicks"
+ },
+ {
+  "name": "King Pen",
+  "charId": 601,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Dark King Pen",
+  "charId": 601,
+  "variantId": 21506,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Tri-Tip",
+  "charId": 602,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Legendary Tri-Tip",
+  "charId": 602,
+  "variantId": 21507,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Chopscotch",
+  "charId": 603,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Candy-Coated Chopscotch",
+  "charId": 603,
+  "variantId": 21525,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Boom Bloom",
+  "charId": 604,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Pit Boss",
+  "charId": 605,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Legendary Pit Boss",
+  "charId": 605,
+  "variantId": 21507,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Barbella",
+  "charId": 606,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Barbella (Pink)",
+  "charId": 606,
+  "variantId": 20513,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Air Strike",
+  "charId": 607,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Egg Bomber Air Strike",
+  "charId": 607,
+  "variantId": 21517,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Ember",
+  "charId": 608,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Dec-Ember (???)",
+  "charId": 608,
+  "variantId": 20484,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Ambush",
+  "charId": 609,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Dr. Krankcase",
+  "charId": 610,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Hood Sickle",
+  "charId": 611,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Steel Plated Hood Sickle",
+  "charId": 611,
+  "variantId": 21506,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Taw Kwon Crow",
+  "charId": 612,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Mystical Tae Kwon Crow",
+  "charId": 612,
+  "variantId": 21506,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Golden Queen",
+  "charId": 613,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Dark Golden Queen",
+  "charId": 613,
+  "variantId": 21506,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Wolfgang",
+  "charId": 614,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Dark Wolfgang",
+  "charId": 614,
+  "variantId": 21506,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Pain-Yatta",
+  "charId": 615,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Pain-Yatta (Rock Candy)",
+  "charId": 615,
+  "variantId": 20513,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Mysticat",
+  "charId": 616,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Starcast",
+  "charId": 617,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Starcast (Clear/Happy Birthday Ben)",
+  "charId": 617,
+  "variantId": 20513,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Buckshot",
+  "charId": 618,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Heartbreaker Buckshot (UNRELEASED)",
+  "charId": 618,
+  "variantId": 21516,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Aurora",
+  "charId": 619,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Solar Flare Aurora",
+  "charId": 619,
+  "variantId": 21506,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Flare Wolf",
+  "charId": 620,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Hard-Boiled Flare Wolf",
+  "charId": 620,
+  "variantId": 21517,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Chompy Mage",
+  "charId": 621,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Jingle Bell Chompy Mage",
+  "charId": 621,
+  "variantId": 21518,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Bad Juju",
+  "charId": 622,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Mystical Bad Juju",
+  "charId": 622,
+  "variantId": 21506,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Grave Clobber",
+  "charId": 623,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Blaster-Tron",
+  "charId": 624,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Ro-Bow",
+  "charId": 625,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Chain Reaction",
+  "charId": 626,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Chain Reaction (Orange?)",
+  "charId": 626,
+  "variantId": 20513,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Kaos",
+  "charId": 627,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Wild Storm",
+  "charId": 628,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Tidepool",
+  "charId": 629,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Crash Bandicoot",
+  "charId": 630,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Dr. Neo Cortex",
+  "charId": 631,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Create Your Own Skylander (Card)",
+  "charId": 661,
+  "variantId": 20481,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Create Your Own Skylander (Foil Card)",
+  "charId": 661,
+  "variantId": 20482,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Create Your Own Skylander (Special Card)",
+  "charId": 661,
+  "variantId": 20483,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Create Your Own Skylander (3D Print)",
+  "charId": 661,
+  "variantId": 20484,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Create Your Own Skylander (Medium 3D Print)",
+  "charId": 661,
+  "variantId": 20485,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Create Your Own Skylander (Large 3D Print)",
+  "charId": 661,
+  "variantId": 20486,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Create Your Own Skylander (Unique 3D Print)",
+  "charId": 661,
+  "variantId": 20487,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Magic Creation Crystal (Pyramid)",
+  "charId": 680,
+  "variantId": 20996,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Magic Creation Crystal (Lantern)",
+  "charId": 680,
+  "variantId": 21000,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Magic Creation Crystal (Legendary Lantern)",
+  "charId": 680,
+  "variantId": 22024,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Magic Creation Crystal (Claw)",
+  "charId": 680,
+  "variantId": 21019,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Water Creation Crystal (Armor)",
+  "charId": 681,
+  "variantId": 21012,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Water Creation Crystal (Fanged)",
+  "charId": 681,
+  "variantId": 21016,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Water Creation Crystal (Rocket)",
+  "charId": 681,
+  "variantId": 21020,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Air Creation Crystal (Angel)",
+  "charId": 682,
+  "variantId": 20994,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Air Creation Crystal (Lantern)",
+  "charId": 682,
+  "variantId": 20999,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Air Creation Crystal (UNRELEASED Acorn)",
+  "charId": 682,
+  "variantId": 21010,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Undead Creation Crystal (Lantern)",
+  "charId": 683,
+  "variantId": 21001,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Undead Creation Crystal (Fanged)",
+  "charId": 683,
+  "variantId": 21015,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Undead Creation Crystal (Claw)",
+  "charId": 683,
+  "variantId": 21017,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Tech Creation Crystal (UNRELEASED Pyramid)",
+  "charId": 684,
+  "variantId": 20997,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Tech Creation Crystal (Reactor)",
+  "charId": 684,
+  "variantId": 21005,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Tech Creation Crystal (Armor)",
+  "charId": 684,
+  "variantId": 21013,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Fire Creation Crystal (UNRELEASED Angel)",
+  "charId": 685,
+  "variantId": 20993,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Fire Creation Crystal (Reactor)",
+  "charId": 685,
+  "variantId": 21007,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Fire Creation Crystal (Acorn)",
+  "charId": 685,
+  "variantId": 21009,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Earth Creation Crystal (UNRELEASED Rune)",
+  "charId": 686,
+  "variantId": 21004,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Earth Creation Crystal (Armor)",
+  "charId": 686,
+  "variantId": 21011,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Earth Creation Crystal (Rocket)",
+  "charId": 686,
+  "variantId": 21021,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Life Creation Crystal (Acorn)",
+  "charId": 687,
+  "variantId": 21008,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Life Creation Crystal (Legendary Acorn)",
+  "charId": 687,
+  "variantId": 22032,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Life Creation Crystal (Claw)",
+  "charId": 687,
+  "variantId": 21018,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Life Creation Crystal (Rocket)",
+  "charId": 687,
+  "variantId": 21022,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Life Creation Crystal (Rune)",
+  "charId": 687,
+  "variantId": 21023,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Dark Creation Crystal (Pyramid)",
+  "charId": 688,
+  "variantId": 20998,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Dark Creation Crystal (Rune)",
+  "charId": 688,
+  "variantId": 21002,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Dark Creation Crystal (Reactor)",
+  "charId": 688,
+  "variantId": 21006,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Light Creation Crystal (UNRELEASED Angel)",
+  "charId": 689,
+  "variantId": 20995,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Light Creation Crystal (Rune)",
+  "charId": 689,
+  "variantId": 21003,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Light Creation Crystal (Fanged)",
+  "charId": 689,
+  "variantId": 21014,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Light Creation Crystal (Legendary Fanged)",
+  "charId": 689,
+  "variantId": 22038,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Goldie",
+  "charId": 699,
+  "variantId": 20480,
+  "section": "Imaginators"
+ },
+ {
+  "name": "Jet",
+  "charId": 1000,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Ranger",
+  "charId": 1001,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Legendary Ranger",
+  "charId": 1001,
+  "variantId": 9219,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Rouser",
+  "charId": 1002,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Stone",
+  "charId": 1003,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Stone (Bronze?)",
+  "charId": 1003,
+  "variantId": 8214,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Zone",
+  "charId": 1004,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Dark Zone",
+  "charId": 1004,
+  "variantId": 9218,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Kraken",
+  "charId": 1005,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Kraken (Gold)",
+  "charId": 1005,
+  "variantId": 8196,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Jade Kraken",
+  "charId": 1005,
+  "variantId": 9218,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Bomb",
+  "charId": 1006,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Bomb (Gold?)",
+  "charId": 1006,
+  "variantId": 8214,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Drilla",
+  "charId": 1007,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Loop",
+  "charId": 1008,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Enchanted Loop",
+  "charId": 1008,
+  "variantId": 9218,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Shadow",
+  "charId": 1009,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Shadow (Silver?)",
+  "charId": 1009,
+  "variantId": 8214,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Charge",
+  "charId": 1010,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Nitro Charge",
+  "charId": 1010,
+  "variantId": 9218,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Rise",
+  "charId": 1011,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Shift",
+  "charId": 1012,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Legendary Shift",
+  "charId": 1012,
+  "variantId": 9219,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Shake",
+  "charId": 1013,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Quickdraw Shake",
+  "charId": 1013,
+  "variantId": 9218,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Blade",
+  "charId": 1014,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Nitro Blade",
+  "charId": 1014,
+  "variantId": 9218,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Buckler",
+  "charId": 1015,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Buckler (Color Shift)",
+  "charId": 1015,
+  "variantId": 8216,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Dark Buckler",
+  "charId": 1015,
+  "variantId": 9218,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Template (Bottom)",
+  "charId": 1999,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Boom",
+  "charId": 2000,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Free",
+  "charId": 2001,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Legendary Free",
+  "charId": 2001,
+  "variantId": 9219,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Rubble",
+  "charId": 2002,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Doom",
+  "charId": 2003,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Doom (Gold?)",
+  "charId": 2003,
+  "variantId": 8214,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Blast",
+  "charId": 2004,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Dark Blast",
+  "charId": 2004,
+  "variantId": 9218,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Fire",
+  "charId": 2005,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Fire (Gold)",
+  "charId": 2005,
+  "variantId": 8196,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Jade Fire",
+  "charId": 2005,
+  "variantId": 9218,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Stink",
+  "charId": 2006,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Stink (Silver)",
+  "charId": 2006,
+  "variantId": 8214,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Grilla",
+  "charId": 2007,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Hoot",
+  "charId": 2008,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Enchanted Hoot",
+  "charId": 2008,
+  "variantId": 9218,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Trap",
+  "charId": 2009,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Trap (Bronze?)",
+  "charId": 2009,
+  "variantId": 8214,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Magna",
+  "charId": 2010,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Nitro Magna",
+  "charId": 2010,
+  "variantId": 9218,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Spy",
+  "charId": 2011,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Night",
+  "charId": 2012,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Legendary Night",
+  "charId": 2012,
+  "variantId": 9219,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Rattle",
+  "charId": 2013,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Quickdraw Rattle",
+  "charId": 2013,
+  "variantId": 9218,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Freeze",
+  "charId": 2014,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Nitro Freeze",
+  "charId": 2014,
+  "variantId": 9218,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Wash",
+  "charId": 2015,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Wash (Color Shift)",
+  "charId": 2015,
+  "variantId": 8216,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Dark Wash",
+  "charId": 2015,
+  "variantId": 9218,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Template (Top)",
+  "charId": 2999,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Scratch",
+  "charId": 3000,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Pop Thorn",
+  "charId": 3001,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Slobber Tooth",
+  "charId": 3002,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Dark Slobber Tooth",
+  "charId": 3002,
+  "variantId": 9218,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Scorp",
+  "charId": 3003,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Scorp (Green)",
+  "charId": 3003,
+  "variantId": 8214,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Fryno",
+  "charId": 3004,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Hog Wild Fryno",
+  "charId": 3004,
+  "variantId": 14341,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Smolderdash",
+  "charId": 3005,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Smolderdash (LightCore)",
+  "charId": 3005,
+  "variantId": 8710,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Snowderdash (???)",
+  "charId": 3005,
+  "variantId": 8729,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Bumble Blast",
+  "charId": 3006,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Bumble Blast (LightCore)",
+  "charId": 3006,
+  "variantId": 8710,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Jolly Bumble Blast",
+  "charId": 3006,
+  "variantId": 9218,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Zoo Lou",
+  "charId": 3007,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Legendary Zoo Lou",
+  "charId": 3007,
+  "variantId": 9219,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Dune Bug",
+  "charId": 3008,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Dune Bug (Red)",
+  "charId": 3008,
+  "variantId": 8196,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Star Strike",
+  "charId": 3009,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Star Strike (LightCore)",
+  "charId": 3009,
+  "variantId": 8710,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Enchanted Star Strike",
+  "charId": 3009,
+  "variantId": 9730,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Countdown",
+  "charId": 3010,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Countdown (LightCore)",
+  "charId": 3010,
+  "variantId": 8710,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Kickoff Countdown",
+  "charId": 3010,
+  "variantId": 9218,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Wind-Up",
+  "charId": 3011,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "VVind-Up (Gear Head)",
+  "charId": 3011,
+  "variantId": 9220,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Roller Brawl",
+  "charId": 3012,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Grim Creeper",
+  "charId": 3013,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Grim Creeper (LightCore)",
+  "charId": 3013,
+  "variantId": 8710,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Legendary Grim Creeper",
+  "charId": 3013,
+  "variantId": 9731,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Rip Tide",
+  "charId": 3014,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Rip Tide (Green)",
+  "charId": 3014,
+  "variantId": 8214,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Punk Shock",
+  "charId": 3015,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Template Legacy",
+  "charId": 3999,
+  "variantId": 8192,
+  "section": "SWAP Force"
+ },
+ {
+  "name": "Battle Hammer",
+  "charId": 3200,
+  "variantId": 8192,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Sky Diamond",
+  "charId": 3201,
+  "variantId": 8192,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Platinum Sheep",
+  "charId": 3202,
+  "variantId": 8192,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Groove Machine",
+  "charId": 3203,
+  "variantId": 8192,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "UFO Hat",
+  "charId": 3204,
+  "variantId": 8192,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Jet Stream",
+  "charId": 3220,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Tomb Buggy",
+  "charId": 3221,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Tomb Buggy (Dark Bronze)",
+  "charId": 3221,
+  "variantId": 16414,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Reef Ripper",
+  "charId": 3222,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Burn-Cycle",
+  "charId": 3223,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Burn-Cycle (Patina)",
+  "charId": 3223,
+  "variantId": 16414,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Hot Streak",
+  "charId": 3224,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Hot Streak (Exclusive Event Edition)",
+  "charId": 3224,
+  "variantId": 16388,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Hot Streak (Mobile Starter Pack)",
+  "charId": 3224,
+  "variantId": 16415,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Dark Hot Streak",
+  "charId": 3224,
+  "variantId": 17410,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Instant Hot Streak",
+  "charId": 3224,
+  "variantId": 17423,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Golden Hot Streak",
+  "charId": 3224,
+  "variantId": 17438,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Shark Tank",
+  "charId": 3225,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Thump Truck",
+  "charId": 3226,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Crypt Crusher",
+  "charId": 3227,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Stealth Stinger",
+  "charId": 3228,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Nitro Stealth Stinger",
+  "charId": 3228,
+  "variantId": 17410,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Instant Stealth Stinger",
+  "charId": 3228,
+  "variantId": 17423,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Dive Bomber",
+  "charId": 3231,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Spring Ahead Dive Bomber",
+  "charId": 3231,
+  "variantId": 17410,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Instant Dive Bomber",
+  "charId": 3231,
+  "variantId": 17423,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Sky Slicer",
+  "charId": 3232,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Instant Sky Slicer (Imaginators)",
+  "charId": 3232,
+  "variantId": 17423,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Clown Crusier",
+  "charId": 3233,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Dark Clown Crusier",
+  "charId": 3233,
+  "variantId": 17410,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Gold Rusher",
+  "charId": 3234,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Power Blue Gold Rusher",
+  "charId": 3234,
+  "variantId": 17410,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Shield Striker",
+  "charId": 3235,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Shield Striker (Patina)",
+  "charId": 3235,
+  "variantId": 16414,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Sun Runner",
+  "charId": 3236,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Legendary Sun Runner",
+  "charId": 3236,
+  "variantId": 17311,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Sea Shadow",
+  "charId": 3237,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Dark Sea Shadow",
+  "charId": 3237,
+  "variantId": 17410,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Instant Sea Shadow (Imaginators)",
+  "charId": 3237,
+  "variantId": 17423,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Splatter Splasher",
+  "charId": 3238,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Power Blue Splatter Splasher",
+  "charId": 3238,
+  "variantId": 17410,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Soda Skimmer",
+  "charId": 3239,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Nitro Soda Skimmer",
+  "charId": 3239,
+  "variantId": 17410,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Barrel Blaster",
+  "charId": 3240,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Dark Barrel Blaster",
+  "charId": 3240,
+  "variantId": 17410,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Buzz Wing",
+  "charId": 3241,
+  "variantId": 16384,
+  "section": "Vicarious Visions Items/Vehicles"
+ },
+ {
+  "name": "Sheep Wreck Island",
+  "charId": 3300,
+  "variantId": 8192,
+  "section": "SWAP Force Expansions/Battle Pieces"
+ },
+ {
+  "name": "Tower of Time",
+  "charId": 3301,
+  "variantId": 8192,
+  "section": "SWAP Force Expansions/Battle Pieces"
+ },
+ {
+  "name": "Fiery Forge",
+  "charId": 3301,
+  "variantId": 8710,
+  "section": "SWAP Force Expansions/Battle Pieces"
+ },
+ {
+  "name": "Arkeyan Crossbow",
+  "charId": 3302,
+  "variantId": 8710,
+  "section": "SWAP Force Expansions/Battle Pieces"
+ },
+ {
+  "name": "Fiesta",
+  "charId": 3400,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Frightful Fiesta",
+  "charId": 3400,
+  "variantId": 17685,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "High Volt",
+  "charId": 3401,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "High Volt (Patina)",
+  "charId": 3401,
+  "variantId": 16670,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Splat",
+  "charId": 3402,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Power Blue Splat",
+  "charId": 3402,
+  "variantId": 17666,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Stormblade",
+  "charId": 3406,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Snow-Brite Stormblade",
+  "charId": 3406,
+  "variantId": 16654,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Smash Hit",
+  "charId": 3411,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Steel Plated Smash Hit",
+  "charId": 3411,
+  "variantId": 17666,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Spitfire",
+  "charId": 3412,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Dark Spitfire",
+  "charId": 3412,
+  "variantId": 17666,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Instant Spitfire",
+  "charId": 3412,
+  "variantId": 17679,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Hurricane Jet-Vac",
+  "charId": 3413,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Legendary Hurricane Jet-Vac",
+  "charId": 3413,
+  "variantId": 17667,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Double Dare Trigger Happy",
+  "charId": 3414,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Power Blue Double Dare Trigger Happy",
+  "charId": 3414,
+  "variantId": 17666,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Super Shot Stealth Elf",
+  "charId": 3415,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Dark Super Shot Stealth Elf",
+  "charId": 3415,
+  "variantId": 17666,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Instant Super Shot Stealth Elf",
+  "charId": 3415,
+  "variantId": 17679,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Shark Shooter Terrafin",
+  "charId": 3416,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Bone Bash Roller Brawl",
+  "charId": 3417,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Bone Bash Roller Brawl (Dark Bronze?)",
+  "charId": 3417,
+  "variantId": 16670,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Legendary Bone Bash Roller Brawl",
+  "charId": 3417,
+  "variantId": 17667,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Big Bubble Pop Fizz",
+  "charId": 3420,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Birthday Bash Big Bubble Pop Fizz",
+  "charId": 3420,
+  "variantId": 17678,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Lava Lance Eruptor",
+  "charId": 3421,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Lava Lance Eruptor (Patina?)",
+  "charId": 3421,
+  "variantId": 16670,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Deep Dive Gill Grunt",
+  "charId": 3422,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Turbo Charge Donkey Kong",
+  "charId": 3423,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Dark Turbo Charge Donkey Kong",
+  "charId": 3423,
+  "variantId": 17666,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Hammer Slam Bowser",
+  "charId": 3424,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Dark Hammer Slam Bowser",
+  "charId": 3424,
+  "variantId": 17666,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Dive-Clops",
+  "charId": 3425,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Missile-Tow Dive-Clops",
+  "charId": 3425,
+  "variantId": 17678,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Instant Dive-Clops",
+  "charId": 3425,
+  "variantId": 17679,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Astroblast",
+  "charId": 3426,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Legendary Astroblast",
+  "charId": 3426,
+  "variantId": 17667,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Nightfall",
+  "charId": 3427,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Thrillipede",
+  "charId": 3428,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Eggcited Thrillipede",
+  "charId": 3428,
+  "variantId": 17677,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Nightfall (Defective)",
+  "charId": 3527,
+  "variantId": 16640,
+  "section": "SuperChargers"
+ },
+ {
+  "name": "Chef Pepper Jack",
+  "charId": 3440,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Stratosphere",
+  "charId": 3441,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Cap'n Cluck",
+  "charId": 3442,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Wolfgang",
+  "charId": 3443,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Threatpack",
+  "charId": 3444,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Hood Sickle",
+  "charId": 3445,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Bad Juju",
+  "charId": 3446,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Glumshanks",
+  "charId": 3450,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Dragon Hunter",
+  "charId": 3451,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Moneybone",
+  "charId": 3452,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Chompy Mage",
+  "charId": 3453,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Dr. Krankcase",
+  "charId": 3454,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Pain-Yatta",
+  "charId": 3455,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Broccoli Guy",
+  "charId": 3456,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Mesmeralda",
+  "charId": 3460,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Captain Frightbeard",
+  "charId": 3461,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Golden Queen",
+  "charId": 3462,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Spellslamzer",
+  "charId": 3463,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Chill Bill",
+  "charId": 3464,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "The Gulper",
+  "charId": 3465,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Noodles",
+  "charId": 3466,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Kaos",
+  "charId": 3467,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Toaster Bomber",
+  "charId": 3470,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Storm Striker",
+  "charId": 3471,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Sky Scrambler",
+  "charId": 3472,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Sub Woofer",
+  "charId": 3473,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Threatpack Vehicle",
+  "charId": 3474,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Hood Sickle Vehicle",
+  "charId": 3475,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Bad Juju Vehicle",
+  "charId": 3476,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Steam Roller",
+  "charId": 3480,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Scale Biter",
+  "charId": 3481,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Spirit Dragster",
+  "charId": 3482,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Chompy Buster",
+  "charId": 3483,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Dr. Krankcase Vehicle",
+  "charId": 3484,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Pain-Yatta Vehicle",
+  "charId": 3485,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Broccoli Guy Vehicle",
+  "charId": 3486,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Wave Singer",
+  "charId": 3490,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "The Lil' Phantom Tide",
+  "charId": 3491,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Glitter Glider",
+  "charId": 3492,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Rune Slider",
+  "charId": 3493,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Chill Bill Vehicle",
+  "charId": 3494,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "The Gulper Vehicle",
+  "charId": 3495,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Noodles Vehicle",
+  "charId": 3496,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Doom Jet",
+  "charId": 3497,
+  "variantId": 16384,
+  "section": "Villain Drivers/Vehicles"
+ },
+ {
+  "name": "Sky Trophy",
+  "charId": 3500,
+  "variantId": 16384,
+  "section": "SuperChargers Trophies"
+ },
+ {
+  "name": "Land Trophy",
+  "charId": 3501,
+  "variantId": 16384,
+  "section": "SuperChargers Trophies"
+ },
+ {
+  "name": "Sea Trophy",
+  "charId": 3502,
+  "variantId": 16384,
+  "section": "SuperChargers Trophies"
+ },
+ {
+  "name": "Kaos Trophy",
+  "charId": 3503,
+  "variantId": 16384,
+  "section": "SuperChargers Trophies"
+ },
+ {
+  "name": "Fusion",
+  "charId": 4500,
+  "variantId": 20480,
+  "section": "Skylanders 2016"
+ },
+ {
+  "name": "Synergy",
+  "charId": 4501,
+  "variantId": 20480,
+  "section": "Skylanders 2016"
+ },
+ {
+  "name": "Unity",
+  "charId": 4502,
+  "variantId": 20480,
+  "section": "Skylanders 2016"
+ },
+ {
+  "name": "BlueFalcon_Base",
+  "charId": 4503,
+  "variantId": 20480,
+  "section": "Skylanders 2016"
+ },
+ {
+  "name": "Undead Card",
+  "charId": 4517,
+  "variantId": 20480,
+  "section": "Imaginators Test Characters (WiP)"
+ },
+ {
+  "name": "CYOS_Small_Template",
+  "charId": 4519,
+  "variantId": 20480,
+  "section": "Imaginators Test Characters (WiP)"
+ },
+ {
+  "name": "CYOS_Medium_Template",
+  "charId": 4520,
+  "variantId": 20480,
+  "section": "Imaginators Test Characters (WiP)"
+ },
+ {
+  "name": "CYOS_Large_Template",
+  "charId": 4521,
+  "variantId": 20480,
+  "section": "Imaginators Test Characters (WiP)"
+ },
+ {
+  "name": "Medium Generic Base",
+  "charId": 4522,
+  "variantId": 20480,
+  "section": "Imaginators Test Characters (WiP)"
+ },
+ {
+  "name": "Quickshot",
+  "charId": 4523,
+  "variantId": 20480,
+  "section": "Imaginators Test Characters (WiP)"
+ },
+ {
+  "name": "Sorcerer",
+  "charId": 4525,
+  "variantId": 20480,
+  "section": "Imaginators Test Characters (WiP)"
+ },
+ {
+  "name": "Template Vehicle",
+  "charId": 4999,
+  "variantId": 16384,
+  "section": "SuperChargers Template Vehicles"
+ },
+ {
+  "name": "Template Land Vehicle",
+  "charId": 5999,
+  "variantId": 16384,
+  "section": "SuperChargers Template Vehicles"
+ },
+ {
+  "name": "Template Air Vehicle",
+  "charId": 6999,
+  "variantId": 16384,
+  "section": "SuperChargers Template Vehicles"
+ },
+ {
+  "name": "Template Sea Vehicle",
+  "charId": 7999,
+  "variantId": 16384,
+  "section": "SuperChargers Template Vehicles"
+ },
+ {
+  "name": "DEBUG Core",
+  "charId": 9990,
+  "variantId": 12288,
+  "section": "Trap Team DEBUG Characters"
+ },
+ {
+  "name": "DEBUG Giant",
+  "charId": 9991,
+  "variantId": 12288,
+  "section": "Trap Team DEBUG Characters"
+ },
+ {
+  "name": "DEBUG Ranger",
+  "charId": 9992,
+  "variantId": 12288,
+  "section": "Trap Team DEBUG Characters"
+ }
+]
