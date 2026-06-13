@@ -104,9 +104,33 @@ export class Collection {
     return this.owned.has(keyOf(charId, variantId));
   }
 
+  isWishlisted(charId: number, variantId: number): boolean {
+    return this.wishlist.has(keyOf(charId, variantId));
+  }
+
   async addWishlist(e: WishlistEntry): Promise<void> {
     this.wishlist.set(e.key, e);
     await wishlistPut(e);
+  }
+
+  async removeWishlist(charId: number, variantId: number): Promise<void> {
+    const key = keyOf(charId, variantId);
+    if (this.wishlist.delete(key)) await wishlistDelete(key);
+  }
+
+  /** Toggle wishlist for a catalogue figure. Returns the new state. */
+  async toggleWishlist(fig: { charId: number; variantId: number; name: string; section: string }): Promise<boolean> {
+    const key = keyOf(fig.charId, fig.variantId);
+    if (this.wishlist.has(key)) {
+      await this.removeWishlist(fig.charId, fig.variantId);
+      return false;
+    }
+    await this.addWishlist({ key, charId: fig.charId, variantId: fig.variantId, name: fig.name, section: fig.section });
+    return true;
+  }
+
+  copiesOf(charId: number, variantId: number): number {
+    return this.owned.get(keyOf(charId, variantId))?.copies.length ?? 0;
   }
 
   stats(): Stats {

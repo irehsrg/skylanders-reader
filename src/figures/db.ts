@@ -12,6 +12,9 @@ export interface Figure {
 
 const figures = rawFigures as Figure[];
 
+/** The full catalogue, in source order. */
+export const allFigures: readonly Figure[] = figures;
+
 const byKey = new Map<number, Figure>();
 const byCharId = new Map<number, Figure[]>();
 for (const f of figures) {

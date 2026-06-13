@@ -3,6 +3,7 @@ import { Portal, PortalWriteUnsupportedError, SLOT_COUNT, type SlotEvent } from 
 import { lookupFigure, parseIdentity, figureCount } from './figures/db';
 import { HelperClient, type HelperFigure } from './helper-client';
 import { Collection, type ScanInput } from './collection/collection';
+import { CatalogView } from './catalog';
 
 const connectBtn = document.querySelector<HTMLButtonElement>('#connect')!;
 const portalStatus = document.querySelector<HTMLSpanElement>('#portal-status')!;
@@ -19,6 +20,7 @@ const importBtn = document.querySelector<HTMLButtonElement>('#import')!;
 const importFile = document.querySelector<HTMLInputElement>('#import-file')!;
 
 const collection = new Collection();
+const catalog = new CatalogView(collection, () => renderCollection());
 
 let portal: Portal | null = null;
 let detectOnly = false;
@@ -93,6 +95,7 @@ async function recordScan(scan: ScanInput) {
     if (result.isNewFigure) log(`Added to collection: ${scan.name}`);
     else if (result.isNewCopy) log(`Duplicate copy of ${scan.name} (now ${result.entry.copies.length}).`);
     renderCollection();
+    catalog.render();
   } catch (err) {
     log(`Collection save failed: ${(err as Error).message}`);
   }
@@ -189,10 +192,25 @@ async function importCollection(file: File) {
     const count = await collection.importJSON(await file.text(), 'merge');
     log(`Imported ${count} figures from backup.`);
     renderCollection();
+    catalog.render();
   } catch (err) {
     log(`Import failed: ${(err as Error).message}`);
   }
 }
+
+// ---- tabs ------------------------------------------------------------------
+
+const tabPanels: Record<string, HTMLElement> = {
+  scanner: document.querySelector<HTMLElement>('#tab-scanner')!,
+  catalog: document.querySelector<HTMLElement>('#tab-catalog')!,
+};
+document.querySelectorAll<HTMLButtonElement>('.tab').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const target = btn.dataset.tab!;
+    document.querySelectorAll('.tab').forEach((b) => b.classList.toggle('active', b === btn));
+    for (const [name, panel] of Object.entries(tabPanels)) panel.hidden = name !== target;
+  });
+});
 
 exportBtn.addEventListener('click', exportCollection);
 importBtn.addEventListener('click', () => importFile.click());
@@ -357,6 +375,7 @@ async function init() {
   log(`Figure database loaded: ${figureCount} figures.`);
   await collection.load();
   renderCollection();
+  catalog.render();
   const owned = collection.stats().ownedFigures;
   if (owned > 0) log(`Collection restored: ${owned} figures.`);
 
