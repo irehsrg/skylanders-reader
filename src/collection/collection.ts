@@ -11,6 +11,7 @@ import {
   wishlistDelete,
   type OwnedEntry,
   type WishlistEntry,
+  type TagCopy,
 } from './store';
 
 export interface ScanInput {
@@ -45,9 +46,38 @@ export interface Stats {
 
 const keyOf = (charId: number, variantId: number) => `${charId}:${variantId}`;
 
+/** Write-through target for cloud sync. Set when the user is signed in. */
+export interface CloudAdapter {
+  upsertOwned(entry: OwnedEntry): Promise<void>;
+  upsertWishlist(entry: WishlistEntry): Promise<void>;
+  deleteWishlist(key: string): Promise<void>;
+}
+
+/** Union two copy lists by UID, keeping earliest firstSeen / latest lastSeen. */
+function mergeCopies(a: TagCopy[], b: TagCopy[]): TagCopy[] {
+  const byUid = new Map(a.map((c) => [c.uid, { ...c }]));
+  for (const c of b) {
+    const prev = byUid.get(c.uid);
+    if (prev) {
+      prev.firstSeen = Math.min(prev.firstSeen, c.firstSeen);
+      prev.lastSeen = Math.max(prev.lastSeen, c.lastSeen);
+      prev.scans += c.scans;
+    } else {
+      byUid.set(c.uid, { ...c });
+    }
+  }
+  return [...byUid.values()];
+}
+
 export class Collection {
   private owned = new Map<string, OwnedEntry>();
   private wishlist = new Map<string, WishlistEntry>();
+  private cloud: CloudAdapter | null = null;
+
+  /** Attach (or detach with null) a cloud write-through target. */
+  setCloud(adapter: CloudAdapter | null): void {
+    this.cloud = adapter;
+  }
 
   async load(): Promise<void> {
     for (const e of await ownedGetAll()) this.owned.set(e.key, e);
@@ -86,9 +116,13 @@ export class Collection {
     copy.scans++;
 
     // Scanning something resolves any wishlist entry for it.
-    if (this.wishlist.delete(key)) await wishlistDelete(key);
+    if (this.wishlist.delete(key)) {
+      await wishlistDelete(key);
+      this.cloud?.deleteWishlist(key).catch(() => {});
+    }
 
     await ownedPut(entry);
+    this.cloud?.upsertOwned(entry).catch(() => {});
     return { entry, isNewFigure, isNewCopy };
   }
 
@@ -111,11 +145,15 @@ export class Collection {
   async addWishlist(e: WishlistEntry): Promise<void> {
     this.wishlist.set(e.key, e);
     await wishlistPut(e);
+    this.cloud?.upsertWishlist(e).catch(() => {});
   }
 
   async removeWishlist(charId: number, variantId: number): Promise<void> {
     const key = keyOf(charId, variantId);
-    if (this.wishlist.delete(key)) await wishlistDelete(key);
+    if (this.wishlist.delete(key)) {
+      await wishlistDelete(key);
+      this.cloud?.deleteWishlist(key).catch(() => {});
+    }
   }
 
   /** Toggle wishlist for a catalogue figure. Returns the new state. */
@@ -160,6 +198,33 @@ export class Collection {
     };
   }
 
+  // ---- merge (cloud sync + import) -------------------------------------
+
+  /** Merge owned entries (from cloud or a backup) into local, persisting. */
+  async mergeOwned(entries: OwnedEntry[]): Promise<void> {
+    for (const e of entries) {
+      const existing = this.owned.get(e.key);
+      if (existing) {
+        existing.copies = mergeCopies(existing.copies, e.copies ?? []);
+        existing.name = e.name || existing.name;
+        existing.section = e.section || existing.section;
+        await ownedPut(existing);
+      } else {
+        this.owned.set(e.key, { ...e, copies: e.copies ?? [] });
+        await ownedPut(this.owned.get(e.key)!);
+      }
+    }
+  }
+
+  /** Merge wishlist entries into local, skipping any now owned. */
+  async mergeWishlist(entries: WishlistEntry[]): Promise<void> {
+    for (const w of entries) {
+      if (this.owned.has(w.key) || this.wishlist.has(w.key)) continue;
+      this.wishlist.set(w.key, w);
+      await wishlistPut(w);
+    }
+  }
+
   // ---- backup ----------------------------------------------------------
 
   exportJSON(): string {
@@ -185,33 +250,9 @@ export class Collection {
       this.owned.clear();
       await ownedClear();
     }
-    let imported = 0;
-    for (const e of (data.owned ?? []) as OwnedEntry[]) {
-      const existing = this.owned.get(e.key);
-      if (existing && mode === 'merge') {
-        // Union copies by UID, keeping earliest firstSeen / latest lastSeen.
-        const byUid = new Map(existing.copies.map((c) => [c.uid, c]));
-        for (const c of e.copies) {
-          const prev = byUid.get(c.uid);
-          if (prev) {
-            prev.firstSeen = Math.min(prev.firstSeen, c.firstSeen);
-            prev.lastSeen = Math.max(prev.lastSeen, c.lastSeen);
-            prev.scans += c.scans;
-          } else {
-            byUid.set(c.uid, c);
-          }
-        }
-        existing.copies = [...byUid.values()];
-        await ownedPut(existing);
-      } else {
-        this.owned.set(e.key, e);
-        await ownedPut(e);
-      }
-      imported++;
-    }
-    for (const w of (data.wishlist ?? []) as WishlistEntry[]) {
-      if (!this.owned.has(w.key)) await this.addWishlist(w);
-    }
-    return imported;
+    const owned = (data.owned ?? []) as OwnedEntry[];
+    await this.mergeOwned(owned);
+    await this.mergeWishlist((data.wishlist ?? []) as WishlistEntry[]);
+    return owned.length;
   }
 }

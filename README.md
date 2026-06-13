@@ -16,6 +16,13 @@ So there are two modes:
   control-pipe write path as desktop tools like SkyReader. Run `npm start` in
   `helper/`, then open the web app; it auto-connects and switches to full mode.
 
+## Accounts & sync (optional)
+
+The app is fully usable offline (local IndexedDB + JSON export/import). To add
+accounts and cross-device sync, connect a free Supabase project — see
+[BACKEND.md](BACKEND.md). Without it, the app stays local-only and the sign-in
+UI is hidden.
+
 ## Requirements
 
 - Chrome, Edge, or another Chromium browser on **desktop** (WebHID is not

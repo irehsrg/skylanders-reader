@@ -4,6 +4,8 @@ import { lookupFigure, parseIdentity, figureCount } from './figures/db';
 import { HelperClient, type HelperFigure } from './helper-client';
 import { Collection, type ScanInput } from './collection/collection';
 import { CatalogView } from './catalog';
+import { initAuth } from './auth-ui';
+import { makeCloudAdapter, fullSync } from './cloud/sync';
 
 const connectBtn = document.querySelector<HTMLButtonElement>('#connect')!;
 const portalStatus = document.querySelector<HTMLSpanElement>('#portal-status')!;
@@ -378,6 +380,25 @@ async function init() {
   catalog.render();
   const owned = collection.stats().ownedFigures;
   if (owned > 0) log(`Collection restored: ${owned} figures.`);
+
+  // Cloud accounts + sync (only active when Supabase is configured).
+  initAuth(async (user) => {
+    if (!user) {
+      collection.setCloud(null);
+      log('Signed out — collection is local-only.');
+      return;
+    }
+    collection.setCloud(makeCloudAdapter());
+    log(`Signed in as ${user.email ?? 'user'} — syncing…`);
+    try {
+      const r = await fullSync(collection);
+      log(`Sync complete: ${r.owned} figures, ${r.wishlist} wishlist.`);
+      renderCollection();
+      catalog.render();
+    } catch (err) {
+      log(`Sync failed: ${(err as Error).message}`);
+    }
+  });
 
   // Prefer the local helper (full identification on any portal/OS).
   const client = new HelperClient(helperEvents);

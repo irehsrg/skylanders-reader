@@ -13,7 +13,29 @@
         <div class="toolbar">
           <button id="connect" type="button">Connect portal</button>
           <span id="portal-status" class="portal-status">No portal connected</span>
+          <div class="account" id="account" hidden>
+            <button id="signin-btn" type="button" class="ghost">Sign in</button>
+            <span id="account-email" class="account-email" hidden></span>
+            <button id="signout-btn" type="button" class="ghost" hidden>Sign out</button>
+          </div>
         </div>
+
+        <dialog id="auth-dialog" class="auth-dialog">
+          <form method="dialog" class="auth-form" id="auth-form">
+            <h3>Sign in to sync your collection</h3>
+            <button type="button" class="auth-google" id="auth-google">Continue with Google</button>
+            <div class="auth-divider"><span>or</span></div>
+            <input type="email" id="auth-email" placeholder="you@example.com" autocomplete="email" />
+            <input type="password" id="auth-password" placeholder="Password (for email sign-in)" autocomplete="current-password" />
+            <div class="auth-buttons">
+              <button type="button" id="auth-signin">Sign in</button>
+              <button type="button" class="ghost" id="auth-signup">Create account</button>
+              <button type="button" class="ghost" id="auth-magic">Email me a link</button>
+            </div>
+            <p class="auth-message" id="auth-message"></p>
+            <button type="button" class="auth-close ghost" id="auth-close">Close</button>
+          </form>
+        </dialog>
         <p id="unsupported" class="unsupported" hidden>
           This browser doesn't support WebHID. Use <strong>Chrome</strong> or
           <strong>Edge</strong> on a desktop computer.
