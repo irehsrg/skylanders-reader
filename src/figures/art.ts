@@ -2,6 +2,7 @@
 // bundled (see CLAUDE.md); these generated tiles give each figure a stable,
 // recognizable look until user-photographed or licensed images are added.
 import type { Figure } from './db';
+import { figureImageUrl } from '../cloud/supabase';
 
 /** Up to two initials from a figure name, ignoring parenthetical variants. */
 export function initials(name: string): string {
@@ -28,4 +29,20 @@ export function figureTile(fig: Pick<Figure, 'name' | 'charId'>): HTMLDivElement
   txt.textContent = initials(fig.name);
   tile.appendChild(txt);
   return tile;
+}
+
+/**
+ * Real figure image (from the Supabase bucket) with a generated placeholder
+ * fallback when the backend isn't configured or the image is missing.
+ */
+export function figureThumb(fig: Pick<Figure, 'name' | 'charId' | 'variantId'>): HTMLElement {
+  const url = figureImageUrl(fig.charId, fig.variantId);
+  if (!url) return figureTile(fig);
+  const img = document.createElement('img');
+  img.className = 'figure-art';
+  img.loading = 'lazy';
+  img.alt = fig.name;
+  img.src = url;
+  img.addEventListener('error', () => img.replaceWith(figureTile(fig)), { once: true });
+  return img;
 }

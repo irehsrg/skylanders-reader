@@ -16,6 +16,6 @@ export const supabase: SupabaseClient | null = cloudEnabled
 /** Public URL for a figure image stored in the `figure-images` bucket. */
 export function figureImageUrl(charId: number, variantId: number): string | null {
   if (!supabase) return null;
-  const path = `${charId}-${variantId}.webp`;
+  const path = `${charId}-${variantId}.jpg`;
   return supabase.storage.from('figure-images').getPublicUrl(path).data.publicUrl;
 }

@@ -47,7 +47,28 @@ domain for production), and add both as redirect URLs.
 - After that, every scan and wishlist change is written through to the cloud
   immediately, so other devices stay in sync on their next load.
 
-## Images (later)
-The `figure-images` bucket is created but empty. Figure art will be uploaded
-there and referenced by `charId-variantId.webp`; until then the app shows
-generated placeholder tiles. (Populating the bucket is a separate step.)
+## Figure images
+The `figure-images` bucket is created public-read but starts empty, so the app
+shows generated placeholder tiles. To populate it, run the sync script — it
+scrapes figure images from darkSpyro, matches them to the catalogue by name,
+and uploads them keyed `charId-variantId.jpg` (the app picks them up
+automatically, falling back to placeholders for anything missing).
+
+It needs your **service_role** key (Project Settings → API) to write to storage.
+**Do not paste that key into chat or commit it** — put it only in your local
+`.env` (which is gitignored), then run the script locally:
+
+```
+# add this line to .env (service_role bypasses RLS — keep it secret):
+SUPABASE_SERVICE_KEY=your-service-role-key
+
+# dry run (no key needed) — see how many figures match:
+node scripts/sync-images.mjs
+
+# real upload:
+npm run sync-images -- --upload
+```
+
+Current coverage: ~402 of 691 figures match (the main figures across all six
+games); traps, vehicles, debug/unreleased entries and a few variants don't have
+a darkSpyro image and stay on placeholders.

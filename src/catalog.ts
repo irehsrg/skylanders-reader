@@ -1,7 +1,7 @@
 // Catalog view: browse all catalogued figures with search/filter, see what's
 // owned vs missing, and toggle wishlist.
 import { allFigures, sectionOrder, type Figure } from './figures/db';
-import { figureTile } from './figures/art';
+import { figureThumb } from './figures/art';
 import type { Collection } from './collection/collection';
 
 type Filter = 'all' | 'owned' | 'missing' | 'wishlist';
@@ -68,7 +68,7 @@ export class CatalogView {
     const card = document.createElement('div');
     card.className = owned ? 'cat-card owned' : 'cat-card';
 
-    const art = figureTile(f);
+    const art = figureThumb(f);
     if (!owned) art.classList.add('dim');
     card.appendChild(art);
 
