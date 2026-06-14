@@ -382,13 +382,19 @@ async function init() {
   if (owned > 0) log(`Collection restored: ${owned} figures.`);
 
   // Cloud accounts + sync (only active when Supabase is configured).
+  // Supabase fires the auth listener more than once per load (INITIAL_SESSION
+  // then SIGNED_IN), so sync only once per user.
+  let syncedUser: string | null = null;
   initAuth(async (user) => {
     if (!user) {
       collection.setCloud(null);
+      syncedUser = null;
       log('Signed out — collection is local-only.');
       return;
     }
     collection.setCloud(makeCloudAdapter());
+    if (syncedUser === user.id) return;
+    syncedUser = user.id;
     log(`Signed in as ${user.email ?? 'user'} — syncing…`);
     try {
       const r = await fullSync(collection);
@@ -397,6 +403,7 @@ async function init() {
       catalog.render();
     } catch (err) {
       log(`Sync failed: ${(err as Error).message}`);
+      syncedUser = null; // allow a retry on the next auth event
     }
   });
 
