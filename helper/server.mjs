@@ -1,12 +1,56 @@
-// Localhost bridge: exposes the portal to the web app over a WebSocket.
-// Run alongside the web app; the page connects to ws://127.0.0.1:8777 and
-// receives identified figures. When this helper isn't running, the web app
-// falls back to WebHID detect-only mode.
+// Localhost bridge: exposes the portal to the web app over a WebSocket, and
+// also serves the built web app over HTTP on the same origin. Open
+// http://localhost:8777 and everything (UI + portal socket) is same-origin, so
+// there's no HTTPS/mixed-content issue. The page connects to ws on this port
+// and receives identified figures; without the helper it falls back to
+// WebHID detect-only mode.
 import { WebSocketServer } from 'ws';
+import { createServer } from 'node:http';
+import { readFile } from 'node:fs/promises';
+import { dirname, join, extname, normalize } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { PortalHelper } from './portal.mjs';
 
 const PORT = 8777;
-const wss = new WebSocketServer({ host: '127.0.0.1', port: PORT });
+const here = dirname(fileURLToPath(import.meta.url));
+const DIST = join(here, '..', 'dist');
+
+const MIME = {
+  '.html': 'text/html; charset=utf-8',
+  '.js': 'text/javascript; charset=utf-8',
+  '.css': 'text/css; charset=utf-8',
+  '.json': 'application/json; charset=utf-8',
+  '.svg': 'image/svg+xml',
+  '.png': 'image/png',
+  '.jpg': 'image/jpeg',
+  '.ico': 'image/x-icon',
+  '.woff2': 'font/woff2',
+};
+
+// Static file server for the built app. Path traversal is blocked, and the
+// SPA falls back to index.html.
+const httpServer = createServer(async (req, res) => {
+  try {
+    const urlPath = decodeURIComponent((req.url || '/').split('?')[0]);
+    let rel = normalize(urlPath).replace(/^(\.\.[/\\])+/, '');
+    if (rel === '/' || rel === '\\' || rel === '') rel = 'index.html';
+    let filePath = join(DIST, rel);
+    if (!filePath.startsWith(DIST)) filePath = join(DIST, 'index.html');
+    let body;
+    try {
+      body = await readFile(filePath);
+    } catch {
+      body = await readFile(join(DIST, 'index.html')); // SPA fallback
+      filePath = 'index.html';
+    }
+    res.writeHead(200, { 'Content-Type': MIME[extname(filePath)] || 'application/octet-stream' });
+    res.end(body);
+  } catch {
+    res.writeHead(404).end('Build the app first: npm run build');
+  }
+});
+
+const wss = new WebSocketServer({ server: httpServer });
 
 let portal = null;
 let lastState = { connected: false, product: null, present: new Array(16).fill(false) };
@@ -85,5 +129,9 @@ wss.on('connection', (ws) => {
   }
 });
 
-console.log(`Skylanders portal helper listening on ws://127.0.0.1:${PORT}`);
-console.log('Leave this window open. Plug in your portal and open the web app.');
+httpServer.listen(PORT, '127.0.0.1', () => {
+  console.log(`Skylanders portal helper running.`);
+  console.log(`  • Open the app:  http://localhost:${PORT}`);
+  console.log(`  • Portal socket: ws://127.0.0.1:${PORT}`);
+  console.log('Leave this window open. Plug in your portal and drop figures on it.');
+});

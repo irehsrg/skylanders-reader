@@ -1,0 +1,8 @@
+# Never upload local secrets or the local-only helper to Vercel.
+.env
+.env.local
+helper
+scripts
+supabase
+.claude
+node_modules

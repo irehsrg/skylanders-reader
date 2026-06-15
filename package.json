@@ -9,7 +9,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "build-db": "node scripts/build-figure-db.mjs",
-    "sync-images": "node --env-file=.env scripts/sync-images.mjs"
+    "sync-images": "node --env-file=.env scripts/sync-images.mjs",
+    "station": "npm run build && node helper/server.mjs"
   },
   "devDependencies": {
     "@types/w3c-web-hid": "^1.0.6",
