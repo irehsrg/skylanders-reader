@@ -666,12 +666,6 @@
   "section": "Spyro's Adventure"
  },
  {
-  "name": "DEBUG Minion",
-  "charId": 999,
-  "variantId": 0,
-  "section": "Spyro's Adventure"
- },
- {
   "name": "Jet-Vac",
   "charId": 100,
   "variantId": 4096,
@@ -735,12 +729,6 @@
   "name": "Flashwing (LightCore)",
   "charId": 103,
   "variantId": 8710,
-  "section": "Giants"
- },
- {
-  "name": "Flashwing (UNRELEASED Series 2)",
-  "charId": 103,
-  "variantId": 14337,
   "section": "Giants"
  },
  {
@@ -981,12 +969,6 @@
   "name": "Hidden Treasure",
   "charId": 201,
   "variantId": 0,
-  "section": "Toys For Bob Items/Traps"
- },
- {
-  "name": "Platinum Treasure Chest (UNRELEASED)",
-  "charId": 201,
-  "variantId": 2,
   "section": "Toys For Bob Items/Traps"
  },
  {
@@ -1656,12 +1638,6 @@
   "section": "Trap Team"
  },
  {
-  "name": "Snap Shot (UNRELEASED Event)",
-  "charId": 462,
-  "variantId": 12292,
-  "section": "Trap Team"
- },
- {
   "name": "Dark Snap Shot",
   "charId": 462,
   "variantId": 13314,
@@ -2220,12 +2196,6 @@
   "section": "Imaginators"
  },
  {
-  "name": "Heartbreaker Buckshot (UNRELEASED)",
-  "charId": 618,
-  "variantId": 21516,
-  "section": "Imaginators"
- },
- {
   "name": "Aurora",
   "charId": 619,
   "variantId": 20480,
@@ -2430,12 +2400,6 @@
   "section": "Imaginators"
  },
  {
-  "name": "Air Creation Crystal (UNRELEASED Acorn)",
-  "charId": 682,
-  "variantId": 21010,
-  "section": "Imaginators"
- },
- {
   "name": "Undead Creation Crystal (Lantern)",
   "charId": 683,
   "variantId": 21001,
@@ -2454,12 +2418,6 @@
   "section": "Imaginators"
  },
  {
-  "name": "Tech Creation Crystal (UNRELEASED Pyramid)",
-  "charId": 684,
-  "variantId": 20997,
-  "section": "Imaginators"
- },
- {
   "name": "Tech Creation Crystal (Reactor)",
   "charId": 684,
   "variantId": 21005,
@@ -2472,12 +2430,6 @@
   "section": "Imaginators"
  },
  {
-  "name": "Fire Creation Crystal (UNRELEASED Angel)",
-  "charId": 685,
-  "variantId": 20993,
-  "section": "Imaginators"
- },
- {
   "name": "Fire Creation Crystal (Reactor)",
   "charId": 685,
   "variantId": 21007,
@@ -2487,12 +2439,6 @@
   "name": "Fire Creation Crystal (Acorn)",
   "charId": 685,
   "variantId": 21009,
-  "section": "Imaginators"
- },
- {
-  "name": "Earth Creation Crystal (UNRELEASED Rune)",
-  "charId": 686,
-  "variantId": 21004,
   "section": "Imaginators"
  },
  {
@@ -2553,12 +2499,6 @@
   "name": "Dark Creation Crystal (Reactor)",
   "charId": 688,
   "variantId": 21006,
-  "section": "Imaginators"
- },
- {
-  "name": "Light Creation Crystal (UNRELEASED Angel)",
-  "charId": 689,
-  "variantId": 20995,
   "section": "Imaginators"
  },
  {
@@ -2766,12 +2706,6 @@
   "section": "SWAP Force"
  },
  {
-  "name": "Template (Bottom)",
-  "charId": 1999,
-  "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
   "name": "Boom",
   "charId": 2000,
   "variantId": 8192,
@@ -2949,12 +2883,6 @@
   "name": "Dark Wash",
   "charId": 2015,
   "variantId": 9218,
-  "section": "SWAP Force"
- },
- {
-  "name": "Template (Top)",
-  "charId": 2999,
-  "variantId": 8192,
   "section": "SWAP Force"
  },
  {
@@ -3152,12 +3080,6 @@
  {
   "name": "Punk Shock",
   "charId": 3015,
-  "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Template Legacy",
-  "charId": 3999,
   "variantId": 8192,
   "section": "SWAP Force"
  },
@@ -3714,134 +3636,8 @@
   "section": "SuperChargers"
  },
  {
-  "name": "Chef Pepper Jack",
-  "charId": 3440,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
   "name": "Stratosphere",
   "charId": 3441,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Cap'n Cluck",
-  "charId": 3442,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Wolfgang",
-  "charId": 3443,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Threatpack",
-  "charId": 3444,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Hood Sickle",
-  "charId": 3445,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Bad Juju",
-  "charId": 3446,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Glumshanks",
-  "charId": 3450,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Dragon Hunter",
-  "charId": 3451,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Moneybone",
-  "charId": 3452,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Chompy Mage",
-  "charId": 3453,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Dr. Krankcase",
-  "charId": 3454,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Pain-Yatta",
-  "charId": 3455,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Broccoli Guy",
-  "charId": 3456,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Mesmeralda",
-  "charId": 3460,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Captain Frightbeard",
-  "charId": 3461,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Golden Queen",
-  "charId": 3462,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Spellslamzer",
-  "charId": 3463,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Chill Bill",
-  "charId": 3464,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "The Gulper",
-  "charId": 3465,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Noodles",
-  "charId": 3466,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Kaos",
-  "charId": 3467,
   "variantId": 16384,
   "section": "Villain Drivers/Vehicles"
  },
@@ -4018,95 +3814,5 @@
   "charId": 4502,
   "variantId": 20480,
   "section": "Skylanders 2016"
- },
- {
-  "name": "BlueFalcon_Base",
-  "charId": 4503,
-  "variantId": 20480,
-  "section": "Skylanders 2016"
- },
- {
-  "name": "Undead Card",
-  "charId": 4517,
-  "variantId": 20480,
-  "section": "Imaginators Test Characters (WiP)"
- },
- {
-  "name": "CYOS_Small_Template",
-  "charId": 4519,
-  "variantId": 20480,
-  "section": "Imaginators Test Characters (WiP)"
- },
- {
-  "name": "CYOS_Medium_Template",
-  "charId": 4520,
-  "variantId": 20480,
-  "section": "Imaginators Test Characters (WiP)"
- },
- {
-  "name": "CYOS_Large_Template",
-  "charId": 4521,
-  "variantId": 20480,
-  "section": "Imaginators Test Characters (WiP)"
- },
- {
-  "name": "Medium Generic Base",
-  "charId": 4522,
-  "variantId": 20480,
-  "section": "Imaginators Test Characters (WiP)"
- },
- {
-  "name": "Quickshot",
-  "charId": 4523,
-  "variantId": 20480,
-  "section": "Imaginators Test Characters (WiP)"
- },
- {
-  "name": "Sorcerer",
-  "charId": 4525,
-  "variantId": 20480,
-  "section": "Imaginators Test Characters (WiP)"
- },
- {
-  "name": "Template Vehicle",
-  "charId": 4999,
-  "variantId": 16384,
-  "section": "SuperChargers Template Vehicles"
- },
- {
-  "name": "Template Land Vehicle",
-  "charId": 5999,
-  "variantId": 16384,
-  "section": "SuperChargers Template Vehicles"
- },
- {
-  "name": "Template Air Vehicle",
-  "charId": 6999,
-  "variantId": 16384,
-  "section": "SuperChargers Template Vehicles"
- },
- {
-  "name": "Template Sea Vehicle",
-  "charId": 7999,
-  "variantId": 16384,
-  "section": "SuperChargers Template Vehicles"
- },
- {
-  "name": "DEBUG Core",
-  "charId": 9990,
-  "variantId": 12288,
-  "section": "Trap Team DEBUG Characters"
- },
- {
-  "name": "DEBUG Giant",
-  "charId": 9991,
-  "variantId": 12288,
-  "section": "Trap Team DEBUG Characters"
- },
- {
-  "name": "DEBUG Ranger",
-  "charId": 9992,
-  "variantId": 12288,
-  "section": "Trap Team DEBUG Characters"
  }
 ]
