@@ -197,22 +197,41 @@ button:disabled {
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
-.welcome-showcase {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
+.marquee {
+  width: 100%;
   margin: 0 auto 36px;
-  max-width: 880px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 }
-.welcome-showcase img,
-.welcome-showcase .figure-art {
-  width: 64px;
-  height: 64px;
-  border-radius: 12px;
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 70s linear infinite;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+/* Each item carries its own trailing gap so two identical halves loop seamlessly. */
+.marquee-track > * {
+  flex: none;
+  width: 76px;
+  height: 76px;
+  margin-right: 14px;
+  border-radius: 14px;
   object-fit: cover;
   border: 1px solid var(--border);
   background: var(--panel);
+}
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
 }
 .features {
   display: grid;

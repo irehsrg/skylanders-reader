@@ -402,13 +402,17 @@ function renderCollection() {
   if (unrecognized > 0) cleanupBtn.textContent = `Clean up ${unrecognized}`;
 }
 
-/** Strip of base-figure images on the welcome screen. */
+/** Slow infinite marquee of base-figure images on the welcome screen. */
 function renderShowcase() {
   const bases = visibleFigures.filter((f) => f.variantId === 0);
-  const step = Math.max(1, Math.floor(bases.length / 18));
+  const step = Math.max(1, Math.floor(bases.length / 30));
   const picks: typeof bases = [];
-  for (let i = 0; i < bases.length && picks.length < 18; i += step) picks.push(bases[i]);
-  welcomeShowcase.replaceChildren(...picks.map((f) => figureThumb(f)));
+  for (let i = 0; i < bases.length && picks.length < 30; i += step) picks.push(bases[i]);
+  const track = document.createElement('div');
+  track.className = 'marquee-track';
+  // Two identical halves so translateX(-50%) loops seamlessly.
+  for (const f of [...picks, ...picks]) track.appendChild(figureThumb(f));
+  welcomeShowcase.replaceChildren(track);
 }
 
 async function cleanupUnrecognized() {
