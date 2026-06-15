@@ -1,0 +1,314 @@
+[
+  {
+    "name": "Jet",
+    "key": "1000-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/02/BoomJet.png",
+    "sclName": "Boom Jet"
+  },
+  {
+    "name": "Ranger",
+    "key": "1001-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/06/FreeRanger.png",
+    "sclName": "Free Ranger"
+  },
+  {
+    "name": "Legendary Ranger",
+    "key": "1001-9219",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/08/LegendaryFreeRanger.png",
+    "sclName": "Legendary Free Ranger"
+  },
+  {
+    "name": "Rouser",
+    "key": "1002-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/12/RubbleRouser1.png",
+    "sclName": "Rubble Rouser"
+  },
+  {
+    "name": "Stone",
+    "key": "1003-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/11/DoomStone1.png",
+    "sclName": "Doom Stone"
+  },
+  {
+    "name": "Zone",
+    "key": "1004-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/06/BlastZone.png",
+    "sclName": "Blast Zone"
+  },
+  {
+    "name": "Dark Zone",
+    "key": "1004-9218",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/02/DarkBlastZone.png",
+    "sclName": "Dark Blast Zone"
+  },
+  {
+    "name": "Kraken",
+    "key": "1005-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/06/FireKraken.png",
+    "sclName": "Fire Kraken"
+  },
+  {
+    "name": "Kraken (Gold)",
+    "key": "1005-8196",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/06/GoldFireKraken.png",
+    "sclName": "Gold Fire Kraken"
+  },
+  {
+    "name": "Jade Kraken",
+    "key": "1005-9218",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/11/JadeFireKraken3.png",
+    "sclName": "Jade Fire Kraken"
+  },
+  {
+    "name": "Bomb",
+    "key": "1006-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/12/StinkBomb.png",
+    "sclName": "Stink Bomb"
+  },
+  {
+    "name": "Drilla",
+    "key": "1007-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/08/GrillaDrilla.png",
+    "sclName": "Grilla Drilla"
+  },
+  {
+    "name": "Loop",
+    "key": "1008-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/06/HootLoop.png",
+    "sclName": "Hoot Loop"
+  },
+  {
+    "name": "Enchanted Loop",
+    "key": "1008-9218",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/02/EnchantedHootLoop.png",
+    "sclName": "Enchanted Hoot Loop"
+  },
+  {
+    "name": "Shadow",
+    "key": "1009-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/03/TrapShadow.png",
+    "sclName": "Trap Shadow"
+  },
+  {
+    "name": "Charge",
+    "key": "1010-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/08/MagnaCharge.png",
+    "sclName": "Magna Charge"
+  },
+  {
+    "name": "Nitro Charge",
+    "key": "1010-9218",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/10/NitroMagnaCharge1.png",
+    "sclName": "Nitro Magna Charge"
+  },
+  {
+    "name": "Rise",
+    "key": "1011-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/12/SpyRise.png",
+    "sclName": "Spy Rise"
+  },
+  {
+    "name": "Shift",
+    "key": "1012-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/08/NightShift.png",
+    "sclName": "Night Shift"
+  },
+  {
+    "name": "Legendary Shift",
+    "key": "1012-9219",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/08/LegendaryNightShift.png",
+    "sclName": "Legendary Night Shift"
+  },
+  {
+    "name": "Shake",
+    "key": "1013-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/02/RattleShake.png",
+    "sclName": "Rattle Shake"
+  },
+  {
+    "name": "Quickdraw Shake",
+    "key": "1013-9218",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/11/QuickdrawRattleShake.png",
+    "sclName": "Quick Draw Rattle Shake"
+  },
+  {
+    "name": "Blade",
+    "key": "1014-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/03/FreezeBlade.png",
+    "sclName": "Freeze Blade"
+  },
+  {
+    "name": "Nitro Blade",
+    "key": "1014-9218",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/03/NitroFreezeBlade.png",
+    "sclName": "Nitro Freeze Blade"
+  },
+  {
+    "name": "Buckler",
+    "key": "1015-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/02/WashBuckler.png",
+    "sclName": "Wash Buckler"
+  },
+  {
+    "name": "Dark Buckler",
+    "key": "1015-9218",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/02/DarkWashBuckler.png",
+    "sclName": "Dark Wash Buckler"
+  },
+  {
+    "name": "Boom",
+    "key": "2000-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/02/BoomJet.png",
+    "sclName": "Boom Jet"
+  },
+  {
+    "name": "Free",
+    "key": "2001-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/06/FreeRanger.png",
+    "sclName": "Free Ranger"
+  },
+  {
+    "name": "Legendary Free",
+    "key": "2001-9219",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/08/LegendaryFreeRanger.png",
+    "sclName": "Legendary Free Ranger"
+  },
+  {
+    "name": "Rubble",
+    "key": "2002-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/12/RubbleRouser1.png",
+    "sclName": "Rubble Rouser"
+  },
+  {
+    "name": "Doom",
+    "key": "2003-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/11/DoomStone1.png",
+    "sclName": "Doom Stone"
+  },
+  {
+    "name": "Blast",
+    "key": "2004-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/06/BlastZone.png",
+    "sclName": "Blast Zone"
+  },
+  {
+    "name": "Dark Blast",
+    "key": "2004-9218",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/02/DarkBlastZone.png",
+    "sclName": "Dark Blast Zone"
+  },
+  {
+    "name": "Fire",
+    "key": "2005-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/06/FireKraken.png",
+    "sclName": "Fire Kraken"
+  },
+  {
+    "name": "Fire (Gold)",
+    "key": "2005-8196",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/06/GoldFireKraken.png",
+    "sclName": "Gold Fire Kraken"
+  },
+  {
+    "name": "Jade Fire",
+    "key": "2005-9218",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/11/JadeFireKraken3.png",
+    "sclName": "Jade Fire Kraken"
+  },
+  {
+    "name": "Stink",
+    "key": "2006-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/12/StinkBomb.png",
+    "sclName": "Stink Bomb"
+  },
+  {
+    "name": "Grilla",
+    "key": "2007-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/08/GrillaDrilla.png",
+    "sclName": "Grilla Drilla"
+  },
+  {
+    "name": "Hoot",
+    "key": "2008-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/06/HootLoop.png",
+    "sclName": "Hoot Loop"
+  },
+  {
+    "name": "Enchanted Hoot",
+    "key": "2008-9218",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/02/EnchantedHootLoop.png",
+    "sclName": "Enchanted Hoot Loop"
+  },
+  {
+    "name": "Trap",
+    "key": "2009-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/03/TrapShadow.png",
+    "sclName": "Trap Shadow"
+  },
+  {
+    "name": "Magna",
+    "key": "2010-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/08/MagnaCharge.png",
+    "sclName": "Magna Charge"
+  },
+  {
+    "name": "Nitro Magna",
+    "key": "2010-9218",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/10/NitroMagnaCharge1.png",
+    "sclName": "Nitro Magna Charge"
+  },
+  {
+    "name": "Spy",
+    "key": "2011-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/12/SpyRise.png",
+    "sclName": "Spy Rise"
+  },
+  {
+    "name": "Night",
+    "key": "2012-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/08/NightShift.png",
+    "sclName": "Night Shift"
+  },
+  {
+    "name": "Legendary Night",
+    "key": "2012-9219",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/08/LegendaryNightShift.png",
+    "sclName": "Legendary Night Shift"
+  },
+  {
+    "name": "Rattle",
+    "key": "2013-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/02/RattleShake.png",
+    "sclName": "Rattle Shake"
+  },
+  {
+    "name": "Quickdraw Rattle",
+    "key": "2013-9218",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/11/QuickdrawRattleShake.png",
+    "sclName": "Quick Draw Rattle Shake"
+  },
+  {
+    "name": "Freeze",
+    "key": "2014-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/03/FreezeBlade.png",
+    "sclName": "Freeze Blade"
+  },
+  {
+    "name": "Nitro Freeze",
+    "key": "2014-9218",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/03/NitroFreezeBlade.png",
+    "sclName": "Nitro Freeze Blade"
+  },
+  {
+    "name": "Wash",
+    "key": "2015-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/02/WashBuckler.png",
+    "sclName": "Wash Buckler"
+  },
+  {
+    "name": "Dark Wash",
+    "key": "2015-9218",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/02/DarkWashBuckler.png",
+    "sclName": "Dark Wash Buckler"
+  }
+]
