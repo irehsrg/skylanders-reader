@@ -1,7 +1,10 @@
 [
-  { "name": "Whirlwind", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2013/02/Whirlwind2.png" },
-  { "name": "Sonic Boom (Series 2)", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2013/02/SonicBoom1.png" },
-  { "name": "Sonic Boom (Glow in the Dark)", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2013/12/GlowInTheDarkSonicBoom.png" },
-  { "name": "Sonic Boom (Sparkle/Glitter)", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2013/12/SparkleSonicBoom.png" },
-  { "name": "Warnado (LightCore)", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2013/08/LightCoreWarnado.png" }
+  { "key": "3-6164", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2013/12/PurpleLightningRod.png" },
+  { "key": "5-14352", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2015/04/EonsEliteTerrafin.png" },
+  { "key": "6-18448", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/EliteDinoRang.png" },
+  { "key": "9-14352", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2015/04/EonsEliteEruptor.png" },
+  { "key": "11-6146", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2013/11/GoldenFlameslinger.png" },
+  { "key": "14-14352", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2015/04/EonsEliteGillGrunt.png" },
+  { "key": "14-6167", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2013/07/MetallicGreenGillGrunt.png" },
+  { "key": "15-18448", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/EonsEliteSlamBam.png" }
 ]
