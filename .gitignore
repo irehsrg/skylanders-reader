@@ -5,3 +5,4 @@ dist
 # Supabase (local secrets — never commit)
 .env
 .env.local
+build

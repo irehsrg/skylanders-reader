@@ -40,3 +40,18 @@ portal and exits — handy for testing without the web app.
 
 No admin rights, no driver install, no compiler — koffi and node-hid ship
 prebuilt binaries.
+
+## Distribute to others (no Node needed)
+
+```sh
+npm run package-helper
+```
+
+Builds `build/portal-station/` — a portable Windows x64 bundle with a bundled
+Node runtime, the helper + its native modules, the built web app, and a
+`Start Portal.bat` launcher. Zip that folder and share it; users unzip, plug in
+their portal, and double-click the launcher (no install, no Node). It opens
+`http://localhost:8777` automatically.
+
+(~220 MB unzipped, mostly the Node runtime; future work: trim koffi's
+non-Windows binaries and ship a zip.)

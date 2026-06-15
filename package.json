@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "build-db": "node scripts/build-figure-db.mjs",
     "sync-images": "node --env-file=.env scripts/sync-images.mjs",
-    "station": "npm run build && node helper/server.mjs"
+    "station": "npm run build && node helper/server.mjs",
+    "package-helper": "npm run build && node scripts/package-helper.mjs"
   },
   "devDependencies": {
     "@types/w3c-web-hid": "^1.0.6",
