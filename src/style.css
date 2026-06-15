@@ -200,6 +200,7 @@ button:disabled {
 }
 .marquee {
   width: 100%;
+  height: 64px;
   margin: 0 auto 36px;
   overflow: hidden;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
@@ -207,22 +208,28 @@ button:disabled {
 }
 .marquee-track {
   display: flex;
+  align-items: center;
   width: max-content;
+  height: 100%;
   animation: marquee 70s linear infinite;
 }
 .marquee:hover .marquee-track {
   animation-play-state: paused;
 }
-/* Each item carries its own trailing gap so two identical halves loop seamlessly. */
-.marquee-track > * {
+/* High-specificity sizing so it overrides img.figure-art{width:100%}; each
+   item carries its trailing gap so two identical halves loop seamlessly. */
+.marquee-track img.figure-art,
+.marquee-track .figure-art {
   flex: none;
-  width: 76px;
-  height: 76px;
+  width: 56px;
+  height: 56px;
+  aspect-ratio: auto;
   margin-right: 14px;
-  border-radius: 14px;
+  border-radius: 12px;
   object-fit: cover;
   border: 1px solid var(--border);
   background: var(--panel);
+  font-size: 0.85rem;
 }
 @keyframes marquee {
   to {
