@@ -10,7 +10,7 @@ import { readFile } from 'node:fs/promises';
 import { dirname, join, extname, normalize } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { PortalHelper } from './portal.mjs';
-import { inspectFigure, selfTestWrite } from './figure.mjs';
+import { inspectFigure, selfTestWrite, prepareWrite } from './figure.mjs';
 
 const PORT = Number(process.env.PORT) || 8777;
 const here = dirname(fileURLToPath(import.meta.url));
@@ -155,6 +155,34 @@ wss.on('connection', (ws) => {
         ws.send(JSON.stringify({ t: 'inspect-result', slot: msg.slot, ...result, writeSelfTest, blocks }));
       } catch (err) {
         ws.send(JSON.stringify({ t: 'inspect-result', slot: msg.slot, ok: false, error: err.message }));
+      }
+    }
+
+    // Edit a figure (gold/xp/heroPoints/nickname/reset). Heavily guarded.
+    if (msg.t === 'edit') {
+      try {
+        if (!portal || !portal.connected) throw new Error('No portal connected.');
+        // Re-read and confirm the same figure is still on the portal.
+        const blocks = await portal.dumpAll(msg.slot);
+        const before = inspectFigure(blocks);
+        if (!before.ok) throw new Error('Could not read figure: ' + before.error);
+        if (msg.expect && (before.charId !== msg.expect.charId || before.variantId !== msg.expect.variantId)) {
+          throw new Error('Figure on the portal changed — aborting for safety.');
+        }
+        // prepareWrite refuses figures whose checksums it can't reproduce
+        // (traps, Creation Crystals, unknown formats).
+        const prep = prepareWrite(blocks, msg.edits || {});
+        log(`Editing slot ${msg.slot + 1}: writing ${prep.writes.length} blocks (area ${prep.inactiveArea}, seq ${prep.newSeq})…`);
+        await portal.writeFigure(msg.slot, prep.writes);
+        // Verify by re-reading the whole figure.
+        const after = inspectFigure(await portal.dumpAll(msg.slot));
+        const c = after.checksums;
+        const ok = after.ok && c.type1.match && !!c.type2.matchedBy && !!c.type3.matchedBy && after.activeArea === prep.inactiveArea;
+        log(`Edit ${ok ? 'OK' : 'VERIFY FAILED'}: ${JSON.stringify(after.stats)}`);
+        ws.send(JSON.stringify({ t: 'edit-result', slot: msg.slot, ok, stats: after.stats, error: ok ? undefined : 'post-write verification failed' }));
+      } catch (err) {
+        log(`Edit failed: ${err.message}`);
+        ws.send(JSON.stringify({ t: 'edit-result', slot: msg.slot, ok: false, error: err.message }));
       }
     }
   });

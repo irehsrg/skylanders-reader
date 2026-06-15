@@ -29,6 +29,21 @@ export interface InspectResult {
   writeSelfTest?: { pass: boolean; reason?: string } | null;
 }
 
+export interface EditResult {
+  slot: number;
+  ok: boolean;
+  error?: string;
+  stats?: { xp: number; gold: number; hat: number | null; heroPoints: number | null; nickname: string };
+}
+
+export interface FigureEdits {
+  gold?: number;
+  xp?: number;
+  heroPoints?: number;
+  nickname?: string;
+  reset?: boolean;
+}
+
 export interface HelperEvents {
   hello(info: { product: string }): void;
   bye(): void;
@@ -37,6 +52,7 @@ export interface HelperEvents {
   removed(slot: number): void;
   log(msg: string): void;
   inspectResult(result: InspectResult): void;
+  editResult(result: EditResult): void;
   /** Connection to the helper itself opened/closed (not the portal). */
   connected(): void;
   disconnected(): void;
@@ -96,6 +112,13 @@ export class HelperClient {
     }
   }
 
+  /** Request an edit to the figure in `slot`. */
+  requestEdit(slot: number, edits: FigureEdits, expect: { charId: number; variantId: number }): void {
+    if (this.ws?.readyState === WebSocket.OPEN) {
+      this.ws.send(JSON.stringify({ t: 'edit', slot, edits, expect }));
+    }
+  }
+
   private dispatch(raw: string) {
     let msg: Record<string, unknown>;
     try {
@@ -111,6 +134,7 @@ export class HelperClient {
       case 'removed': this.events.removed(msg.slot as number); break;
       case 'log': this.events.log(String(msg.msg ?? '')); break;
       case 'inspect-result': this.events.inspectResult(msg as unknown as InspectResult); break;
+      case 'edit-result': this.events.editResult(msg as unknown as EditResult); break;
     }
   }
 }

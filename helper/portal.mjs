@@ -165,6 +165,32 @@ export class PortalHelper extends EventEmitter {
     });
   }
 
+  /**
+   * Write prepared blocks to the figure in `slot`, read-back-verifying each
+   * (retry up to 3×, abort on persistent mismatch). `writes` MUST be ordered
+   * data-blocks-first, header-last so a mid-write abort leaves the old save
+   * area intact. Never pass block 0 or sector trailers.
+   */
+  async writeFigure(slot, writes) {
+    while (this.#busy) await sleep(20);
+    this.#busy = true;
+    try {
+      for (const w of writes) {
+        if (w.block === 0 || w.block % 4 === 3) throw new Error(`refusing protected block 0x${w.block.toString(16)}`);
+        let ok = false;
+        for (let attempt = 0; attempt < 3 && !ok; attempt++) {
+          this.#write('W', 0x57, 0x10 + slot, w.block, ...w.bytes);
+          await sleep(130);
+          const back = await this.#query(slot, w.block);
+          ok = back && Buffer.compare(Buffer.from(back), Buffer.from(w.bytes)) === 0;
+        }
+        if (!ok) throw new Error(`write verify failed at block 0x${w.block.toString(16)}`);
+      }
+    } finally {
+      this.#busy = false;
+    }
+  }
+
   /** Read all 64 blocks of the figure in `slot` (non-destructive). */
   async dumpAll(slot) {
     while (this.#busy) await sleep(20);

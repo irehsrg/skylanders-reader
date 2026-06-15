@@ -1,7 +1,7 @@
 import './style.css';
 import { Portal, PortalWriteUnsupportedError, SLOT_COUNT, type SlotEvent } from './hid/portal';
 import { lookupFigure, parseIdentity, figureCount } from './figures/db';
-import { HelperClient, type HelperFigure, type InspectResult } from './helper-client';
+import { HelperClient, type HelperFigure, type InspectResult, type EditResult } from './helper-client';
 import { Collection, type ScanInput } from './collection/collection';
 import { CatalogView } from './catalog';
 import { initAuth } from './auth-ui';
@@ -155,20 +155,105 @@ function renderInspectResult(r: InspectResult) {
     st.className = 'detail-checks';
     st.textContent = r.writeSelfTest.pass
       ? 'Write self-test: ✓ a no-op edit rebuilds a valid figure in memory (write pipeline proven).'
-      : `Write self-test: ✗ ${r.writeSelfTest.reason ?? 'failed'} — writing will stay disabled.`;
+      : `Write self-test: ✗ ${r.writeSelfTest.reason ?? 'failed'} — editing disabled.`;
     figureDetailsEl.appendChild(st);
   }
 
+  let backupDone = false;
   const backup = document.createElement('button');
   backup.className = 'ghost';
   backup.textContent = 'Download backup (.json)';
-  backup.addEventListener('click', () => downloadBackup(r, name));
   figureDetailsEl.appendChild(backup);
+
+  // Edit panel — only for figures whose write pipeline self-test passed and
+  // whose type is safe to edit.
+  const editable =
+    r.writeSelfTest?.pass &&
+    !/creation crystal|trap/i.test(name) &&
+    !/Trap/i.test(slotFigures.get(r.slot)?.meta ?? '');
+
+  if (!editable) {
+    const note = document.createElement('p');
+    note.className = 'muted';
+    note.textContent = r.writeSelfTest?.pass
+      ? 'This figure type can’t be edited safely (traps / creation crystals are blocked).'
+      : 'Editing is disabled for this figure.';
+    figureDetailsEl.appendChild(note);
+    backup.addEventListener('click', () => downloadBackup(r, name));
+    return;
+  }
+
+  const panel = document.createElement('div');
+  panel.className = 'edit-panel';
+  panel.innerHTML = `
+    <h3>Edit figure</h3>
+    <p class="edit-warn">⚠ Editing rewrites data on the physical figure. It’s well-tested, but a bad write
+    could damage it. <strong>Download a backup first</strong>, and try a figure you don’t mind risking.</p>
+    <label class="edit-own"><input type="checkbox" id="edit-own" /> I own this figure and accept the risk</label>
+    <div class="edit-fields">
+      <label>Gold<input type="number" id="edit-gold" min="0" max="65000" value="${r.stats!.gold}"></label>
+      <label>XP (tier 1)<input type="number" id="edit-xp" min="0" max="33000" value="${r.stats!.xp}"></label>
+      <label>Hero points<input type="number" id="edit-hp" min="0" max="100" value="${r.stats!.heroPoints ?? 0}"></label>
+      <label>Nickname<input type="text" id="edit-name" maxlength="14" value="${escapeAttr(r.stats!.nickname)}"></label>
+    </div>
+    <div class="edit-actions">
+      <button id="edit-apply" disabled>Apply changes</button>
+      <button id="edit-reset" class="ghost danger" disabled>Reset figure</button>
+    </div>`;
+  figureDetailsEl.appendChild(panel);
 
   const note = document.createElement('p');
   note.className = 'muted';
-  note.textContent = 'Editing is not enabled yet — this is a read-only preview while the format is verified.';
+  note.textContent = 'Changes write to the spare save slot and are verified by reading back every block.';
   figureDetailsEl.appendChild(note);
+
+  const own = panel.querySelector<HTMLInputElement>('#edit-own')!;
+  const applyBtn = panel.querySelector<HTMLButtonElement>('#edit-apply')!;
+  const resetBtn = panel.querySelector<HTMLButtonElement>('#edit-reset')!;
+  const refresh = () => {
+    const enabled = own.checked && backupDone;
+    applyBtn.disabled = !enabled;
+    resetBtn.disabled = !enabled;
+  };
+  own.addEventListener('change', refresh);
+  backup.addEventListener('click', () => {
+    downloadBackup(r, name);
+    backupDone = true;
+    refresh();
+  });
+
+  applyBtn.addEventListener('click', () => {
+    const edits = {
+      gold: Number(panel.querySelector<HTMLInputElement>('#edit-gold')!.value),
+      xp: Number(panel.querySelector<HTMLInputElement>('#edit-xp')!.value),
+      heroPoints: Number(panel.querySelector<HTMLInputElement>('#edit-hp')!.value),
+      nickname: panel.querySelector<HTMLInputElement>('#edit-name')!.value,
+    };
+    if (!confirm(`Write these changes to ${name}? A backup has been saved.`)) return;
+    applyBtn.disabled = true;
+    log(`Applying edits to ${name}…`);
+    helperClient?.requestEdit(r.slot, edits, { charId: r.charId!, variantId: r.variantId! });
+  });
+  resetBtn.addEventListener('click', () => {
+    if (!confirm(`Factory-reset ${name}? This wipes XP, gold, name, hat and upgrades. A backup has been saved.`)) return;
+    resetBtn.disabled = true;
+    log(`Resetting ${name}…`);
+    helperClient?.requestEdit(r.slot, { reset: true }, { charId: r.charId!, variantId: r.variantId! });
+  });
+}
+
+function escapeAttr(s: string): string {
+  return s.replace(/"/g, '&quot;').replace(/</g, '&lt;');
+}
+
+function renderEditResult(r: EditResult) {
+  if (r.ok) {
+    log(`Edit succeeded and verified. New stats: gold ${r.stats?.gold}, XP ${r.stats?.xp}, name "${r.stats?.nickname || ''}".`);
+    helperClient?.requestInspect(r.slot); // refresh the panel with new values
+  } else {
+    log(`Edit failed: ${r.error ?? 'unknown'} — figure left unchanged.`);
+    alert(`Edit failed: ${r.error ?? 'unknown'}\nThe figure was not changed (or restore from your backup if in doubt).`);
+  }
 }
 
 function downloadBackup(r: InspectResult, name: string) {
@@ -394,6 +479,7 @@ const helperEvents = {
     figureDetailsEl.hidden = true;
   },
   inspectResult: renderInspectResult,
+  editResult: renderEditResult,
   log,
   connected: () => {
     log('Connected to local portal helper — full identification enabled.');

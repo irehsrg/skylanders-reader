@@ -319,6 +319,59 @@ button:disabled {
   margin-right: 8px;
 }
 
+.edit-panel {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.edit-panel h3 {
+  margin: 0 0 8px;
+}
+
+.edit-warn {
+  font-size: 0.82rem;
+  color: var(--warn);
+  margin: 0 0 10px;
+}
+
+.edit-own {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  margin-bottom: 12px;
+}
+
+.edit-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.edit-fields label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.edit-fields input {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 7px 9px;
+  font-size: 0.9rem;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 8px;
+}
+
 /* collection */
 .collection-head {
   display: flex;
