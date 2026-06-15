@@ -1,6 +1,6 @@
 // Catalog view: browse all catalogued figures with search/filter, see what's
 // owned vs missing, and toggle wishlist.
-import { allFigures, sectionOrder, type Figure } from './figures/db';
+import { visibleFigures, sectionOrder, type Figure } from './figures/db';
 import { figureThumb } from './figures/art';
 import type { Collection } from './collection/collection';
 
@@ -42,7 +42,7 @@ export class CatalogView {
     const filter = this.filterEl.value as Filter;
     const section = this.sectionEl.value;
 
-    const matches = allFigures.filter((f) => {
+    const matches = visibleFigures.filter((f) => {
       if (section !== 'all' && f.section !== section) return false;
       if (q && !f.name.toLowerCase().includes(q)) return false;
       const owned = this.collection.isOwned(f.charId, f.variantId);

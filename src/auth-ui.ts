@@ -41,8 +41,17 @@ export function initAuth(onUser: (user: User | null) => void): void {
     }
   };
 
+  const emailSection = document.querySelector<HTMLDivElement>('#auth-email-section')!;
+  const toggle = document.querySelector<HTMLButtonElement>('#auth-toggle')!;
+  toggle.addEventListener('click', () => {
+    emailSection.hidden = !emailSection.hidden;
+    toggle.hidden = true; // once revealed, keep it open
+  });
+
   signinBtn.addEventListener('click', () => {
     setMessage('');
+    emailSection.hidden = true;
+    toggle.hidden = false;
     dialog.showModal();
   });
   document.querySelector('#auth-close')!.addEventListener('click', () => dialog.close());

@@ -38,14 +38,18 @@
         <dialog id="auth-dialog" class="auth-dialog">
           <form method="dialog" class="auth-form" id="auth-form">
             <h3>Sign in to sync your collection</h3>
+            <p class="muted">Your collection follows you across devices. Google is the quickest.</p>
             <button type="button" class="auth-google" id="auth-google">Continue with Google</button>
-            <div class="auth-divider"><span>or</span></div>
-            <input type="email" id="auth-email" placeholder="you@example.com" autocomplete="email" />
-            <input type="password" id="auth-password" placeholder="Password (for email sign-in)" autocomplete="current-password" />
-            <div class="auth-buttons">
-              <button type="button" id="auth-signin">Sign in</button>
-              <button type="button" class="ghost" id="auth-signup">Create account</button>
-              <button type="button" class="ghost" id="auth-magic">Email me a link</button>
+            <button type="button" class="auth-toggle" id="auth-toggle">Sign in with email instead</button>
+            <div class="auth-email-section" id="auth-email-section" hidden>
+              <input type="email" id="auth-email" placeholder="you@example.com" autocomplete="email" />
+              <input type="password" id="auth-password" placeholder="Password" autocomplete="current-password" />
+              <div class="auth-buttons">
+                <button type="button" id="auth-signin">Sign in</button>
+                <button type="button" class="ghost" id="auth-signup">Create account</button>
+                <button type="button" class="ghost" id="auth-magic">Email me a link</button>
+              </div>
+              <p class="muted">Creating an account or using a link may require confirming your email.</p>
             </div>
             <p class="auth-message" id="auth-message"></p>
             <button type="button" class="auth-close ghost" id="auth-close">Close</button>
@@ -125,6 +129,20 @@
       </main>
 
       <footer>
+        <details class="how">
+          <summary>How it works</summary>
+          <p>
+            <strong>Browse anywhere:</strong> sign in and your collection, wishlist and
+            game-completion sync across devices — no portal needed.
+          </p>
+          <p>
+            <strong>Scan &amp; edit:</strong> run the free <strong>Portal Station</strong> app, which talks to
+            your USB Portal of Power (browsers can’t reach USB toy portals directly), then open
+            <code>http://localhost:8777</code>. Drop figures on the portal to auto-identify them; for figures
+            you own you can edit gold, XP, hero points, nickname, or reset — always backed up and verified
+            before writing.
+          </p>
+        </details>
         <p>
           Free &amp; open source. Not affiliated with or endorsed by Activision.
           Skylanders is a trademark of Activision Publishing, Inc.

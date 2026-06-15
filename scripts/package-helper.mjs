@@ -8,7 +8,7 @@
 //
 // The layout mirrors the repo so the helper's relative paths (../dist,
 // ../src/figures/figures.json) resolve unchanged.
-import { cp, mkdir, rm, writeFile, stat } from 'node:fs/promises';
+import { cp, mkdir, rm, writeFile, stat, readdir } from 'node:fs/promises';
 import { copyFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -19,6 +19,32 @@ const out = join(root, 'build', 'portal-station');
 
 async function exists(p) {
   try { await stat(p); return true; } catch { return false; }
+}
+
+// Remove prebuilt native binaries for platforms other than Windows x64 to
+// shrink the bundle (koffi and node-hid ship binaries for many platforms).
+// Keeps any directory whose name mentions win/windows + x64.
+async function pruneNonWindows(modulesDir) {
+  const isWinX64 = (n) => /win32/i.test(n) && /(x64|x86_64|amd64)/i.test(n);
+  // koffi: node_modules/koffi/build/koffi/<platform>_<arch>/
+  const koffiBuild = join(modulesDir, 'koffi', 'build', 'koffi');
+  await pruneChildren(koffiBuild, isWinX64);
+  // node-hid: node_modules/node-hid/prebuilds/<platform>-<arch>/
+  await pruneChildren(join(modulesDir, 'node-hid', 'prebuilds'), isWinX64);
+}
+
+async function pruneChildren(dir, keep) {
+  let entries;
+  try {
+    entries = await readdir(dir, { withFileTypes: true });
+  } catch {
+    return; // path layout differs; skip rather than risk breakage
+  }
+  for (const e of entries) {
+    if (e.isDirectory() && !keep(e.name)) {
+      await rm(join(dir, e.name), { recursive: true, force: true });
+    }
+  }
 }
 
 async function main() {
@@ -43,6 +69,9 @@ async function main() {
   await copyFile(join(root, 'helper', 'server.mjs'), join(out, 'helper', 'server.mjs'));
   await copyFile(join(root, 'helper', 'portal.mjs'), join(out, 'helper', 'portal.mjs'));
   await cp(join(root, 'helper', 'node_modules'), join(out, 'helper', 'node_modules'), { recursive: true });
+
+  console.log('Trimming non-Windows native binaries…');
+  await pruneNonWindows(join(out, 'helper', 'node_modules'));
 
   console.log('Copying web app + figure database…');
   await cp(join(root, 'dist'), join(out, 'dist'), { recursive: true });

@@ -131,6 +131,26 @@ button:disabled {
   font-weight: 600;
 }
 
+.auth-toggle {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-decoration: underline;
+  padding: 4px;
+}
+
+.auth-toggle:hover {
+  color: var(--text);
+  filter: none;
+}
+
+.auth-email-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .auth-divider {
   text-align: center;
   color: var(--muted);
@@ -691,4 +711,28 @@ footer {
   margin-top: 40px;
   color: var(--muted);
   font-size: 0.8rem;
+}
+
+.how {
+  margin-bottom: 16px;
+}
+
+.how summary {
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.how p {
+  line-height: 1.55;
+}
+
+.how code,
+.scan-help code {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 0.85em;
 }
