@@ -575,8 +575,8 @@ async function connectWith(p: Portal) {
       detectOnly = true;
       unsupportedMsg.innerHTML =
         '<strong>This portal can detect figures but can’t identify them in the browser.</strong> ' +
-        'Run the local helper (see the <code>helper/</code> folder) for full identification — it uses ' +
-        'the same command path as desktop tools like SkyReader.';
+        'Run the free <strong>Portal Station</strong> app and open <code>http://localhost:8777</code> ' +
+        'for full identification and editing.';
       unsupportedMsg.hidden = false;
       portalStatus.textContent = `Connected (detect only): ${p.productName}`;
       portalStatus.classList.add('connected');
@@ -635,7 +635,8 @@ async function init() {
   // Prefer the local helper (full identification on any portal/OS).
   helperClient = new HelperClient(helperEvents);
   if (await helperClient.connect()) return;
-  log('No local helper found — using browser WebHID.');
+  log('No local portal helper found — browse mode. Run the Portal Station to scan.');
+  document.querySelector<HTMLParagraphElement>('#scan-help')!.hidden = false;
 
   if (!Portal.isSupported()) {
     unsupportedMsg.hidden = false;
