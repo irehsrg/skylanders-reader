@@ -666,18 +666,6 @@
   "section": "Spyro's Adventure"
  },
  {
-  "name": "Cynder (UNRELEASED Series 4)",
-  "charId": 32,
-  "variantId": 14345,
-  "section": "Spyro's Adventure"
- },
- {
-  "name": "Cynder (UNRELEASED Eon's Elite)",
-  "charId": 32,
-  "variantId": 14352,
-  "section": "Spyro's Adventure"
- },
- {
   "name": "DEBUG Minion",
   "charId": 999,
   "variantId": 0,
@@ -771,12 +759,6 @@
   "name": "Hot Dog",
   "charId": 105,
   "variantId": 4096,
-  "section": "Giants"
- },
- {
-  "name": "Hot Dog (Color Shift)",
-  "charId": 105,
-  "variantId": 4117,
   "section": "Giants"
  },
  {
