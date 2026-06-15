@@ -11,7 +11,7 @@ import { dirname, join, extname, normalize } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { PortalHelper } from './portal.mjs';
 
-const PORT = 8777;
+const PORT = Number(process.env.PORT) || 8777;
 const here = dirname(fileURLToPath(import.meta.url));
 const DIST = join(here, '..', 'dist');
 
