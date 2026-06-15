@@ -1,0 +1,656 @@
+[
+  {
+    "name": "Dark Mega Ram Spyro",
+    "charId": 16,
+    "variantId": 11266,
+    "section": "Spyro's Adventure"
+  },
+  {
+    "name": "Dark Ninja Stealth Elf",
+    "charId": 26,
+    "variantId": 11266,
+    "section": "Spyro's Adventure"
+  },
+  {
+    "name": "DEBUG Minion",
+    "charId": 999,
+    "variantId": 0,
+    "section": "Spyro's Adventure"
+  },
+  {
+    "name": "Scorpion Striker Catapult",
+    "charId": 209,
+    "variantId": 4614,
+    "section": "Toys For Bob Items/Traps"
+  },
+  {
+    "name": "Mystery Chest (Bronze)",
+    "charId": 235,
+    "variantId": 20481,
+    "section": "Toys For Bob Items/Traps"
+  },
+  {
+    "name": "Mystery Chest (Silver)",
+    "charId": 235,
+    "variantId": 20482,
+    "section": "Toys For Bob Items/Traps"
+  },
+  {
+    "name": "Mystery Chest (Gold)",
+    "charId": 235,
+    "variantId": 20483,
+    "section": "Toys For Bob Items/Traps"
+  },
+  {
+    "name": "Mystery Chest (Cursed Tiki Temple)",
+    "charId": 235,
+    "variantId": 20503,
+    "section": "Toys For Bob Items/Traps"
+  },
+  {
+    "name": "Mystery Chest (Lost Imaginite Mines)",
+    "charId": 235,
+    "variantId": 20505,
+    "section": "Toys For Bob Items/Traps"
+  },
+  {
+    "name": "Dec-Ember (???)",
+    "charId": 608,
+    "variantId": 20484,
+    "section": "Imaginators"
+  },
+  {
+    "name": "Taw Kwon Crow",
+    "charId": 612,
+    "variantId": 20480,
+    "section": "Imaginators"
+  },
+  {
+    "name": "Create Your Own Skylander (Card)",
+    "charId": 661,
+    "variantId": 20481,
+    "section": "Imaginators"
+  },
+  {
+    "name": "Create Your Own Skylander (Foil Card)",
+    "charId": 661,
+    "variantId": 20482,
+    "section": "Imaginators"
+  },
+  {
+    "name": "Create Your Own Skylander (Special Card)",
+    "charId": 661,
+    "variantId": 20483,
+    "section": "Imaginators"
+  },
+  {
+    "name": "Create Your Own Skylander (3D Print)",
+    "charId": 661,
+    "variantId": 20484,
+    "section": "Imaginators"
+  },
+  {
+    "name": "Create Your Own Skylander (Medium 3D Print)",
+    "charId": 661,
+    "variantId": 20485,
+    "section": "Imaginators"
+  },
+  {
+    "name": "Create Your Own Skylander (Large 3D Print)",
+    "charId": 661,
+    "variantId": 20486,
+    "section": "Imaginators"
+  },
+  {
+    "name": "Create Your Own Skylander (Unique 3D Print)",
+    "charId": 661,
+    "variantId": 20487,
+    "section": "Imaginators"
+  },
+  {
+    "name": "Goldie",
+    "charId": 699,
+    "variantId": 20480,
+    "section": "Imaginators"
+  },
+  {
+    "name": "Jet",
+    "charId": 1000,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Ranger",
+    "charId": 1001,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Legendary Ranger",
+    "charId": 1001,
+    "variantId": 9219,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Rouser",
+    "charId": 1002,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Stone",
+    "charId": 1003,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Stone (Bronze?)",
+    "charId": 1003,
+    "variantId": 8214,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Zone",
+    "charId": 1004,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Dark Zone",
+    "charId": 1004,
+    "variantId": 9218,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Kraken",
+    "charId": 1005,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Kraken (Gold)",
+    "charId": 1005,
+    "variantId": 8196,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Jade Kraken",
+    "charId": 1005,
+    "variantId": 9218,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Drilla",
+    "charId": 1007,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Loop",
+    "charId": 1008,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Enchanted Loop",
+    "charId": 1008,
+    "variantId": 9218,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Shadow",
+    "charId": 1009,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Shadow (Silver?)",
+    "charId": 1009,
+    "variantId": 8214,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Charge",
+    "charId": 1010,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Nitro Charge",
+    "charId": 1010,
+    "variantId": 9218,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Rise",
+    "charId": 1011,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Shift",
+    "charId": 1012,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Legendary Shift",
+    "charId": 1012,
+    "variantId": 9219,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Shake",
+    "charId": 1013,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Quickdraw Shake",
+    "charId": 1013,
+    "variantId": 9218,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Blade",
+    "charId": 1014,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Nitro Blade",
+    "charId": 1014,
+    "variantId": 9218,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Buckler",
+    "charId": 1015,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Buckler (Color Shift)",
+    "charId": 1015,
+    "variantId": 8216,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Dark Buckler",
+    "charId": 1015,
+    "variantId": 9218,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Template (Bottom)",
+    "charId": 1999,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Boom",
+    "charId": 2000,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Free",
+    "charId": 2001,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Legendary Free",
+    "charId": 2001,
+    "variantId": 9219,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Rubble",
+    "charId": 2002,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Doom",
+    "charId": 2003,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Doom (Gold?)",
+    "charId": 2003,
+    "variantId": 8214,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Blast",
+    "charId": 2004,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Dark Blast",
+    "charId": 2004,
+    "variantId": 9218,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Jade Fire",
+    "charId": 2005,
+    "variantId": 9218,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Stink",
+    "charId": 2006,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Stink (Silver)",
+    "charId": 2006,
+    "variantId": 8214,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Grilla",
+    "charId": 2007,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Hoot",
+    "charId": 2008,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Enchanted Hoot",
+    "charId": 2008,
+    "variantId": 9218,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Magna",
+    "charId": 2010,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Nitro Magna",
+    "charId": 2010,
+    "variantId": 9218,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Spy",
+    "charId": 2011,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Night",
+    "charId": 2012,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Legendary Night",
+    "charId": 2012,
+    "variantId": 9219,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Rattle",
+    "charId": 2013,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Quickdraw Rattle",
+    "charId": 2013,
+    "variantId": 9218,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Freeze",
+    "charId": 2014,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Nitro Freeze",
+    "charId": 2014,
+    "variantId": 9218,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Wash",
+    "charId": 2015,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Wash (Color Shift)",
+    "charId": 2015,
+    "variantId": 8216,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Dark Wash",
+    "charId": 2015,
+    "variantId": 9218,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Template (Top)",
+    "charId": 2999,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Template Legacy",
+    "charId": 3999,
+    "variantId": 8192,
+    "section": "SWAP Force"
+  },
+  {
+    "name": "Clown Crusier",
+    "charId": 3233,
+    "variantId": 16384,
+    "section": "Vicarious Visions Items/Vehicles"
+  },
+  {
+    "name": "Dark Clown Crusier",
+    "charId": 3233,
+    "variantId": 17410,
+    "section": "Vicarious Visions Items/Vehicles"
+  },
+  {
+    "name": "Snow-Brite Stormblade",
+    "charId": 3406,
+    "variantId": 16654,
+    "section": "SuperChargers"
+  },
+  {
+    "name": "Stratosphere",
+    "charId": 3441,
+    "variantId": 16384,
+    "section": "Villain Drivers/Vehicles"
+  },
+  {
+    "name": "Cap'n Cluck",
+    "charId": 3442,
+    "variantId": 16384,
+    "section": "Villain Drivers/Vehicles"
+  },
+  {
+    "name": "Threatpack",
+    "charId": 3444,
+    "variantId": 16384,
+    "section": "Villain Drivers/Vehicles"
+  },
+  {
+    "name": "Moneybone",
+    "charId": 3452,
+    "variantId": 16384,
+    "section": "Villain Drivers/Vehicles"
+  },
+  {
+    "name": "Broccoli Guy",
+    "charId": 3456,
+    "variantId": 16384,
+    "section": "Villain Drivers/Vehicles"
+  },
+  {
+    "name": "Threatpack Vehicle",
+    "charId": 3474,
+    "variantId": 16384,
+    "section": "Villain Drivers/Vehicles"
+  },
+  {
+    "name": "Hood Sickle Vehicle",
+    "charId": 3475,
+    "variantId": 16384,
+    "section": "Villain Drivers/Vehicles"
+  },
+  {
+    "name": "Bad Juju Vehicle",
+    "charId": 3476,
+    "variantId": 16384,
+    "section": "Villain Drivers/Vehicles"
+  },
+  {
+    "name": "Dr. Krankcase Vehicle",
+    "charId": 3484,
+    "variantId": 16384,
+    "section": "Villain Drivers/Vehicles"
+  },
+  {
+    "name": "Pain-Yatta Vehicle",
+    "charId": 3485,
+    "variantId": 16384,
+    "section": "Villain Drivers/Vehicles"
+  },
+  {
+    "name": "Broccoli Guy Vehicle",
+    "charId": 3486,
+    "variantId": 16384,
+    "section": "Villain Drivers/Vehicles"
+  },
+  {
+    "name": "Chill Bill Vehicle",
+    "charId": 3494,
+    "variantId": 16384,
+    "section": "Villain Drivers/Vehicles"
+  },
+  {
+    "name": "The Gulper Vehicle",
+    "charId": 3495,
+    "variantId": 16384,
+    "section": "Villain Drivers/Vehicles"
+  },
+  {
+    "name": "Noodles Vehicle",
+    "charId": 3496,
+    "variantId": 16384,
+    "section": "Villain Drivers/Vehicles"
+  },
+  {
+    "name": "Fusion",
+    "charId": 4500,
+    "variantId": 20480,
+    "section": "Skylanders 2016"
+  },
+  {
+    "name": "Synergy",
+    "charId": 4501,
+    "variantId": 20480,
+    "section": "Skylanders 2016"
+  },
+  {
+    "name": "Unity",
+    "charId": 4502,
+    "variantId": 20480,
+    "section": "Skylanders 2016"
+  },
+  {
+    "name": "BlueFalcon_Base",
+    "charId": 4503,
+    "variantId": 20480,
+    "section": "Skylanders 2016"
+  },
+  {
+    "name": "Undead Card",
+    "charId": 4517,
+    "variantId": 20480,
+    "section": "Imaginators Test Characters (WiP)"
+  },
+  {
+    "name": "CYOS_Small_Template",
+    "charId": 4519,
+    "variantId": 20480,
+    "section": "Imaginators Test Characters (WiP)"
+  },
+  {
+    "name": "CYOS_Medium_Template",
+    "charId": 4520,
+    "variantId": 20480,
+    "section": "Imaginators Test Characters (WiP)"
+  },
+  {
+    "name": "CYOS_Large_Template",
+    "charId": 4521,
+    "variantId": 20480,
+    "section": "Imaginators Test Characters (WiP)"
+  },
+  {
+    "name": "Medium Generic Base",
+    "charId": 4522,
+    "variantId": 20480,
+    "section": "Imaginators Test Characters (WiP)"
+  },
+  {
+    "name": "Template Vehicle",
+    "charId": 4999,
+    "variantId": 16384,
+    "section": "SuperChargers Template Vehicles"
+  },
+  {
+    "name": "Template Land Vehicle",
+    "charId": 5999,
+    "variantId": 16384,
+    "section": "SuperChargers Template Vehicles"
+  },
+  {
+    "name": "Template Air Vehicle",
+    "charId": 6999,
+    "variantId": 16384,
+    "section": "SuperChargers Template Vehicles"
+  },
+  {
+    "name": "Template Sea Vehicle",
+    "charId": 7999,
+    "variantId": 16384,
+    "section": "SuperChargers Template Vehicles"
+  },
+  {
+    "name": "DEBUG Core",
+    "charId": 9990,
+    "variantId": 12288,
+    "section": "Trap Team DEBUG Characters"
+  },
+  {
+    "name": "DEBUG Giant",
+    "charId": 9991,
+    "variantId": 12288,
+    "section": "Trap Team DEBUG Characters"
+  },
+  {
+    "name": "DEBUG Ranger",
+    "charId": 9992,
+    "variantId": 12288,
+    "section": "Trap Team DEBUG Characters"
+  }
+]
