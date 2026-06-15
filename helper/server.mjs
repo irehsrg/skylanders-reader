@@ -10,6 +10,7 @@ import { readFile } from 'node:fs/promises';
 import { dirname, join, extname, normalize } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { PortalHelper } from './portal.mjs';
+import { inspectFigure } from './figure.mjs';
 
 const PORT = Number(process.env.PORT) || 8777;
 const here = dirname(fileURLToPath(import.meta.url));
@@ -127,6 +128,32 @@ wss.on('connection', (ws) => {
     ws.send(JSON.stringify({ t: 'status', present: lastState.present }));
     for (const fig of figuresBySlot.values()) ws.send(JSON.stringify({ t: 'figure', ...fig }));
   }
+
+  ws.on('message', async (raw) => {
+    let msg;
+    try { msg = JSON.parse(raw.toString()); } catch { return; }
+    // Read-only figure inspection: full dump + decode + checksum validation.
+    if (msg.t === 'inspect') {
+      if (!portal || !portal.connected) {
+        ws.send(JSON.stringify({ t: 'inspect-result', slot: msg.slot, ok: false, error: 'No portal connected.' }));
+        return;
+      }
+      try {
+        log(`Inspecting slot ${msg.slot + 1} (full dump)…`);
+        const blocks = await portal.dumpAll(msg.slot);
+        const result = inspectFigure(blocks);
+        const readCount = blocks.filter(Boolean).length;
+        log(`Slot ${msg.slot + 1}: read ${readCount}/64 blocks; ${result.ok ? 'decoded' : 'decode failed: ' + result.error}`);
+        if (result.ok) {
+          const c = result.checksums;
+          log(`  checksum type1 ${c.type1.match ? 'OK' : 'MISMATCH'}; type2 range=${c.type2.matchedBy ?? '?'}; type3 range=${c.type3.matchedBy ?? '?'}`);
+        }
+        ws.send(JSON.stringify({ t: 'inspect-result', slot: msg.slot, ...result, blocks }));
+      } catch (err) {
+        ws.send(JSON.stringify({ t: 'inspect-result', slot: msg.slot, ok: false, error: err.message }));
+      }
+    }
+  });
 });
 
 httpServer.listen(PORT, '127.0.0.1', () => {

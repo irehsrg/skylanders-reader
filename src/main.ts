@@ -1,7 +1,7 @@
 import './style.css';
 import { Portal, PortalWriteUnsupportedError, SLOT_COUNT, type SlotEvent } from './hid/portal';
 import { lookupFigure, parseIdentity, figureCount } from './figures/db';
-import { HelperClient, type HelperFigure } from './helper-client';
+import { HelperClient, type HelperFigure, type InspectResult } from './helper-client';
 import { Collection, type ScanInput } from './collection/collection';
 import { CatalogView } from './catalog';
 import { initAuth } from './auth-ui';
@@ -24,7 +24,9 @@ const cleanupBtn = document.querySelector<HTMLButtonElement>('#cleanup')!;
 
 const collection = new Collection();
 const catalog = new CatalogView(collection, () => renderCollection());
+const figureDetailsEl = document.querySelector<HTMLDivElement>('#figure-details')!;
 
+let helperClient: HelperClient | null = null;
 let portal: Portal | null = null;
 let detectOnly = false;
 // In helper mode, figures are keyed by slot so removals update the grid.
@@ -86,8 +88,98 @@ function renderSlotFigures() {
   figuresEmpty.hidden = slots.length > 0;
   for (const slot of slots) {
     const f = slotFigures.get(slot)!;
-    figuresEl.appendChild(makeCard(f));
+    const card = makeCard(f);
+    const inspect = document.createElement('button');
+    inspect.className = 'ghost';
+    inspect.textContent = 'Inspect';
+    inspect.title = 'Read this figure’s data (non-destructive)';
+    inspect.addEventListener('click', () => {
+      figureDetailsEl.hidden = false;
+      figureDetailsEl.textContent = `Reading slot ${slot + 1}…`;
+      helperClient?.requestInspect(slot);
+    });
+    card.appendChild(inspect);
+    figuresEl.appendChild(card);
   }
+}
+
+function renderInspectResult(r: InspectResult) {
+  figureDetailsEl.hidden = false;
+  figureDetailsEl.replaceChildren();
+  if (!r.ok) {
+    figureDetailsEl.textContent = `Couldn’t read figure: ${r.error ?? 'unknown error'}`;
+    return;
+  }
+  const name = slotFigures.get(r.slot)?.name ?? `char ${r.charId}`;
+  const s = r.stats!;
+  const c = r.checksums!;
+  const rows: [string, string][] = [
+    ['Figure', name],
+    ['XP', String(s.xp)],
+    ['Gold', String(s.gold)],
+    ['Hero points', s.heroPoints == null ? '—' : String(s.heroPoints)],
+    ['Hat', s.hat ? String(s.hat) : 'none'],
+    ['Nickname', s.nickname || '—'],
+    ['Active save area', String(r.activeArea)],
+  ];
+
+  const h = document.createElement('h3');
+  h.textContent = 'Figure data (read-only preview)';
+  figureDetailsEl.appendChild(h);
+
+  const dl = document.createElement('div');
+  dl.className = 'detail-grid';
+  for (const [k, v] of rows) {
+    const ke = document.createElement('span');
+    ke.className = 'dk';
+    ke.textContent = k;
+    const ve = document.createElement('span');
+    ve.className = 'dv';
+    ve.textContent = v;
+    dl.append(ke, ve);
+  }
+  figureDetailsEl.appendChild(dl);
+
+  // Checksum validation — proves the crypto is correct before any write.
+  const ck = document.createElement('p');
+  ck.className = 'detail-checks';
+  const ok = c.type1.match && c.type2.matchedBy && c.type3.matchedBy;
+  ck.innerHTML =
+    `Checksum verification: type1 ${c.type1.match ? '✓' : '✗'}, ` +
+    `type2 ${c.type2.matchedBy ? '✓' : '✗'}, type3 ${c.type3.matchedBy ? '✓' : '✗'} — ` +
+    (ok ? 'crypto validated on this figure.' : 'needs review (do not enable writes yet).');
+  figureDetailsEl.appendChild(ck);
+
+  const backup = document.createElement('button');
+  backup.className = 'ghost';
+  backup.textContent = 'Download backup (.json)';
+  backup.addEventListener('click', () => downloadBackup(r, name));
+  figureDetailsEl.appendChild(backup);
+
+  const note = document.createElement('p');
+  note.className = 'muted';
+  note.textContent = 'Editing is not enabled yet — this is a read-only preview while the format is verified.';
+  figureDetailsEl.appendChild(note);
+}
+
+function downloadBackup(r: InspectResult, name: string) {
+  const data = {
+    format: 'portal-tracker-figure-backup',
+    version: 1,
+    savedAt: new Date().toISOString(),
+    name,
+    charId: r.charId,
+    variantId: r.variantId,
+    blocks: r.blocks,
+  };
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `${name.replace(/[^a-z0-9]+/gi, '-')}-${r.charId}-${r.variantId}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+  log(`Saved backup of ${name}.`);
 }
 
 // ---- collection ------------------------------------------------------------
@@ -290,7 +382,9 @@ const helperEvents = {
   removed: (slot: number) => {
     slotFigures.delete(slot);
     renderSlotFigures();
+    figureDetailsEl.hidden = true;
   },
+  inspectResult: renderInspectResult,
   log,
   connected: () => {
     log('Connected to local portal helper — full identification enabled.');
@@ -444,8 +538,8 @@ async function init() {
   });
 
   // Prefer the local helper (full identification on any portal/OS).
-  const client = new HelperClient(helperEvents);
-  if (await client.connect()) return;
+  helperClient = new HelperClient(helperEvents);
+  if (await helperClient.connect()) return;
   log('No local helper found — using browser WebHID.');
 
   if (!Portal.isSupported()) {

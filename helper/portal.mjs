@@ -165,6 +165,22 @@ export class PortalHelper extends EventEmitter {
     });
   }
 
+  /** Read all 64 blocks of the figure in `slot` (non-destructive). */
+  async dumpAll(slot) {
+    while (this.#busy) await sleep(20);
+    this.#busy = true;
+    try {
+      const blocks = [];
+      for (let b = 0; b < 64; b++) {
+        const data = await this.#query(slot, b);
+        blocks.push(data ? [...data] : null);
+      }
+      return blocks;
+    } finally {
+      this.#busy = false;
+    }
+  }
+
   async #identify(slot) {
     // Serialize queries — the portal handles one block read at a time.
     while (this.#busy) await sleep(20);

@@ -12,6 +12,22 @@ export interface HelperFigure {
   uid: string | null;
 }
 
+export interface InspectResult {
+  slot: number;
+  ok: boolean;
+  error?: string;
+  charId?: number;
+  variantId?: number;
+  activeArea?: number;
+  stats?: { xp: number; gold: number; hat: number | null; heroPoints: number | null; nickname: string };
+  checksums?: {
+    type1: { stored: number; computed: number; match: boolean };
+    type2: { stored: number; matchedBy: string | null };
+    type3: { stored: number; matchedBy: string | null };
+  };
+  blocks?: (number[] | null)[];
+}
+
 export interface HelperEvents {
   hello(info: { product: string }): void;
   bye(): void;
@@ -19,6 +35,7 @@ export interface HelperEvents {
   figure(fig: HelperFigure): void;
   removed(slot: number): void;
   log(msg: string): void;
+  inspectResult(result: InspectResult): void;
   /** Connection to the helper itself opened/closed (not the portal). */
   connected(): void;
   disconnected(): void;
@@ -71,6 +88,13 @@ export class HelperClient {
     this.ws?.close();
   }
 
+  /** Request a non-destructive full dump + decode of the figure in `slot`. */
+  requestInspect(slot: number): void {
+    if (this.ws?.readyState === WebSocket.OPEN) {
+      this.ws.send(JSON.stringify({ t: 'inspect', slot }));
+    }
+  }
+
   private dispatch(raw: string) {
     let msg: Record<string, unknown>;
     try {
@@ -85,6 +109,7 @@ export class HelperClient {
       case 'figure': this.events.figure(msg as unknown as HelperFigure); break;
       case 'removed': this.events.removed(msg.slot as number); break;
       case 'log': this.events.log(String(msg.msg ?? '')); break;
+      case 'inspect-result': this.events.inspectResult(msg as unknown as InspectResult); break;
     }
   }
 }
