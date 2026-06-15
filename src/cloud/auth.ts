@@ -28,9 +28,15 @@ export async function signInWithGoogle(): Promise<void> {
 }
 
 export async function signUpWithPassword(email: string, password: string): Promise<string> {
-  const { data, error } = await client().auth.signUp({ email, password });
+  const { data, error } = await client().auth.signUp({
+    email,
+    password,
+    options: { emailRedirectTo: window.location.origin + window.location.pathname },
+  });
   if (error) throw error;
-  return data.session ? 'Signed in.' : 'Check your email to confirm your account.';
+  return data.session
+    ? 'Signed in.'
+    : 'Account created — check your email to confirm. (Tip: Google sign-in is instant.)';
 }
 
 export async function signInWithPassword(email: string, password: string): Promise<void> {
