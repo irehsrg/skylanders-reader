@@ -175,7 +175,8 @@ button:disabled {
 }
 .hero-title {
   font-size: 2.2rem;
-  line-height: 1.1;
+  line-height: 1.18;
+  padding-bottom: 0.1em;
   margin: 8px auto 14px;
   max-width: 16ch;
   background: linear-gradient(180deg, #fff, #c9c4e8);
