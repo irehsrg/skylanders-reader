@@ -1392,12 +1392,6 @@
   "section": "Toys For Bob Items/Traps"
  },
  {
-  "name": "Ultimate Kaos Trap*",
-  "charId": 220,
-  "variantId": 13599,
-  "section": "Toys For Bob Items/Traps"
- },
- {
   "name": "Ultimate Kaos Trap (Fixed)",
   "charId": 220,
   "variantId": 13343,

@@ -1,12 +1,9 @@
 [
-  { "key": "31-18448", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/EonsEliteGhostRoaster.png" },
-  { "key": "104-4627", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2013/12/SparkleHotHead.png" },
-  { "key": "105-10266", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2014/08/RedFlameFritoLayFireBoneHotDog.png" },
-  { "key": "105-10268", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2014/08/PurpleFlameFritoLayFireBoneHotDog.png" },
-  { "key": "105-10267", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2014/08/GreenFlameFritoLayFireBoneHotDog.png" },
-  { "key": "113-4119", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2014/06/MetallicGreenShroomboom.png" },
-  { "key": "114-4628", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2013/12/PurpleEyeBrawl.png" },
-  { "key": "203-0", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2013/07/GhostSwords.png" },
-  { "key": "204-0", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2013/07/TimeTwister.png" },
-  { "key": "207-0", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2013/07/SparxDragonfly.png" }
+  { "key": "213-12311", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2015/04/UndeadCaptainsHatTrap.png" },
+  { "key": "214-12314", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2015/04/TechHandstandTrap.png" },
+  { "key": "215-12311", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2015/04/FireCaptainsHatTrap.png" },
+  { "key": "216-12314", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2015/03/EarthHandstandTrap.png" },
+  { "key": "218-12314", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2015/04/DarkHandstandTrap.png" },
+  { "key": "220-12318", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2014/06/KaosTrap.png" },
+  { "key": "220-13343", "url": "https://skylanderscharacterlist.com/wp-content/uploads/2014/07/UltimateKaosTrap.png" }
 ]
