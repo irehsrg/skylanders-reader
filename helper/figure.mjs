@@ -22,15 +22,22 @@ function decodeUtf16(buf) {
   return s;
 }
 
-// Find which contiguous range of the area's data blocks reproduces a stored
-// checksum (empirically pins the Type-2/3 input ranges from real data).
+// Find which range of the area's data blocks (optionally zero-padded to a
+// fixed buffer length, as Type 3 does) reproduces a stored checksum. This
+// empirically pins the Type-2/3 input construction from real data.
+const PAD_LENGTHS = [0, 0x30, 0x40, 0x60, 0x110, 0x120, 0x200];
 function findRange(decs, idxList, target) {
   for (let i = 0; i < decs.length; i++) {
     for (let j = i + 1; j <= decs.length; j++) {
       const slice = decs.slice(i, j);
       if (slice.some((s) => !s)) continue;
-      if (crc16(Buffer.concat(slice)) === target) {
-        return idxList.slice(i, j).map((x) => '0x' + x.toString(16)).join(',');
+      const base = Buffer.concat(slice);
+      for (const pad of PAD_LENGTHS) {
+        const buf = pad > base.length ? Buffer.concat([base, Buffer.alloc(pad - base.length)]) : base;
+        if (crc16(buf) === target) {
+          const r = idxList.slice(i, j).map((x) => '0x' + x.toString(16)).join(',');
+          return pad > base.length ? `${r}+pad0x${pad.toString(16)}` : r;
+        }
       }
     }
   }
