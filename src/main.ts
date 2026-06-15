@@ -150,6 +150,15 @@ function renderInspectResult(r: InspectResult) {
     (ok ? 'crypto validated on this figure.' : 'needs review (do not enable writes yet).');
   figureDetailsEl.appendChild(ck);
 
+  if (r.writeSelfTest) {
+    const st = document.createElement('p');
+    st.className = 'detail-checks';
+    st.textContent = r.writeSelfTest.pass
+      ? 'Write self-test: ✓ a no-op edit rebuilds a valid figure in memory (write pipeline proven).'
+      : `Write self-test: ✗ ${r.writeSelfTest.reason ?? 'failed'} — writing will stay disabled.`;
+    figureDetailsEl.appendChild(st);
+  }
+
   const backup = document.createElement('button');
   backup.className = 'ghost';
   backup.textContent = 'Download backup (.json)';

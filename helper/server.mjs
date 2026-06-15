@@ -10,7 +10,7 @@ import { readFile } from 'node:fs/promises';
 import { dirname, join, extname, normalize } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { PortalHelper } from './portal.mjs';
-import { inspectFigure } from './figure.mjs';
+import { inspectFigure, selfTestWrite } from './figure.mjs';
 
 const PORT = Number(process.env.PORT) || 8777;
 const here = dirname(fileURLToPath(import.meta.url));
@@ -144,11 +144,15 @@ wss.on('connection', (ws) => {
         const result = inspectFigure(blocks);
         const readCount = blocks.filter(Boolean).length;
         log(`Slot ${msg.slot + 1}: read ${readCount}/64 blocks; ${result.ok ? 'decoded' : 'decode failed: ' + result.error}`);
+        let writeSelfTest = null;
         if (result.ok) {
           const c = result.checksums;
-          log(`  checksum type1 ${c.type1.match ? 'OK' : 'MISMATCH'}; type2 range=${c.type2.matchedBy ?? '?'}; type3 range=${c.type3.matchedBy ?? '?'}`);
+          log(`  checksum type1 ${c.type1.match ? 'OK' : 'MISMATCH'}; type2=${c.type2.matchedBy ?? '?'}; type3=${c.type3.matchedBy ?? '?'}`);
+          // Dry-run the write pipeline in memory (no portal write).
+          writeSelfTest = selfTestWrite(blocks);
+          log(`  write self-test: ${writeSelfTest.pass ? 'PASS' : 'FAIL'} ${writeSelfTest.pass ? '' : JSON.stringify(writeSelfTest)}`);
         }
-        ws.send(JSON.stringify({ t: 'inspect-result', slot: msg.slot, ...result, blocks }));
+        ws.send(JSON.stringify({ t: 'inspect-result', slot: msg.slot, ...result, writeSelfTest, blocks }));
       } catch (err) {
         ws.send(JSON.stringify({ t: 'inspect-result', slot: msg.slot, ok: false, error: err.message }));
       }

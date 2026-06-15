@@ -26,6 +26,7 @@ export interface InspectResult {
     type3: { stored: number; matchedBy: string | null };
   };
   blocks?: (number[] | null)[];
+  writeSelfTest?: { pass: boolean; reason?: string } | null;
 }
 
 export interface HelperEvents {
