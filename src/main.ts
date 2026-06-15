@@ -20,6 +20,7 @@ const collectionEl = document.querySelector<HTMLDivElement>('#collection')!;
 const exportBtn = document.querySelector<HTMLButtonElement>('#export')!;
 const importBtn = document.querySelector<HTMLButtonElement>('#import')!;
 const importFile = document.querySelector<HTMLInputElement>('#import-file')!;
+const cleanupBtn = document.querySelector<HTMLButtonElement>('#cleanup')!;
 
 const collection = new Collection();
 const catalog = new CatalogView(collection, () => renderCollection());
@@ -150,32 +151,66 @@ function renderCollection() {
     if (!list) bySection.set(e.section, (list = []));
     list.push(e);
   }
+  let unrecognized = 0;
   for (const [section, list] of bySection) {
     const title = document.createElement('div');
     title.className = 'collection-group-title';
     title.textContent = section || 'Other';
     collectionEl.appendChild(title);
     for (const e of list) {
+      const recognized = lookupFigure(e.charId, e.variantId).figure !== null;
+      if (!recognized) unrecognized++;
       const card = document.createElement('div');
       card.className = 'owned-card';
       const left = document.createElement('div');
       const name = document.createElement('div');
       name.className = 'oc-name';
-      name.textContent = e.unknown ? `${e.name} (unconfirmed)` : e.name;
+      name.textContent = recognized ? e.name : `${e.name} (unrecognized)`;
       const sec = document.createElement('div');
       sec.className = 'oc-section';
       sec.textContent = `char ${e.charId} · variant ${e.variantId}`;
       left.append(name, sec);
       card.appendChild(left);
+      const right = document.createElement('div');
+      right.className = 'oc-actions';
       if (e.copies.length > 1) {
         const badge = document.createElement('span');
         badge.className = 'dupe-badge';
         badge.textContent = `×${e.copies.length}`;
-        card.appendChild(badge);
+        right.appendChild(badge);
       }
+      const remove = document.createElement('button');
+      remove.type = 'button';
+      remove.className = 'oc-remove';
+      remove.title = 'Remove from collection';
+      remove.textContent = '✕';
+      remove.addEventListener('click', async () => {
+        await collection.removeOwned(e.charId, e.variantId);
+        renderCollection();
+        catalog.render();
+      });
+      right.appendChild(remove);
+      card.appendChild(right);
       collectionEl.appendChild(card);
     }
   }
+
+  // Offer one-click cleanup of entries that don't match any catalogue figure
+  // (e.g. mis-read variant IDs from before a parser fix).
+  if (unrecognized > 0) {
+    cleanupBtn.hidden = false;
+    cleanupBtn.textContent = `Clean up ${unrecognized} unrecognized`;
+  } else {
+    cleanupBtn.hidden = true;
+  }
+}
+
+async function cleanupUnrecognized() {
+  const bad = collection.ownedList().filter((e) => lookupFigure(e.charId, e.variantId).figure === null);
+  for (const e of bad) await collection.removeOwned(e.charId, e.variantId);
+  log(`Removed ${bad.length} unrecognized entr${bad.length === 1 ? 'y' : 'ies'}.`);
+  renderCollection();
+  catalog.render();
 }
 
 function exportCollection() {
@@ -216,6 +251,7 @@ document.querySelectorAll<HTMLButtonElement>('.tab').forEach((btn) => {
 
 exportBtn.addEventListener('click', exportCollection);
 importBtn.addEventListener('click', () => importFile.click());
+cleanupBtn.addEventListener('click', () => void cleanupUnrecognized());
 importFile.addEventListener('change', () => {
   const file = importFile.files?.[0];
   if (file) void importCollection(file);

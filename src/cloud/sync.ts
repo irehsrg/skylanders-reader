@@ -72,6 +72,10 @@ export function makeCloudAdapter(): CloudAdapter {
       if (!supabase) return;
       await supabase.from('owned').upsert(ownedToRow(entry, await userId()), { onConflict: 'user_id,key' });
     },
+    async deleteOwned(key) {
+      if (!supabase) return;
+      await supabase.from('owned').delete().eq('user_id', await userId()).eq('key', key);
+    },
     async upsertWishlist(entry) {
       if (!supabase) return;
       await supabase.from('wishlist').upsert(wishToRow(entry, await userId()), { onConflict: 'user_id,key' });

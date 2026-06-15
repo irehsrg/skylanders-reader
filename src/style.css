@@ -404,6 +404,37 @@ button.ghost:hover {
   white-space: nowrap;
 }
 
+.oc-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.oc-remove {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: 6px;
+  padding: 2px 7px;
+  font-size: 0.78rem;
+  line-height: 1;
+}
+
+.oc-remove:hover {
+  border-color: #e5484d;
+  color: #e5484d;
+  filter: none;
+}
+
+button.ghost.danger {
+  border-color: color-mix(in srgb, #e5484d 50%, var(--border));
+  color: #e5484d;
+}
+
+button.ghost.danger:hover {
+  border-color: #e5484d;
+}
+
 .collection-group-title {
   grid-column: 1 / -1;
   margin: 10px 0 2px;

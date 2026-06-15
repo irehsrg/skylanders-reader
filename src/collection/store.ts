@@ -66,6 +66,7 @@ function tx<T>(store: string, mode: IDBTransactionMode, fn: (s: IDBObjectStore) 
 
 export const ownedGetAll = () => tx<OwnedEntry[]>(OWNED, 'readonly', (s) => s.getAll());
 export const ownedPut = (e: OwnedEntry) => tx(OWNED, 'readwrite', (s) => s.put(e));
+export const ownedDelete = (key: string) => tx(OWNED, 'readwrite', (s) => s.delete(key));
 export const ownedClear = () => tx(OWNED, 'readwrite', (s) => s.clear());
 
 export const wishlistGetAll = () => tx<WishlistEntry[]>(WISHLIST, 'readonly', (s) => s.getAll());

@@ -5,6 +5,7 @@ import { sectionTotals, sectionOrder } from '../figures/db';
 import {
   ownedGetAll,
   ownedPut,
+  ownedDelete,
   ownedClear,
   wishlistGetAll,
   wishlistPut,
@@ -49,6 +50,7 @@ const keyOf = (charId: number, variantId: number) => `${charId}:${variantId}`;
 /** Write-through target for cloud sync. Set when the user is signed in. */
 export interface CloudAdapter {
   upsertOwned(entry: OwnedEntry): Promise<void>;
+  deleteOwned(key: string): Promise<void>;
   upsertWishlist(entry: WishlistEntry): Promise<void>;
   deleteWishlist(key: string): Promise<void>;
 }
@@ -169,6 +171,15 @@ export class Collection {
 
   copiesOf(charId: number, variantId: number): number {
     return this.owned.get(keyOf(charId, variantId))?.copies.length ?? 0;
+  }
+
+  /** Remove an owned figure entirely (local + cloud). */
+  async removeOwned(charId: number, variantId: number): Promise<void> {
+    const key = keyOf(charId, variantId);
+    if (this.owned.delete(key)) {
+      await ownedDelete(key);
+      this.cloud?.deleteOwned(key).catch(() => {});
+    }
   }
 
   stats(): Stats {

@@ -28,10 +28,16 @@ const byChar = new Map();
 for (const f of figures) {
   if (!byChar.has(f.charId)) byChar.set(f.charId, f);
 }
-function lookup(charId, variantId) {
-  const exact = byKey.get((charId << 16) | variantId);
-  if (exact) return { ...exact, unknown: false };
+// Try each candidate variant (the tag's byte order for the variant field is
+// ambiguous, so we pass both big- and little-endian readings) and use whichever
+// gives an exact catalogue match; fall back to the base character otherwise.
+function lookup(charId, variantCandidates) {
+  for (const v of variantCandidates) {
+    const exact = byKey.get((charId << 16) | v);
+    if (exact) return { ...exact, variantId: v, unknown: false };
+  }
   const base = byChar.get(charId);
+  const variantId = variantCandidates[0];
   if (base) return { ...base, variantId, unknown: true };
   return { name: 'Unknown figure', section: '', charId, variantId, unknown: true };
 }
@@ -167,8 +173,12 @@ export class PortalHelper extends EventEmitter {
       const block1 = await this.#query(slot, 1);
       if (!block1) { this.emit('log', `slot ${slot + 1}: read timed out`); return; }
       const charId = block1[0] | (block1[1] << 8);
-      const variantId = (block1[0x0c] << 8) | block1[0x0d];
-      const fig = lookup(charId, variantId);
+      const variantBE = (block1[0x0c] << 8) | block1[0x0d];
+      const variantLE = block1[0x0c] | (block1[0x0d] << 8);
+      const fig = lookup(charId, [variantBE, variantLE]);
+      const variantId = fig.variantId;
+      const hex = [...block1].map((b) => b.toString(16).padStart(2, '0')).join(' ');
+      this.emit('log', `slot ${slot + 1} block1 [${hex}] char=${charId} vBE=${variantBE} vLE=${variantLE}`);
       // Block 0 holds the MIFARE manufacturer block; bytes 0-3 are the tag's
       // unique ID, which distinguishes two physical copies of the same figure.
       const block0 = await this.#query(slot, 0);
