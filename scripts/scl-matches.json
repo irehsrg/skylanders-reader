@@ -24,6 +24,12 @@
     "sclName": "Stone Whirlwind"
   },
   {
+    "name": "Whirlwind (Eon's Elite)",
+    "key": "0-14352",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/12/EonsEliteWhirlwind.png",
+    "sclName": "Eon's Elite Whirlwind"
+  },
+  {
     "name": "Sonic Boom",
     "key": "1-0",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/02/SonicBoom.png",
@@ -40,6 +46,12 @@
     "key": "1-6161",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/12/GlowInTheDarkSonicBoom.png",
     "sclName": "Glow-in-the-Dark Sonic Boom"
+  },
+  {
+    "name": "Sonic Boom (Sparkle/Glitter)",
+    "key": "1-6163",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/12/SparkleSonicBoom.png",
+    "sclName": "Sparkle Sonic Boom"
   },
   {
     "name": "Warnado",
@@ -90,10 +102,22 @@
     "sclName": "Terrafin - Series 2"
   },
   {
+    "name": "Terrafin (Eon's Elite)",
+    "key": "5-14352",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/04/EonsEliteTerrafin.png",
+    "sclName": "Eon's Elite Terrafin"
+  },
+  {
     "name": "Dino-Rang",
     "key": "6-0",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/02/DinoRang.png",
     "sclName": "Dino-Rang - Series 1"
+  },
+  {
+    "name": "Dino-Rang (Eon's Elite)",
+    "key": "6-18448",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/EliteDinoRang.png",
+    "sclName": "Eon's Elite Dino-Rang"
   },
   {
     "name": "Prism Break",
@@ -148,6 +172,12 @@
     "key": "9-11266",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/06/VolcanicEruptor.png",
     "sclName": "Volcanic Eruptor"
+  },
+  {
+    "name": "Eruptor (Eon's Elite)",
+    "key": "9-14352",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/04/EonsEliteEruptor.png",
+    "sclName": "Eon's Elite Eruptor"
   },
   {
     "name": "Ignitor",
@@ -216,6 +246,12 @@
     "sclName": "Gill Grunt - Series 2"
   },
   {
+    "name": "Gill Grunt (Eon's Elite)",
+    "key": "14-14352",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/04/EonsEliteGillGrunt.png",
+    "sclName": "Eon's Elite Gill Grunt"
+  },
+  {
     "name": "Slam Bam",
     "key": "15-0",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/02/SlamBam.png",
@@ -234,6 +270,12 @@
     "sclName": "Legendary Slam Bam"
   },
   {
+    "name": "Slam Bam (Eon's Elite)",
+    "key": "15-18448",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/EonsEliteSlamBam.png",
+    "sclName": "Eon's Elite Slam Bam"
+  },
+  {
     "name": "Spyro",
     "key": "16-0",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/02/Spyro1.png",
@@ -246,16 +288,28 @@
     "sclName": "Spyro - Series 2"
   },
   {
+    "name": "Spyro (Eon's Elite)",
+    "key": "16-14352",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/12/EonsEliteSpyro.png",
+    "sclName": "Eon's Elite Spyro"
+  },
+  {
     "name": "Voodood",
     "key": "17-0",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/02/Voodood.png",
     "sclName": "Voodood - Series 1"
   },
   {
+    "name": "Voodood (Eon's Elite)",
+    "key": "17-18448",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/EliteVoodood.png",
+    "sclName": "Eon's Elite Voodood"
+  },
+  {
     "name": "Double Trouble",
     "key": "18-0",
-    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/02/DoubleTrouble.png",
-    "sclName": "Double Trouble - Series 1"
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2021/04/logo-horizontal_70T.png",
+    "sclName": "Double Trouble Trouble"
   },
   {
     "name": "Double Trouble (Series 2)",
@@ -286,6 +340,12 @@
     "key": "19-11266",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/11/SpringtimeTriggerHappy2.png",
     "sclName": "Springtime Trigger Happy"
+  },
+  {
+    "name": "Trigger Happy (Eon's Elite)",
+    "key": "19-14352",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/12/EonsEliteTriggerHappy.png",
+    "sclName": "Eon's Elite Trigger Happy"
   },
   {
     "name": "Drobot",
@@ -324,6 +384,12 @@
     "sclName": "Boomer - Series 1"
   },
   {
+    "name": "Boomer (Eon's Elite)",
+    "key": "22-18448",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/EonsEliteBoomer.png",
+    "sclName": "Eon's Elite Boomer"
+  },
+  {
     "name": "Wrecking Ball",
     "key": "23-0",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/02/WreckingBall.png",
@@ -360,6 +426,12 @@
     "sclName": "Stone Zook"
   },
   {
+    "name": "Zook (Eon's Elite)",
+    "key": "25-18448",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/EliteZook.png",
+    "sclName": "Eon's Elite Zook"
+  },
+  {
     "name": "Stealth Elf",
     "key": "26-0",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/08/StealthElf.png",
@@ -376,6 +448,12 @@
     "key": "26-7171",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/03/LegendaryStealthElf.png",
     "sclName": "Legendary Stealth Elf"
+  },
+  {
+    "name": "Stealth Elf (Eon's Elite)",
+    "key": "26-14352",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/04/EonsEliteStealthElf.png",
+    "sclName": "Eon's Elite Stealth Elf"
   },
   {
     "name": "Stump Smash",
@@ -444,10 +522,22 @@
     "sclName": "Green Chop Chop"
   },
   {
+    "name": "Chop Chop (Eon's Elite)",
+    "key": "30-14352",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/12/EonsEliteChopChop.png",
+    "sclName": "Eon's Elite Chop Chop"
+  },
+  {
     "name": "Ghost Roaster",
     "key": "31-0",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/02/GhostRoaster.png",
     "sclName": "Ghost Roaster - Series 1"
+  },
+  {
+    "name": "Ghost Roaster (Eon's Elite)",
+    "key": "31-18448",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/EonsEliteGhostRoaster.png",
+    "sclName": "Eon's Elite Ghost Roaster"
   },
   {
     "name": "Cynder",
@@ -528,6 +618,12 @@
     "sclName": "Hot Head"
   },
   {
+    "name": "Hot Head (Sparkle/Glitter)",
+    "key": "104-4627",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/12/SparkleHotHead.png",
+    "sclName": "Sparkle Hot Head"
+  },
+  {
     "name": "Hot Dog",
     "key": "105-4096",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/02/HotDog.png",
@@ -576,6 +672,12 @@
     "sclName": "Punch Pop Fizz"
   },
   {
+    "name": "Love Potion Pop Fizz",
+    "key": "108-15362",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/LovePotionPopFizz2.png",
+    "sclName": "Love Potion Pop Fizz"
+  },
+  {
     "name": "Ninjini",
     "key": "109-4614",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/02/Ninjini.png",
@@ -604,6 +706,12 @@
     "key": "111-4096",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/02/Sprocket.png",
     "sclName": "Sprocket - Series 1"
+  },
+  {
+    "name": "Sprocket (Sparkle/Glitter)",
+    "key": "111-4115",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/12/SparkleSprocket.png",
+    "sclName": "Sparkle Sprocket"
   },
   {
     "name": "Sprocket (Heavy Metal)",
@@ -726,6 +834,60 @@
     "sclName": "Scorpion Striker Catapult"
   },
   {
+    "name": "The Kaos Trap",
+    "key": "220-12318",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/06/KaosTrap.png",
+    "sclName": "Kaos Trap"
+  },
+  {
+    "name": "Hand of Fate",
+    "key": "230-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/HandOfFate1.png",
+    "sclName": "Hand of Fate"
+  },
+  {
+    "name": "Legendary Hand of Fate",
+    "key": "230-13315",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/HandOfFate.png",
+    "sclName": "Legendary Hand of Fate"
+  },
+  {
+    "name": "Piggy Bank",
+    "key": "231-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/PiggyBank.png",
+    "sclName": "Piggy Bank"
+  },
+  {
+    "name": "Rocket Ram",
+    "key": "232-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/RocketRam.png",
+    "sclName": "Rocket Ram"
+  },
+  {
+    "name": "Tiki Speaky",
+    "key": "233-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/TikiSpeaky.png",
+    "sclName": "Tiki Speaky"
+  },
+  {
+    "name": "Mystery Chest (Bronze)",
+    "key": "235-20481",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/10/BronzeMysteryChest.png",
+    "sclName": "Bronze Mystery Chest"
+  },
+  {
+    "name": "Mystery Chest (Silver)",
+    "key": "235-20482",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/10/SilverMysteryChest.png",
+    "sclName": "Silver Mystery Chest"
+  },
+  {
+    "name": "Mystery Chest (Gold)",
+    "key": "235-20483",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/10/GoldMysteryChest.png",
+    "sclName": "Gold Mystery Chest"
+  },
+  {
     "name": "Dragon's Peak",
     "key": "300-0",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/07/DragonsPeak.png",
@@ -756,6 +918,42 @@
     "sclName": "Volcanic Vault"
   },
   {
+    "name": "Mirror of Mystery",
+    "key": "305-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/MirrorOfMystery.png",
+    "sclName": "Mirror of Mystery"
+  },
+  {
+    "name": "Nightmare Express",
+    "key": "306-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/NightmareExpress.png",
+    "sclName": "Nightmare Express"
+  },
+  {
+    "name": "Sunscraper Spire",
+    "key": "307-12806",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/SunscraperSpire.png",
+    "sclName": "Sunscraper Spire"
+  },
+  {
+    "name": "Midnight Museum",
+    "key": "308-12806",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/MidnightMuseum.png",
+    "sclName": "Midnight Museum"
+  },
+  {
+    "name": "Gryphon Park Observatory",
+    "key": "310-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/10/GryphonParkObservatoryWM.png",
+    "sclName": "Gryphon Park Observatory"
+  },
+  {
+    "name": "Enchanted Elven Forest",
+    "key": "311-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/EnchantedElvenForest.png",
+    "sclName": "Enchanted Elven Forest"
+  },
+  {
     "name": "Legendary Bash",
     "key": "404-0",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/03/LegendaryBash.png",
@@ -780,10 +978,286 @@
     "sclName": "Legendary Chop Chop"
   },
   {
+    "name": "Gusto",
+    "key": "450-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/06/Gusto1.png",
+    "sclName": "Gusto"
+  },
+  {
+    "name": "Thunderbolt",
+    "key": "451-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/Thunderbolt.png",
+    "sclName": "Thunderbolt"
+  },
+  {
+    "name": "Thunderbolt (Clear)",
+    "key": "451-12317",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/02/ClearThunderbolt.png",
+    "sclName": "Clear Thunderbolt"
+  },
+  {
+    "name": "Fling Kong",
+    "key": "452-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/FlingKong.png",
+    "sclName": "Fling Kong"
+  },
+  {
+    "name": "Blades",
+    "key": "453-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/Blades.png",
+    "sclName": "Blades"
+  },
+  {
+    "name": "Legendary Blades",
+    "key": "453-13315",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/LegendaryBlades.png",
+    "sclName": "Legendary Blades"
+  },
+  {
+    "name": "Head Rush",
+    "key": "455-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/08/HeadRush.png",
+    "sclName": "Head Rush"
+  },
+  {
+    "name": "Nitro Head Rush",
+    "key": "455-13314",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/NitroHeadRush.png",
+    "sclName": "Nitro Head Rush"
+  },
+  {
+    "name": "Fist Bump",
+    "key": "456-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/FistBump.png",
+    "sclName": "Fist Bump"
+  },
+  {
+    "name": "Rocky Roll",
+    "key": "457-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/RockyRoll.png",
+    "sclName": "Rocky Roll"
+  },
+  {
+    "name": "Dark Wildfire",
+    "key": "458-13314",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/07/DarkWildFire.png",
+    "sclName": "Dark Wildfire"
+  },
+  {
+    "name": "Trail Blazer",
+    "key": "460-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/TrailBlazer.png",
+    "sclName": "Trail Blazer"
+  },
+  {
+    "name": "Torch",
+    "key": "461-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/05/Torch.jpg",
+    "sclName": "Torch - Series 1"
+  },
+  {
+    "name": "Dark Snap Shot",
+    "key": "462-13314",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/07/DarkSnapShot.png",
+    "sclName": "Dark Snap Shot"
+  },
+  {
+    "name": "Lob-Star",
+    "key": "463-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/LobStar.png",
+    "sclName": "Lob-Star"
+  },
+  {
+    "name": "Winterfest Lob-Star",
+    "key": "463-13314",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/WinterfestLobStar1.png",
+    "sclName": "Winterfest Lob-Star"
+  },
+  {
+    "name": "Flip Wreck",
+    "key": "464-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/05/FlipWreck1.png",
+    "sclName": "Flip Wreck - Series 1"
+  },
+  {
+    "name": "Echo",
+    "key": "465-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/Echo.png",
+    "sclName": "Echo"
+  },
+  {
+    "name": "Blastermind",
+    "key": "466-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/Blastermind.png",
+    "sclName": "Blastermind"
+  },
+  {
+    "name": "Enigma",
+    "key": "467-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/Enigma.png",
+    "sclName": "Enigma"
+  },
+  {
+    "name": "Cobra Cadabra",
+    "key": "469-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/CobraCadabra.png",
+    "sclName": "Cobra Cadabra"
+  },
+  {
+    "name": "King Cobra Cadabra",
+    "key": "469-13314",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/KingCobraCadabra.png",
+    "sclName": "King Cobra Cadabra"
+  },
+  {
+    "name": "Jawbreaker",
+    "key": "470-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/06/JawBreaker1.png",
+    "sclName": "Jawbreaker"
+  },
+  {
+    "name": "Legendary Jawbreaker",
+    "key": "470-13315",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/LegendaryJawbreaker.png",
+    "sclName": "Legendary Jawbreaker"
+  },
+  {
+    "name": "Chopper",
+    "key": "472-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/06/Chopper.png",
+    "sclName": "Chopper - Series 1"
+  },
+  {
+    "name": "Tread Head",
+    "key": "473-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/TreadHead.png",
+    "sclName": "Tread Head"
+  },
+  {
+    "name": "Bushwhack",
+    "key": "474-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/08/BushWhack.png",
+    "sclName": "Bushwhack"
+  },
+  {
+    "name": "Legendary Bushwhack",
+    "key": "474-13315",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/LegendaryBushwhack.png",
+    "sclName": "Legendary Bushwhack"
+  },
+  {
+    "name": "Tuff Luck",
+    "key": "475-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/TuffLuck.png",
+    "sclName": "Tuff Luck"
+  },
+  {
+    "name": "Tuff Luck (Clear)",
+    "key": "475-12317",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/12/ClearTuffLuck.png",
+    "sclName": "Clear Tuff Luck"
+  },
+  {
+    "name": "Food Fight",
+    "key": "476-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/04/FoodFight.png",
+    "sclName": "Food Fight - Series 1"
+  },
+  {
+    "name": "Dark Food Fight",
+    "key": "476-13314",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/07/DarkFoodFight.png",
+    "sclName": "Dark Food Fight"
+  },
+  {
+    "name": "High Five",
+    "key": "477-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/05/HighFive1.png",
+    "sclName": "High Five - Series 1"
+  },
+  {
+    "name": "Krypt King",
+    "key": "478-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/06/KryptKing1.png",
+    "sclName": "Krypt King"
+  },
+  {
+    "name": "Nitro Krypt King",
+    "key": "478-13314",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/NitroKryptKing.png",
+    "sclName": "Nitro Krypt King"
+  },
+  {
+    "name": "Short Cut",
+    "key": "479-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/ShortCut.png",
+    "sclName": "Short Cut"
+  },
+  {
+    "name": "Short Cut (Clear)",
+    "key": "479-12317",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/02/ClearShortCut.png",
+    "sclName": "Clear Short Cut"
+  },
+  {
+    "name": "Bat Spin",
+    "key": "480-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/05/BatSpin1.png",
+    "sclName": "Bat Spin - Series 1"
+  },
+  {
+    "name": "Funny Bone",
+    "key": "481-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/04/FunnyBone.png",
+    "sclName": "Funny Bone - Series 1"
+  },
+  {
+    "name": "Knight Light",
+    "key": "482-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/KnightLight.png",
+    "sclName": "Knight Light"
+  },
+  {
+    "name": "Spotlight",
+    "key": "483-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/Spotlight.png",
+    "sclName": "Spotlight"
+  },
+  {
+    "name": "Knight Mare",
+    "key": "484-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/KnightMare.png",
+    "sclName": "Knight Mare"
+  },
+  {
+    "name": "Blackout",
+    "key": "485-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/Blackout.png",
+    "sclName": "Blackout"
+  },
+  {
     "name": "Terrabite (Sidekick)",
     "key": "505-0",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/02/SidekicksTerrabite.png",
     "sclName": "Sidekick Terrabite"
+  },
+  {
+    "name": "Terrabite (Mini)",
+    "key": "505-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/08/Terrabite.png",
+    "sclName": "Mini Terrabite"
+  },
+  {
+    "name": "Eggsellent Weeruptor",
+    "key": "507-13314",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/EggscellentWeeruptor.png",
+    "sclName": "Eggsellent Weeruptor"
+  },
+  {
+    "name": "Power Punch Pet-Vac",
+    "key": "508-13314",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/03/PowerPunchPetVac.png",
+    "sclName": "Power Punch Pet Vac"
   },
   {
     "name": "Gill Runt (Sidekick)",
@@ -792,10 +1266,22 @@
     "sclName": "Sidekick Gill Runt"
   },
   {
+    "name": "Gill Runt (Mini)",
+    "key": "511-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/08/GillRunt.png",
+    "sclName": "Mini Gill Runt"
+  },
+  {
     "name": "Trigger Snappy (Sidekick)",
     "key": "519-0",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/03/SidekicksTriggerSnappy.png",
     "sclName": "Sidekick Trigger Snappy"
+  },
+  {
+    "name": "Trigger Snappy (Mini)",
+    "key": "519-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/08/TriggerSnappy.png",
+    "sclName": "Mini Trigger Snappy"
   },
   {
     "name": "Whisper Elf (Sidekick)",
@@ -804,10 +1290,28 @@
     "sclName": "Sidekick Whisper Elf"
   },
   {
+    "name": "Whisper Elf (Mini)",
+    "key": "526-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/08/WhisperElf.png",
+    "sclName": "Mini Whisper Elf"
+  },
+  {
     "name": "Barkley (Sidekick)",
     "key": "540-4096",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/05/SidekickBarkley.png",
     "sclName": "Sidekick Barkley"
+  },
+  {
+    "name": "Barkley (Mini)",
+    "key": "540-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/08/Barkley.png",
+    "sclName": "Mini Barkley"
+  },
+  {
+    "name": "Gnarly Barkley",
+    "key": "540-13314",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/GnarlyBarkley.png",
+    "sclName": "Gnarly Barkley"
   },
   {
     "name": "Thumpling (Sidekick)",
@@ -816,16 +1320,484 @@
     "sclName": "Sidekick Thumpling"
   },
   {
+    "name": "Thumpling (Mini)",
+    "key": "541-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/08/Thumping.png",
+    "sclName": "Mini Thumpling"
+  },
+  {
     "name": "Mini-Jini (Sidekick)",
     "key": "542-4096",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/02/SidekickMiniJini.png",
     "sclName": "Sidekick Mini Jini"
   },
   {
+    "name": "Mini-Jini (Mini)",
+    "key": "542-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/08/MiniJini.png",
+    "sclName": "Mini Mini Jini"
+  },
+  {
     "name": "Eye-Small (Sidekick)",
     "key": "543-4096",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/02/SidekickEyeSmall.png",
     "sclName": "Sidekick Eye Small"
+  },
+  {
+    "name": "Eye-Small (Mini)",
+    "key": "543-12288",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/08/EyeSmall.png",
+    "sclName": "Mini Eye Small"
+  },
+  {
+    "name": "King Pen",
+    "key": "601-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/KingPen.png",
+    "sclName": "King Pen"
+  },
+  {
+    "name": "Dark King Pen",
+    "key": "601-21506",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/06/DarkKingPen.png",
+    "sclName": "Dark King Pen"
+  },
+  {
+    "name": "Tri-Tip",
+    "key": "602-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/TriTipFinal-1.png",
+    "sclName": "Tri-Tip"
+  },
+  {
+    "name": "Legendary Tri-Tip",
+    "key": "602-21507",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/09/LegendaryTriTip.png",
+    "sclName": "Legendary Tri-Tip"
+  },
+  {
+    "name": "Chopscotch",
+    "key": "603-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/07/Chopscotch.png",
+    "sclName": "Chopscotch"
+  },
+  {
+    "name": "Candy-Coated Chopscotch",
+    "key": "603-21525",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/CandyCoatedChopscotch.png",
+    "sclName": "Candy-Coated Chopscotch"
+  },
+  {
+    "name": "Boom Bloom",
+    "key": "604-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/11/BoomBloom.png",
+    "sclName": "Boom Bloom"
+  },
+  {
+    "name": "Pit Boss",
+    "key": "605-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/09/PitBossTemp.png",
+    "sclName": "Pit Boss"
+  },
+  {
+    "name": "Legendary Pit Boss",
+    "key": "605-21507",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/09/LegendaryPitBoss.png",
+    "sclName": "Legendary Pit Boss"
+  },
+  {
+    "name": "Barbella",
+    "key": "606-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/BarbellaFinal.png",
+    "sclName": "Barbella"
+  },
+  {
+    "name": "Barbella (Pink)",
+    "key": "606-20513",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/10/PinkBarbella.png",
+    "sclName": "Pink Barbella"
+  },
+  {
+    "name": "Air Strike",
+    "key": "607-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/07/AirStrike.png",
+    "sclName": "Air Strike"
+  },
+  {
+    "name": "Egg Bomber Air Strike",
+    "key": "607-21517",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2017/03/EggBomberAirStrike_Actual.png",
+    "sclName": "Egg Bomber Air Strike"
+  },
+  {
+    "name": "Ember",
+    "key": "608-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/06/EmberFireSentinel.png",
+    "sclName": "Ember"
+  },
+  {
+    "name": "Dec-Ember (???)",
+    "key": "608-20484",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/12/DecEmberTemp.png",
+    "sclName": "Dec-Ember"
+  },
+  {
+    "name": "Ambush",
+    "key": "609-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/06/AmbushLifeKnightSkylanders.png",
+    "sclName": "Ambush"
+  },
+  {
+    "name": "Dr. Krankcase",
+    "key": "610-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/DrKrankCaseFinal.png",
+    "sclName": "Dr. Krankcase"
+  },
+  {
+    "name": "Hood Sickle",
+    "key": "611-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/HoodSickleTemp.png",
+    "sclName": "Hood Sickle"
+  },
+  {
+    "name": "Steel Plated Hood Sickle",
+    "key": "611-21506",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/SteelPlatedHoodSickle.png",
+    "sclName": "Steel Plated Hood Sickle"
+  },
+  {
+    "name": "Mystical Tae Kwon Crow",
+    "key": "612-21506",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2021/04/logo-horizontal_70T.png",
+    "sclName": "Mystical Tae Kwon Crow"
+  },
+  {
+    "name": "Golden Queen",
+    "key": "613-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/06/GoldenQueenEdit.png",
+    "sclName": "Golden Queen"
+  },
+  {
+    "name": "Dark Golden Queen",
+    "key": "613-21506",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/06/DarkGoldenQueen.png",
+    "sclName": "Dark Golden Queen"
+  },
+  {
+    "name": "Wolfgang",
+    "key": "614-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/WolfgangFinal.png",
+    "sclName": "Wolfgang"
+  },
+  {
+    "name": "Dark Wolfgang",
+    "key": "614-21506",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/06/DarkWolfgang.png",
+    "sclName": "Dark Wolfgang"
+  },
+  {
+    "name": "Pain-Yatta",
+    "key": "615-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/11/PainYatta.png",
+    "sclName": "Pain-Yatta"
+  },
+  {
+    "name": "Pain-Yatta (Rock Candy)",
+    "key": "615-20513",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/12/RockCandyPainyattaTemp.png",
+    "sclName": "Rock Candy Pain-Yatta"
+  },
+  {
+    "name": "Mysticat",
+    "key": "616-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/MysticatFinal.png",
+    "sclName": "Mysticat"
+  },
+  {
+    "name": "Starcast",
+    "key": "617-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/StarcastFinal.png",
+    "sclName": "Starcast"
+  },
+  {
+    "name": "Buckshot",
+    "key": "618-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/11/Buckshot.png",
+    "sclName": "Buckshot"
+  },
+  {
+    "name": "Aurora",
+    "key": "619-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/07/AuroraTemp.png",
+    "sclName": "Aurora"
+  },
+  {
+    "name": "Solar Flare Aurora",
+    "key": "619-21506",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/11/SolarFlareAurora.png",
+    "sclName": "Solar Flare Aurora"
+  },
+  {
+    "name": "Chompy Mage",
+    "key": "621-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/ChompyMage.png",
+    "sclName": "Chompy Mage"
+  },
+  {
+    "name": "Jingle Bell Chompy Mage",
+    "key": "621-21518",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/11/JingleBellChompyMage.png",
+    "sclName": "Jingle Bell Chompy Mage"
+  },
+  {
+    "name": "Bad Juju",
+    "key": "622-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/11/BadJuju.png",
+    "sclName": "Bad Juju"
+  },
+  {
+    "name": "Mystical Bad Juju",
+    "key": "622-21506",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/11/MysticalBadJuju.png",
+    "sclName": "Mystical Bad Juju"
+  },
+  {
+    "name": "Grave Clobber",
+    "key": "623-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2017/03/GraveClobber_Actual.png",
+    "sclName": "Grave Clobber"
+  },
+  {
+    "name": "Blaster-Tron",
+    "key": "624-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/11/BlasterTron.png",
+    "sclName": "Blaster-Tron"
+  },
+  {
+    "name": "Ro-Bow",
+    "key": "625-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/11/RoBow.png",
+    "sclName": "Ro-Bow"
+  },
+  {
+    "name": "Chain Reaction",
+    "key": "626-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/11/ChainReaction.png",
+    "sclName": "Chain Reaction"
+  },
+  {
+    "name": "Chain Reaction (Orange?)",
+    "key": "626-20513",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/11/OrangeChainReaction.png",
+    "sclName": "Orange Chain Reaction"
+  },
+  {
+    "name": "Kaos",
+    "key": "627-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/Kaos.png",
+    "sclName": "Kaos"
+  },
+  {
+    "name": "Wild Storm",
+    "key": "628-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/11/WildStorm.png",
+    "sclName": "Wild Storm"
+  },
+  {
+    "name": "Tidepool",
+    "key": "629-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/11/Tidepool.png",
+    "sclName": "Tidepool"
+  },
+  {
+    "name": "Crash Bandicoot",
+    "key": "630-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/06/CrashBandicoot.png",
+    "sclName": "Crash Bandicoot"
+  },
+  {
+    "name": "Dr. Neo Cortex",
+    "key": "631-20480",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/08/DrNeoCortex.png",
+    "sclName": "Dr. Neo Cortex"
+  },
+  {
+    "name": "Magic Creation Crystal (Pyramid)",
+    "key": "680-20996",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/MagicPyramidCreationCrystalWM.png",
+    "sclName": "Magic Pyramid Creation Crystal"
+  },
+  {
+    "name": "Magic Creation Crystal (Lantern)",
+    "key": "680-21000",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/MagicLanternCreationCrystalWM.png",
+    "sclName": "Magic Lantern Creation Crystal"
+  },
+  {
+    "name": "Magic Creation Crystal (Legendary Lantern)",
+    "key": "680-22024",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/10/LegendaryMagicLantern.png",
+    "sclName": "Legendary Magic Lantern Creation Crystal"
+  },
+  {
+    "name": "Magic Creation Crystal (Claw)",
+    "key": "680-21019",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/10/MagicClawCreationCrystalWM.png",
+    "sclName": "Magic Claw Creation Crystal"
+  },
+  {
+    "name": "Water Creation Crystal (Armor)",
+    "key": "681-21012",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/WaterArmorCreationCrystalWM.png",
+    "sclName": "Water Armor Creation Crystal"
+  },
+  {
+    "name": "Water Creation Crystal (Fanged)",
+    "key": "681-21016",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/10/WaterFangedCreationCrystalWM.png",
+    "sclName": "Water Fanged Creation Crystal"
+  },
+  {
+    "name": "Water Creation Crystal (Rocket)",
+    "key": "681-21020",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/WaterRocketCreationCrystalWM.png",
+    "sclName": "Water Rocket Creation Crystal"
+  },
+  {
+    "name": "Air Creation Crystal (Angel)",
+    "key": "682-20994",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/AirAngelCreationCrystalWM.png",
+    "sclName": "Air Angel Creation Crystal"
+  },
+  {
+    "name": "Air Creation Crystal (Lantern)",
+    "key": "682-20999",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/10/AirLanternCreationCrystalWM.png",
+    "sclName": "Air Lantern Creation Crystal"
+  },
+  {
+    "name": "Undead Creation Crystal (Lantern)",
+    "key": "683-21001",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/UndeadLanternCreationCrystalWM.png",
+    "sclName": "Undead Lantern Creation Crystal"
+  },
+  {
+    "name": "Undead Creation Crystal (Fanged)",
+    "key": "683-21015",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/UndeadFangedCreationCrystalWM.png",
+    "sclName": "Undead Fanged Creation Crystal"
+  },
+  {
+    "name": "Undead Creation Crystal (Claw)",
+    "key": "683-21017",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/UndeadClawCreationCrystalWM.png",
+    "sclName": "Undead Claw Creation Crystal"
+  },
+  {
+    "name": "Tech Creation Crystal (Reactor)",
+    "key": "684-21005",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/TechReactorCreationCrystalWM.png",
+    "sclName": "Tech Reactor Creation Crystal"
+  },
+  {
+    "name": "Tech Creation Crystal (Armor)",
+    "key": "684-21013",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/10/TechArmorCreationCrystalWM.png",
+    "sclName": "Tech Armor Creation Crystal"
+  },
+  {
+    "name": "Fire Creation Crystal (Reactor)",
+    "key": "685-21007",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/FireReactorCreationCrystalWM.png",
+    "sclName": "Fire Reactor Creation Crystal"
+  },
+  {
+    "name": "Fire Creation Crystal (Acorn)",
+    "key": "685-21009",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/10/FireAcornCreationCrystalWM.png",
+    "sclName": "Fire Acorn Creation Crystal"
+  },
+  {
+    "name": "Earth Creation Crystal (Armor)",
+    "key": "686-21011",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/EarthArmorCreationCrystalWM.png",
+    "sclName": "Earth Armor Creation Crystal"
+  },
+  {
+    "name": "Earth Creation Crystal (Rocket)",
+    "key": "686-21021",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/EarthRocketCreationCrystalWM.png",
+    "sclName": "Earth Rocket Creation Crystal"
+  },
+  {
+    "name": "Life Creation Crystal (Acorn)",
+    "key": "687-21008",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/LifeAcornCreationCrystalWM.png",
+    "sclName": "Life Acorn Creation Crystal"
+  },
+  {
+    "name": "Life Creation Crystal (Legendary Acorn)",
+    "key": "687-22032",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/11/LegendaryLifeAcorn.png",
+    "sclName": "Legendary Life Acorn Creation Crystal"
+  },
+  {
+    "name": "Life Creation Crystal (Claw)",
+    "key": "687-21018",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/LifeClawCreationCrystalWM.png",
+    "sclName": "Life Claw Creation Crystal"
+  },
+  {
+    "name": "Life Creation Crystal (Rocket)",
+    "key": "687-21022",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/10/LifeRocketCreationCrystalWM.png",
+    "sclName": "Life Rocket Creation Crystal"
+  },
+  {
+    "name": "Life Creation Crystal (Rune)",
+    "key": "687-21023",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/LifeRuneCreationCrystalWM.png",
+    "sclName": "Life Rune Creation Crystal"
+  },
+  {
+    "name": "Dark Creation Crystal (Pyramid)",
+    "key": "688-20998",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/10/DarkPyramidCreationCrystalWM.png",
+    "sclName": "Dark Pyramid Creation Crystal"
+  },
+  {
+    "name": "Dark Creation Crystal (Rune)",
+    "key": "688-21002",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/DarkRuneCreationCrystalWM.png",
+    "sclName": "Dark Rune Creation Crystal"
+  },
+  {
+    "name": "Dark Creation Crystal (Reactor)",
+    "key": "688-21006",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2017/03/DarkReactorCreationCrystalWM.png",
+    "sclName": "Dark Reactor Creation Crystal"
+  },
+  {
+    "name": "Light Creation Crystal (Rune)",
+    "key": "689-21003",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/LightRuneCreationCrystalWM.png",
+    "sclName": "Light Rune Creation Crystal"
+  },
+  {
+    "name": "Light Creation Crystal (Fanged)",
+    "key": "689-21014",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/LightFangedCreationCrystalWM.png",
+    "sclName": "Light Fanged Creation Crystal"
+  },
+  {
+    "name": "Light Creation Crystal (Legendary Fanged)",
+    "key": "689-22038",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/05/LegendaryLightFanged.png",
+    "sclName": "Legendary Light Fanged Creation Crystal"
+  },
+  {
+    "name": "Fire",
+    "key": "2005-8192",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2021/04/logo-horizontal_70T.png",
+    "sclName": "Fire"
   },
   {
     "name": "Scratch",
@@ -1026,6 +1998,192 @@
     "sclName": "UFO Hat"
   },
   {
+    "name": "Jet Stream",
+    "key": "3220-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/JetStream.png",
+    "sclName": "Jet Stream"
+  },
+  {
+    "name": "Tomb Buggy",
+    "key": "3221-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/TombBuggy.png",
+    "sclName": "Tomb Buggy"
+  },
+  {
+    "name": "Reef Ripper",
+    "key": "3222-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/ReefRipper1.png",
+    "sclName": "Reef Ripper"
+  },
+  {
+    "name": "Burn-Cycle",
+    "key": "3223-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/BurnCycle.png",
+    "sclName": "Burn-Cycle"
+  },
+  {
+    "name": "Burn-Cycle (Patina)",
+    "key": "3223-16414",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/12/PatinaBurnCycle.png",
+    "sclName": "Patina Burn-Cycle"
+  },
+  {
+    "name": "Hot Streak",
+    "key": "3224-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/HotStreak.png",
+    "sclName": "Hot Streak"
+  },
+  {
+    "name": "Dark Hot Streak",
+    "key": "3224-17410",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/DarkHotStreak-300.png",
+    "sclName": "Dark Hot Streak"
+  },
+  {
+    "name": "Golden Hot Streak",
+    "key": "3224-17438",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/09/GoldenHotStreak1.png",
+    "sclName": "Golden Hot Streak"
+  },
+  {
+    "name": "Shark Tank",
+    "key": "3225-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/SharkTank.png",
+    "sclName": "Shark Tank"
+  },
+  {
+    "name": "Thump Truck",
+    "key": "3226-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/ThumpTruck.png",
+    "sclName": "Thump Truck"
+  },
+  {
+    "name": "Crypt Crusher",
+    "key": "3227-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/CryptCrusher.png",
+    "sclName": "Crypt Crusher"
+  },
+  {
+    "name": "Stealth Stinger",
+    "key": "3228-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/StealthStinger.png",
+    "sclName": "Stealth Stinger"
+  },
+  {
+    "name": "Nitro Stealth Stinger",
+    "key": "3228-17410",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/08/NitroStealthStinger.png",
+    "sclName": "Nitro Stealth Stinger"
+  },
+  {
+    "name": "Dive Bomber",
+    "key": "3231-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/DiveBomber.png",
+    "sclName": "Dive Bomber"
+  },
+  {
+    "name": "Spring Ahead Dive Bomber",
+    "key": "3231-17410",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/09/SpringAheadDiveBomber.png",
+    "sclName": "Spring Ahead Dive Bomber"
+  },
+  {
+    "name": "Sky Slicer",
+    "key": "3232-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/SkySlicer.png",
+    "sclName": "Sky Slicer"
+  },
+  {
+    "name": "Gold Rusher",
+    "key": "3234-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/GoldRusher.png",
+    "sclName": "Gold Rusher"
+  },
+  {
+    "name": "Power Blue Gold Rusher",
+    "key": "3234-17410",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/02/PowerBlueGoldRusher.png",
+    "sclName": "Power Blue Gold Rusher"
+  },
+  {
+    "name": "Shield Striker",
+    "key": "3235-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/ShieldStriker.png",
+    "sclName": "Shield Striker"
+  },
+  {
+    "name": "Shield Striker (Patina)",
+    "key": "3235-16414",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/11/PatinaShieldStriker.png",
+    "sclName": "Patina Shield Striker"
+  },
+  {
+    "name": "Sun Runner",
+    "key": "3236-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/SunRunner.png",
+    "sclName": "Sun Runner"
+  },
+  {
+    "name": "Legendary Sun Runner",
+    "key": "3236-17311",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/09/LegendarySunRunner.png",
+    "sclName": "Legendary Sun Runner"
+  },
+  {
+    "name": "Sea Shadow",
+    "key": "3237-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/SeaShadow.png",
+    "sclName": "Sea Shadow"
+  },
+  {
+    "name": "Dark Sea Shadow",
+    "key": "3237-17410",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/DarkSeaShadow-300.png",
+    "sclName": "Dark Sea Shadow"
+  },
+  {
+    "name": "Splatter Splasher",
+    "key": "3238-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/SplatterSplasher.png",
+    "sclName": "Splatter Splasher"
+  },
+  {
+    "name": "Power Blue Splatter Splasher",
+    "key": "3238-17410",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/02/PowerBlueSplatterSplasher.png",
+    "sclName": "Power Blue Splatter Splasher"
+  },
+  {
+    "name": "Soda Skimmer",
+    "key": "3239-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/SodaSkimmer.png",
+    "sclName": "Soda Skimmer"
+  },
+  {
+    "name": "Nitro Soda Skimmer",
+    "key": "3239-17410",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/09/NitroSodaSkimmer.png",
+    "sclName": "Nitro Soda Skimmer"
+  },
+  {
+    "name": "Barrel Blaster",
+    "key": "3240-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/BarrelBlaster.png",
+    "sclName": "Barrel Blaster"
+  },
+  {
+    "name": "Dark Barrel Blaster",
+    "key": "3240-17410",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/DarkBarrelBlaster-300.png",
+    "sclName": "Dark Barrel Blaster"
+  },
+  {
+    "name": "Buzz Wing",
+    "key": "3241-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/BuzzWing.png",
+    "sclName": "Buzz Wing"
+  },
+  {
     "name": "Sheep Wreck Island",
     "key": "3300-8192",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/12/SheepWreckIsland1.png",
@@ -1048,5 +2206,527 @@
     "key": "3302-8710",
     "image": "https://skylanderscharacterlist.com/wp-content/uploads/2013/12/ArkeyanCrossbow.png",
     "sclName": "Arkeyan Crossbow"
+  },
+  {
+    "name": "Fiesta",
+    "key": "3400-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/Fiesta.png",
+    "sclName": "Fiesta"
+  },
+  {
+    "name": "Frightful Fiesta",
+    "key": "3400-17685",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/08/FrightfulFiesta.png",
+    "sclName": "Frightful Fiesta"
+  },
+  {
+    "name": "High Volt",
+    "key": "3401-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/HighVolt.png",
+    "sclName": "High Volt"
+  },
+  {
+    "name": "High Volt (Patina)",
+    "key": "3401-16670",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/09/PatinaHighVolt.png",
+    "sclName": "Patina High Volt"
+  },
+  {
+    "name": "Splat",
+    "key": "3402-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/Splat.png",
+    "sclName": "Splat"
+  },
+  {
+    "name": "Power Blue Splat",
+    "key": "3402-17666",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/02/PowerBlueSplat.png",
+    "sclName": "Power Blue Splat"
+  },
+  {
+    "name": "Stormblade",
+    "key": "3406-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/StormBlade.png",
+    "sclName": "Stormblade"
+  },
+  {
+    "name": "Smash Hit",
+    "key": "3411-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/SmashHit.png",
+    "sclName": "Smash Hit"
+  },
+  {
+    "name": "Steel Plated Smash Hit",
+    "key": "3411-17666",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/08/SteelPlatedSmashHit.png",
+    "sclName": "Steel Plated Smash Hit"
+  },
+  {
+    "name": "Spitfire",
+    "key": "3412-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/SpitFire.png",
+    "sclName": "Spitfire"
+  },
+  {
+    "name": "Dark Spitfire",
+    "key": "3412-17666",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/DarkSpitfire-300.png",
+    "sclName": "Dark Spitfire"
+  },
+  {
+    "name": "Hurricane Jet-Vac",
+    "key": "3413-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/HurricaneJetVac.png",
+    "sclName": "Hurricane Jet-Vac"
+  },
+  {
+    "name": "Legendary Hurricane Jet-Vac",
+    "key": "3413-17667",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/08/LegendaryHurricaneJetVac.png",
+    "sclName": "Legendary Hurricane Jet-Vac"
+  },
+  {
+    "name": "Double Dare Trigger Happy",
+    "key": "3414-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/DoubleDareTriggerHappy.png",
+    "sclName": "Double Dare Trigger Happy"
+  },
+  {
+    "name": "Power Blue Double Dare Trigger Happy",
+    "key": "3414-17666",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2016/02/PowerBlueTriggerHappy.png",
+    "sclName": "Power Blue Double Dare Trigger Happy"
+  },
+  {
+    "name": "Super Shot Stealth Elf",
+    "key": "3415-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/SuperShotStealthElf.png",
+    "sclName": "Super Shot Stealth Elf"
+  },
+  {
+    "name": "Dark Super Shot Stealth Elf",
+    "key": "3415-17666",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/DarkSuperShotStealthElf-300.png",
+    "sclName": "Dark Super Shot Stealth Elf"
+  },
+  {
+    "name": "Shark Shooter Terrafin",
+    "key": "3416-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/SharkShooterTerrafin2.png",
+    "sclName": "Shark Shooter Terrafin"
+  },
+  {
+    "name": "Bone Bash Roller Brawl",
+    "key": "3417-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/BoneBashRollerBrawl.png",
+    "sclName": "Bone Bash Roller Brawl"
+  },
+  {
+    "name": "Legendary Bone Bash Roller Brawl",
+    "key": "3417-17667",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/09/LegendaryBoneBashRollerBrawl.png",
+    "sclName": "Legendary Bone Bash Roller Brawl"
+  },
+  {
+    "name": "Big Bubble Pop Fizz",
+    "key": "3420-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/BigBubblePopFizz.png",
+    "sclName": "Big Bubble Pop Fizz"
+  },
+  {
+    "name": "Birthday Bash Big Bubble Pop Fizz",
+    "key": "3420-17678",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/12/BirthdayBashBigBubblePopFizz.png",
+    "sclName": "Birthday Bash Big Bubble Pop Fizz"
+  },
+  {
+    "name": "Lava Lance Eruptor",
+    "key": "3421-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/LavaLanceEruptor.png",
+    "sclName": "Lava Lance Eruptor"
+  },
+  {
+    "name": "Lava Lance Eruptor (Patina?)",
+    "key": "3421-16670",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/11/PatinaLavaLanceEruptor.jpg",
+    "sclName": "Patina Lava Lance Eruptor"
+  },
+  {
+    "name": "Deep Dive Gill Grunt",
+    "key": "3422-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/DeepDiveGillGrunt1.png",
+    "sclName": "Deep Dive Gill Grunt"
+  },
+  {
+    "name": "Turbo Charge Donkey Kong",
+    "key": "3423-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/TurboChargeDonkeyKong.png",
+    "sclName": "Turbo Charge Donkey Kong"
+  },
+  {
+    "name": "Dark Turbo Charge Donkey Kong",
+    "key": "3423-17666",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/DarkTurboChargeDonkeyKong-300.png",
+    "sclName": "Dark Turbo Charge Donkey Kong"
+  },
+  {
+    "name": "Hammer Slam Bowser",
+    "key": "3424-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/HammerSlamBowser.png",
+    "sclName": "Hammer Slam Bowser"
+  },
+  {
+    "name": "Dark Hammer Slam Bowser",
+    "key": "3424-17666",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/DarkHammerSlamBowser-300.png",
+    "sclName": "Dark Hammer Slam Bowser"
+  },
+  {
+    "name": "Dive-Clops",
+    "key": "3425-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/DiveClops.png",
+    "sclName": "Dive-Clops"
+  },
+  {
+    "name": "Missile-Tow Dive-Clops",
+    "key": "3425-17678",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/11/MissileTowDiveClops.png",
+    "sclName": "Missile-Tow Dive-Clops"
+  },
+  {
+    "name": "Astroblast",
+    "key": "3426-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/Astroblast.png",
+    "sclName": "Astroblast"
+  },
+  {
+    "name": "Legendary Astroblast",
+    "key": "3426-17667",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/09/LegendaryAstroblast.png",
+    "sclName": "Legendary Astroblast"
+  },
+  {
+    "name": "Nightfall",
+    "key": "3427-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/06/Nightfall.png",
+    "sclName": "Nightfall"
+  },
+  {
+    "name": "Thrillipede",
+    "key": "3428-16640",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/Thrillipede.png",
+    "sclName": "Thrillipede"
+  },
+  {
+    "name": "Eggcited Thrillipede",
+    "key": "3428-17677",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/10/EggcitedThrillipede.png",
+    "sclName": "Eggcited Thrillipede"
+  },
+  {
+    "name": "Kaos Trophy",
+    "key": "3503-16384",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/07/KaosTrophy300.png",
+    "sclName": "Kaos Trophy"
+  },
+  {
+    "name": "Biter's Bane (Magic Log Holder)",
+    "key": "210-12290",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/MagicLogHolderTrap1.png",
+    "sclName": "Magic Log Holder Trap"
+  },
+  {
+    "name": "Sorcerous Skull (Magic Skull)",
+    "key": "210-12296",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/MagicSkullTrap.png",
+    "sclName": "Magic Skull Trap"
+  },
+  {
+    "name": "Axe of Illusion (Magic Axe)",
+    "key": "210-12299",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/MagicAxeTrap1.png",
+    "sclName": "Magic Axe Trap"
+  },
+  {
+    "name": "Arcane Hourglass (Magic Hourglass)",
+    "key": "210-12302",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/MagicHourglassTrap.png",
+    "sclName": "Magic Hourglass Trap"
+  },
+  {
+    "name": "Spell Slapper (Magic Totem)",
+    "key": "210-12306",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/MagicTotemTrap.png",
+    "sclName": "Magic Totem Trap"
+  },
+  {
+    "name": "Rune Rocket (Magic Rocket)",
+    "key": "210-12309",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/MagicRocketTrap.png",
+    "sclName": "Magic Rocket Trap"
+  },
+  {
+    "name": "Tidal Tiki (Water Tiki)",
+    "key": "211-12289",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/WaterTikiTrap.png",
+    "sclName": "Water Tiki Trap"
+  },
+  {
+    "name": "Wet Walter (Water Log Holder)",
+    "key": "211-12290",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/WaterLogHolderTrap1.png",
+    "sclName": "Water Log Holder Trap"
+  },
+  {
+    "name": "Soaking Staff (Water Angel)",
+    "key": "211-12295",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/WaterAngelTrap.png",
+    "sclName": "Water Angel Trap"
+  },
+  {
+    "name": "Aqua Axe (Water Axe)",
+    "key": "211-12299",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/WaterAxeTrap1.png",
+    "sclName": "Water Axe Trap"
+  },
+  {
+    "name": "Frost Helm (Water Flying Helmet)",
+    "key": "211-12310",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/WaterFlyingHelmetTrap.png",
+    "sclName": "Water Flying Helmet Trap"
+  },
+  {
+    "name": "Breezy Bird (Air Toucan)",
+    "key": "212-12291",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/AirToucanTrap1.png",
+    "sclName": "Air Toucan Trap"
+  },
+  {
+    "name": "Drafty Decanter (Air Jughead)",
+    "key": "212-12294",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/AirJugheadTrap1.png",
+    "sclName": "Air Jughead Trap"
+  },
+  {
+    "name": "Tempest Timer (Air Hourglass)",
+    "key": "212-12302",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/AirHourglassTrap.png",
+    "sclName": "Air Hourglass Trap"
+  },
+  {
+    "name": "Cloudy Cobra (Air Snake)",
+    "key": "212-12304",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/AirSnakeTrap.png",
+    "sclName": "Air Snake Trap"
+  },
+  {
+    "name": "Storm Warning (Air Screamer)",
+    "key": "212-12305",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/AirScreamerTrap1.png",
+    "sclName": "Air Screamer Trap"
+  },
+  {
+    "name": "Cyclone Sabre (Air Sword)",
+    "key": "212-12312",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/AirSwordTrap.png",
+    "sclName": "Air Sword Trap"
+  },
+  {
+    "name": "Haunted Hatchet (Undead Axe)",
+    "key": "213-12299",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/UndeadAxeTrap1.png",
+    "sclName": "Undead Axe Trap"
+  },
+  {
+    "name": "Grim Gripper (Undead Hand)",
+    "key": "213-12300",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/UndeadHandTrap.png",
+    "sclName": "Undead Hand Trap"
+  },
+  {
+    "name": "Spooky Snake (Undead Snake)",
+    "key": "213-12304",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/UndeadSnakeTrap.png",
+    "sclName": "Undead Snake Trap"
+  },
+  {
+    "name": "Dream Piercer (Undead Captain's Hat)",
+    "key": "213-12311",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/04/UndeadCaptainsHatTrap.png",
+    "sclName": "Undead Captain's Hat Trap"
+  },
+  {
+    "name": "Tech Totem (Tech Tiki)",
+    "key": "214-12289",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/TechTikiTrap.png",
+    "sclName": "Tech Tiki Trap"
+  },
+  {
+    "name": "Automatic Angel (Tech Angel)",
+    "key": "214-12295",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/TechAngelTrap.png",
+    "sclName": "Tech Angel Trap"
+  },
+  {
+    "name": "Factory Flower (Tech Scepter)",
+    "key": "214-12297",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/TechScepterTrap1.png",
+    "sclName": "Tech Scepter Trap"
+  },
+  {
+    "name": "Grabbing Gadget (Tech Hand)",
+    "key": "214-12300",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/TechHandTrap.png",
+    "sclName": "Tech Hand Trap"
+  },
+  {
+    "name": "Makers Mana (Tech Flying Helmet)",
+    "key": "214-12310",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/TechFlyingHelmetTrap.png",
+    "sclName": "Tech Flying Helmet Trap"
+  },
+  {
+    "name": "Topsy Techy (Tech Handstand)",
+    "key": "214-12314",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/04/TechHandstandTrap.png",
+    "sclName": "Tech Handstand Trap"
+  },
+  {
+    "name": "Eternal Flame (Fire Torch)",
+    "key": "215-12293",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/FireTorchTrap1.png",
+    "sclName": "Fire Torch Trap"
+  },
+  {
+    "name": "Fire Flower (Fire Scepter)",
+    "key": "215-12297",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/FireScepterTrap.png",
+    "sclName": "Fire Scepter Trap"
+  },
+  {
+    "name": "Scorching Stopper (Fire Screamer)",
+    "key": "215-12305",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/FireScreamerTrap1.png",
+    "sclName": "Fire Screamer Trap"
+  },
+  {
+    "name": "Searing Spinner (Fire Totem)",
+    "key": "215-12306",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/FireTotemTrap.png",
+    "sclName": "Fire Totem Trap"
+  },
+  {
+    "name": "Spark Speak (Fire Captain's Hat)",
+    "key": "215-12311",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/04/FireCaptainsHatTrap.png",
+    "sclName": "Fire Captain's Hat Trap"
+  },
+  {
+    "name": "Blazing Belch (Fire Yawn)",
+    "key": "215-12315",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/FireYawnTrap.png",
+    "sclName": "Fire Yawn Trap"
+  },
+  {
+    "name": "Rock Hawk (Earth Toucan)",
+    "key": "216-12291",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/EarthToucanTrap1.png",
+    "sclName": "Earth Toucan Trap"
+  },
+  {
+    "name": "Banded Boulder (Earth Orb)",
+    "key": "216-12292",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/EarthOrbTrap1.png",
+    "sclName": "Earth Orb Trap"
+  },
+  {
+    "name": "Slag Hammer (Earth Hammer)",
+    "key": "216-12298",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/EarthHammerTrap1.png",
+    "sclName": "Earth Hammer Trap"
+  },
+  {
+    "name": "Dust of Time (Earth Hourglass)",
+    "key": "216-12302",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/EarthHourglassTrap1.png",
+    "sclName": "Earth Hourglass Trap"
+  },
+  {
+    "name": "Spinning Sandstorm (Earth Totem)",
+    "key": "216-12306",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/EarthTotemTrap.png",
+    "sclName": "Earth Totem Trap"
+  },
+  {
+    "name": "Rubble Trouble (Earth Handstand)",
+    "key": "216-12314",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/03/EarthHandstandTrap.png",
+    "sclName": "Earth Handstand Trap"
+  },
+  {
+    "name": "Oak Eagle (Life Toucan)",
+    "key": "217-12291",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/LifeToucanTrap1.png",
+    "sclName": "Life Toucan Trap"
+  },
+  {
+    "name": "Emerald Energy (Life Torch)",
+    "key": "217-12293",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/LifeTorchTrap.png",
+    "sclName": "Life Torch Trap"
+  },
+  {
+    "name": "Weed Whacker (Life Hammer)",
+    "key": "217-12298",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/LifeHammerTrap.png",
+    "sclName": "Life Hammer Trap"
+  },
+  {
+    "name": "Seed Serpent (Life Snake)",
+    "key": "217-12304",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/LifeSnakeTrap.png",
+    "sclName": "Life Snake Trap"
+  },
+  {
+    "name": "Jade Blade (Life Sword)",
+    "key": "217-12312",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/LifeSwordTrap.png",
+    "sclName": "Life Sword Trap"
+  },
+  {
+    "name": "Shrub Shrieker (Life Yawn)",
+    "key": "217-12315",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/09/LifeYawnTrap.png",
+    "sclName": "Life Yawn Trap"
+  },
+  {
+    "name": "Shadow Spider (Dark Spider)",
+    "key": "218-12308",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/DarkSpiderTrap1.png",
+    "sclName": "Dark Spider Trap"
+  },
+  {
+    "name": "Dark Dagger (Dark Sword)",
+    "key": "218-12312",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/DarkSwordTrap.png",
+    "sclName": "Dark Sword Trap"
+  },
+  {
+    "name": "Ghastly Grimace (Dark Handstand)",
+    "key": "218-12314",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/04/DarkHandstandTrap.png",
+    "sclName": "Dark Handstand Trap"
+  },
+  {
+    "name": "Shining Ship (Light Rocket)",
+    "key": "219-12309",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2014/10/LightRocketTrap1.png",
+    "sclName": "Light Rocket Trap"
+  },
+  {
+    "name": "Beam Scream (Light Yawn)",
+    "key": "219-12315",
+    "image": "https://skylanderscharacterlist.com/wp-content/uploads/2015/04/LightYawnTrap.png",
+    "sclName": "Light Yawn Trap"
   }
 ]

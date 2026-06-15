@@ -12,7 +12,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const here = dirname(fileURLToPath(import.meta.url));
-const SITEMAP = 'https://skylanderscharacterlist.com/sitemap.xml';
+const SITEMAP_INDEX = 'https://skylanderscharacterlist.com/sitemap_index.xml';
 const UA = 'Mozilla/5.0 (PortalTracker variant-art index; non-commercial fan tool)';
 const OUT = join(here, 'scl-index.json');
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -36,7 +36,9 @@ async function pageMeta(url) {
   const image = html.match(/<meta property="og:image" content="([^"]*)"/i)?.[1];
   if (!title || !image) return null;
   // og:title = "<Variant Name> - <Game> |"  → strip the trailing " - Game |".
-  let name = decode(title).replace(/\s*\|\s*$/, '');
+  let name = decode(title)
+    .replace(/\s*[-|]\s*Skylanders Character List\s*$/i, '')
+    .replace(/\s*\|\s*$/, '');
   name = name.replace(/\s*-\s*(Spyro's Adventure|Giants|SWAP Force|Trap Team|SuperChargers|Imaginators)\s*$/i, '');
   return { name, image, slug: new URL(url).pathname.replace(/\//g, '') };
 }
@@ -47,11 +49,20 @@ async function main() {
     console.log(`${OUT} already exists with ${idx.length} entries. Use --refresh to rebuild.`);
     return;
   }
-  console.log('Fetching sitemap…');
-  const xml = await (await fetch(SITEMAP, { headers: { 'User-Agent': UA } })).text();
-  const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)]
+  console.log('Fetching sitemap index…');
+  const idxXml = await (await fetch(SITEMAP_INDEX, { headers: { 'User-Agent': UA } })).text();
+  // Figure pages are WordPress "posts" — pull every post-sitemap*.xml page.
+  const postMaps = [...idxXml.matchAll(/<loc>([^<]+)<\/loc>/g)]
     .map((m) => m[1].replace(/^http:/, 'https:'))
-    .filter((u) => !SKIP_SLUG.test(new URL(u).pathname.replace(/\//g, '')));
+    .filter((u) => /post-sitemap\d*\.xml/.test(u));
+  console.log(`post sitemaps: ${postMaps.join(', ')}`);
+  let all = [];
+  for (const sm of postMaps) {
+    const xml = await (await fetch(sm, { headers: { 'User-Agent': UA } })).text();
+    all.push(...[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1].replace(/^http:/, 'https:')));
+    await sleep(300);
+  }
+  const urls = [...new Set(all)].filter((u) => !SKIP_SLUG.test(new URL(u).pathname.replace(/\//g, '')));
   console.log(`${urls.length} candidate figure pages.`);
 
   const index = [];

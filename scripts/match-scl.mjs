@@ -17,6 +17,8 @@ const figures = JSON.parse(readFileSync(join(root, 'src', 'figures', 'figures.js
 const index = JSON.parse(readFileSync(join(here, 'scl-index.json'), 'utf8'));
 const UA = 'Mozilla/5.0 (PortalTracker variant-art match; non-commercial fan tool)';
 const STOP = new Set(['the', 'in', 'of', 'and', 'a']);
+// scl uses different words than our DB for the same deco.
+const SYN = { iridescent: 'purple', glitter: 'sparkle' };
 
 // name -> "sorted-core-tokens#seriesKey". Series 1 / no suffix both yield "".
 function sig(name) {
@@ -34,10 +36,18 @@ function sig(name) {
       i--;
     }
   }
-  toks = toks.filter((t) => t && !STOP.has(t));
+  toks = [...new Set(toks.filter((t) => t && !STOP.has(t)).map((t) => SYN[t] || t))];
   toks.sort();
   return toks.join('-') + '#' + s;
 }
+
+// Trap/item match: our "Dream Piercer (Undead Captain's Hat)" vs scl
+// "Undead Captain's Hat Trap". Returns the parenthetical's signature.
+const parenSig = (name) => {
+  const m = name.match(/\(([^)]+)\)/);
+  return m ? sig(m[1]) : null;
+};
+const coreCount = (s) => s.split('#')[0].split('-').filter(Boolean).length;
 
 // Group both sides by signature.
 const figBySig = new Map();
@@ -46,11 +56,15 @@ for (const f of figures) {
   (figBySig.get(k) || figBySig.set(k, []).get(k)).push(f);
 }
 const sclBySig = new Map();
+const sclByTrapSig = new Map(); // sig of scl name with a trailing "Trap" dropped
 for (const e of index) {
   const k = sig(e.name);
   if (!sclBySig.has(k)) sclBySig.set(k, e); // first wins
+  const tk = sig(e.name.replace(/\s+trap\s*$/i, ''));
+  if (tk !== k && !sclByTrapSig.has(tk)) sclByTrapSig.set(tk, e);
 }
 
+const matched = new Set();
 const matches = [];
 const ambiguous = [];
 for (const [k, figs] of figBySig) {
@@ -59,13 +73,31 @@ for (const [k, figs] of figBySig) {
   if (figs.length === 1) {
     const f = figs[0];
     matches.push({ name: f.name, key: `${f.charId}-${f.variantId}`, image: e.image, sclName: e.name });
+    matched.add(f);
   } else {
     ambiguous.push({ sig: k, figures: figs.map((f) => f.name), sclName: e.name, image: e.image });
   }
 }
 
+// Fallback: traps/items whose name is "<fancy> (<Element> <Type>)" match the
+// scl "<Element> <Type> Trap" page via the parenthetical (≥2 tokens, 1:1 only).
+const figByParen = new Map();
+for (const f of figures) {
+  if (matched.has(f)) continue;
+  const ps = parenSig(f.name);
+  if (ps && coreCount(ps) >= 2) (figByParen.get(ps) || figByParen.set(ps, []).get(ps)).push(f);
+}
+for (const [ps, figs] of figByParen) {
+  if (figs.length !== 1) continue; // only unambiguous
+  const e = sclByTrapSig.get(ps) || sclBySig.get(ps);
+  if (!e) continue;
+  const f = figs[0];
+  matches.push({ name: f.name, key: `${f.charId}-${f.variantId}`, image: e.image, sclName: e.name });
+  matched.add(f);
+}
+
 writeFileSync(join(here, 'scl-matches.json'), JSON.stringify(matches, null, 2));
-const unmatched = figures.filter((f) => !sclBySig.has(sig(f.name)));
+const unmatched = figures.filter((f) => !matched.has(f));
 console.log(`figures: ${figures.length}  |  scl entries: ${index.length}`);
 console.log(`confident 1:1 matches: ${matches.length}`);
 console.log(`ambiguous (multiple figures share a name signature): ${ambiguous.length}`);
@@ -107,6 +139,22 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const ctype = (b) => (b[0] === 0x89 ? 'image/png' : b[0] === 0xff ? 'image/jpeg' : 'application/octet-stream');
 const { createClient } = await import('@supabase/supabase-js');
 const supabase = createClient(url, skey, { auth: { persistSession: false } });
+
+// Skip keys already in the bucket (preserves manual picks) unless --force.
+if (!process.argv.includes('--force')) {
+  const existing = new Set();
+  let offset = 0;
+  for (;;) {
+    const { data, error } = await supabase.storage.from('figure-images').list('', { limit: 1000, offset });
+    if (error || !data?.length) break;
+    for (const o of data) existing.add(o.name);
+    if (data.length < 1000) break;
+    offset += data.length;
+  }
+  const before = pool.length;
+  pool = pool.filter((m) => !existing.has(`${m.key}.jpg`));
+  console.log(`skip-existing: ${before - pool.length} already in bucket; uploading ${pool.length} new.`);
+}
 
 let done = 0;
 let failed = 0;

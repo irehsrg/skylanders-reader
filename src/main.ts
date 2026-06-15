@@ -1,34 +1,48 @@
 import './style.css';
 import { Portal, PortalWriteUnsupportedError, SLOT_COUNT, type SlotEvent } from './hid/portal';
-import { lookupFigure, parseIdentity, figureCount } from './figures/db';
+import { lookupFigure, parseIdentity, figureCount, visibleFigures } from './figures/db';
+import { figureThumb } from './figures/art';
 import { HelperClient, type HelperFigure, type InspectResult, type EditResult } from './helper-client';
 import { Collection, type ScanInput } from './collection/collection';
 import { CatalogView } from './catalog';
 import { initAuth } from './auth-ui';
 import { makeCloudAdapter, fullSync } from './cloud/sync';
 
-const connectBtn = document.querySelector<HTMLButtonElement>('#connect')!;
-const portalStatus = document.querySelector<HTMLSpanElement>('#portal-status')!;
-const unsupportedMsg = document.querySelector<HTMLParagraphElement>('#unsupported')!;
-const slotsEl = document.querySelector<HTMLDivElement>('#slots')!;
-const figuresEl = document.querySelector<HTMLDivElement>('#figures')!;
-const figuresEmpty = document.querySelector<HTMLParagraphElement>('#figures-empty')!;
-const logEl = document.querySelector<HTMLPreElement>('#log')!;
-const collectionSummaryEl = document.querySelector<HTMLParagraphElement>('#collection-summary')!;
-const completenessEl = document.querySelector<HTMLDivElement>('#completeness')!;
-const collectionEl = document.querySelector<HTMLDivElement>('#collection')!;
-const exportBtn = document.querySelector<HTMLButtonElement>('#export')!;
-const importBtn = document.querySelector<HTMLButtonElement>('#import')!;
-const importFile = document.querySelector<HTMLInputElement>('#import-file')!;
-const cleanupBtn = document.querySelector<HTMLButtonElement>('#cleanup')!;
+const $ = <T extends HTMLElement>(sel: string) => document.querySelector<T>(sel)!;
+
+const connectBtn = $<HTMLButtonElement>('#connect');
+const portalStatus = $<HTMLSpanElement>('#portal-status');
+const unsupportedMsg = $<HTMLParagraphElement>('#unsupported');
+const slotsEl = $<HTMLDivElement>('#slots');
+const slotsSection = $<HTMLElement>('#slots-section');
+const figuresEl = $<HTMLDivElement>('#figures');
+const figuresEmpty = $<HTMLParagraphElement>('#figures-empty');
+const logEl = $<HTMLPreElement>('#log');
+const completenessEl = $<HTMLDivElement>('#completeness');
+const collectionEl = $<HTMLDivElement>('#collection');
+const exportBtn = $<HTMLButtonElement>('#export');
+const importBtn = $<HTMLButtonElement>('#import');
+const importFile = $<HTMLInputElement>('#import-file');
+const cleanupBtn = $<HTMLButtonElement>('#cleanup');
+const welcomeEl = $<HTMLElement>('#welcome');
+const dashboardEl = $<HTMLElement>('#dashboard');
+const dashPct = $<HTMLSpanElement>('#dash-pct');
+const dashRing = $<HTMLDivElement>('.dash-ring');
+const dashOwned = $<HTMLElement>('#dash-owned');
+const dashTotal = $<HTMLElement>('#dash-total');
+const dashCopies = $<HTMLElement>('#dash-copies');
+const welcomeSignin = $<HTMLButtonElement>('#welcome-signin');
+const welcomeBrowse = $<HTMLButtonElement>('#welcome-browse');
+const welcomeShowcase = $<HTMLDivElement>('#welcome-showcase');
 
 const collection = new Collection();
 const catalog = new CatalogView(collection, () => renderCollection());
-const figureDetailsEl = document.querySelector<HTMLDivElement>('#figure-details')!;
+const figureDetailsEl = $<HTMLDivElement>('#figure-details');
 
 let helperClient: HelperClient | null = null;
 let portal: Portal | null = null;
 let detectOnly = false;
+let signedIn = false;
 // In helper mode, figures are keyed by slot so removals update the grid.
 const slotFigures = new Map<number, { name: string; meta: string; unknown: boolean }>();
 let helperMode = false;
@@ -293,20 +307,26 @@ async function recordScan(scan: ScanInput) {
 function renderCollection() {
   const stats = collection.stats();
 
+  // Empty → welcome/hero; otherwise → dashboard.
   if (stats.ownedFigures === 0) {
-    collectionSummaryEl.textContent = 'No figures collected yet. Scan a figure to start.';
-    completenessEl.replaceChildren();
-    collectionEl.replaceChildren();
+    welcomeEl.hidden = false;
+    dashboardEl.hidden = true;
+    cleanupBtn.hidden = true;
     return;
   }
+  welcomeEl.hidden = true;
+  dashboardEl.hidden = false;
 
+  dashPct.textContent = `${stats.overallPct}%`;
+  dashRing.style.setProperty('--pct', String(stats.overallPct));
+  dashOwned.textContent = String(stats.ownedFigures);
+  dashTotal.textContent = String(stats.catalogTotal);
   const dupes = stats.totalCopies - stats.ownedFigures;
-  collectionSummaryEl.innerHTML =
-    `<strong>${stats.ownedFigures}</strong> of ${stats.catalogTotal} figures ` +
-    `(${stats.overallPct}%) · ${stats.totalCopies} physical ${stats.totalCopies === 1 ? 'copy' : 'copies'}` +
+  dashCopies.textContent =
+    `${stats.totalCopies} physical ${stats.totalCopies === 1 ? 'copy' : 'copies'}` +
     (dupes > 0 ? ` · ${dupes} duplicate${dupes === 1 ? '' : 's'}` : '');
 
-  // Completeness bars for sections the user has at least one figure in.
+  // Completeness bars for sections the user owns at least one figure in.
   completenessEl.replaceChildren();
   for (const s of stats.bySection) {
     if (s.owned === 0) continue;
@@ -328,7 +348,7 @@ function renderCollection() {
     completenessEl.appendChild(row);
   }
 
-  // Owned figures grouped by section.
+  // Owned figures as an image grid, grouped by section.
   collectionEl.replaceChildren();
   const entries = collection.ownedList().sort((a, b) => a.name.localeCompare(b.name));
   const bySection = new Map<string, typeof entries>();
@@ -340,34 +360,24 @@ function renderCollection() {
   let unrecognized = 0;
   for (const [section, list] of bySection) {
     const title = document.createElement('div');
-    title.className = 'collection-group-title';
+    title.className = 'group-title';
     title.textContent = section || 'Other';
     collectionEl.appendChild(title);
     for (const e of list) {
       const recognized = lookupFigure(e.charId, e.variantId).figure !== null;
       if (!recognized) unrecognized++;
       const card = document.createElement('div');
-      card.className = 'owned-card';
-      const left = document.createElement('div');
-      const name = document.createElement('div');
-      name.className = 'oc-name';
-      name.textContent = recognized ? e.name : `${e.name} (unrecognized)`;
-      const sec = document.createElement('div');
-      sec.className = 'oc-section';
-      sec.textContent = `char ${e.charId} · variant ${e.variantId}`;
-      left.append(name, sec);
-      card.appendChild(left);
-      const right = document.createElement('div');
-      right.className = 'oc-actions';
+      card.className = 'fig-card';
+      card.appendChild(figureThumb({ name: e.name, charId: e.charId, variantId: e.variantId }));
       if (e.copies.length > 1) {
         const badge = document.createElement('span');
-        badge.className = 'dupe-badge';
+        badge.className = 'fig-badge';
         badge.textContent = `×${e.copies.length}`;
-        right.appendChild(badge);
+        card.appendChild(badge);
       }
       const remove = document.createElement('button');
       remove.type = 'button';
-      remove.className = 'oc-remove';
+      remove.className = 'fig-remove';
       remove.title = 'Remove from collection';
       remove.textContent = '✕';
       remove.addEventListener('click', async () => {
@@ -375,20 +385,30 @@ function renderCollection() {
         renderCollection();
         catalog.render();
       });
-      right.appendChild(remove);
-      card.appendChild(right);
+      card.appendChild(remove);
+      const body = document.createElement('div');
+      body.className = 'fig-body';
+      const nm = document.createElement('div');
+      nm.className = 'fig-name';
+      nm.textContent = recognized ? e.name : `${e.name} (unrecognized)`;
+      body.appendChild(nm);
+      card.appendChild(body);
       collectionEl.appendChild(card);
     }
   }
 
-  // Offer one-click cleanup of entries that don't match any catalogue figure
-  // (e.g. mis-read variant IDs from before a parser fix).
-  if (unrecognized > 0) {
-    cleanupBtn.hidden = false;
-    cleanupBtn.textContent = `Clean up ${unrecognized} unrecognized`;
-  } else {
-    cleanupBtn.hidden = true;
-  }
+  // One-click cleanup of entries that don't match any catalogue figure.
+  cleanupBtn.hidden = unrecognized === 0;
+  if (unrecognized > 0) cleanupBtn.textContent = `Clean up ${unrecognized}`;
+}
+
+/** Strip of base-figure images on the welcome screen. */
+function renderShowcase() {
+  const bases = visibleFigures.filter((f) => f.variantId === 0);
+  const step = Math.max(1, Math.floor(bases.length / 18));
+  const picks: typeof bases = [];
+  for (let i = 0; i < bases.length && picks.length < 18; i += step) picks.push(bases[i]);
+  welcomeShowcase.replaceChildren(...picks.map((f) => figureThumb(f)));
 }
 
 async function cleanupUnrecognized() {
@@ -424,16 +444,25 @@ async function importCollection(file: File) {
 // ---- tabs ------------------------------------------------------------------
 
 const tabPanels: Record<string, HTMLElement> = {
-  scanner: document.querySelector<HTMLElement>('#tab-scanner')!,
-  catalog: document.querySelector<HTMLElement>('#tab-catalog')!,
+  collection: $<HTMLElement>('#tab-collection'),
+  catalog: $<HTMLElement>('#tab-catalog'),
+  scan: $<HTMLElement>('#tab-scan'),
 };
+function activateTab(target: string) {
+  document
+    .querySelectorAll<HTMLButtonElement>('.tab')
+    .forEach((b) => b.classList.toggle('active', b.dataset.tab === target));
+  for (const [name, panel] of Object.entries(tabPanels)) panel.hidden = name !== target;
+}
 document.querySelectorAll<HTMLButtonElement>('.tab').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    const target = btn.dataset.tab!;
-    document.querySelectorAll('.tab').forEach((b) => b.classList.toggle('active', b === btn));
-    for (const [name, panel] of Object.entries(tabPanels)) panel.hidden = name !== target;
-  });
+  btn.addEventListener('click', () => activateTab(btn.dataset.tab!));
 });
+
+function updateWelcomeCta() {
+  welcomeSignin.hidden = signedIn;
+}
+welcomeBrowse.addEventListener('click', () => activateTab('catalog'));
+welcomeSignin.addEventListener('click', () => $<HTMLButtonElement>('#signin-btn').click());
 
 exportBtn.addEventListener('click', exportCollection);
 importBtn.addEventListener('click', () => importFile.click());
@@ -453,6 +482,7 @@ const helperEvents = {
     helperMode = true;
     connectBtn.hidden = true;
     unsupportedMsg.hidden = true;
+    slotsSection.hidden = false;
     portalStatus.textContent = `Connected: ${info.product} (via helper)`;
     portalStatus.classList.add('connected');
   },
@@ -553,6 +583,7 @@ async function startPortal(p: Portal) {
   portalStatus.textContent = `Connected: ${p.productName}`;
   portalStatus.classList.add('connected');
   connectBtn.disabled = true;
+  slotsSection.hidden = false;
 }
 
 function onDisconnected() {
@@ -600,6 +631,7 @@ connectBtn.addEventListener('click', async () => {
 
 async function init() {
   log(`Figure database loaded: ${figureCount} figures.`);
+  renderShowcase();
   await collection.load();
   renderCollection();
   catalog.render();
@@ -611,6 +643,8 @@ async function init() {
   // then SIGNED_IN), so sync only once per user.
   let syncedUser: string | null = null;
   initAuth(async (user) => {
+    signedIn = Boolean(user);
+    updateWelcomeCta();
     if (!user) {
       collection.setCloud(null);
       syncedUser = null;
