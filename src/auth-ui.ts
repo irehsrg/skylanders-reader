@@ -75,5 +75,10 @@ export function initAuth(onUser: (user: User | null) => void): void {
     emailLabel.textContent = user?.email ?? '';
     if (signedIn && dialog.open) dialog.close();
     onUser(user);
+    // Supabase leaves the consumed OAuth tokens (or a bare '#') in the URL after
+    // a redirect sign-in; tidy it up once the session has been parsed.
+    if (location.hash) {
+      history.replaceState(null, '', location.pathname + location.search);
+    }
   });
 }
