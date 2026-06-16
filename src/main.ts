@@ -294,6 +294,10 @@ function downloadBackup(r: InspectResult, name: string) {
 
 async function recordScan(scan: ScanInput) {
   try {
+    // Canonicalize to the matched catalogue entry so aliased tags (e.g. a SWAP
+    // figure's two halves) record against the single combined figure.
+    const canon = lookupFigure(scan.charId, scan.variantId).figure;
+    if (canon) scan = { ...scan, charId: canon.charId, variantId: canon.variantId };
     const result = await collection.recordScan(scan);
     if (result.isNewFigure) log(`Added to collection: ${scan.name}`);
     else if (result.isNewCopy) log(`Duplicate copy of ${scan.name} (now ${result.entry.copies.length}).`);

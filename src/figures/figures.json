@@ -2460,334 +2460,186 @@
   "section": "Imaginators"
  },
  {
-  "name": "Jet",
+  "name": "Boom Jet",
   "charId": 1000,
   "variantId": 8192,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2000
  },
  {
-  "name": "Ranger",
+  "name": "Free Ranger",
   "charId": 1001,
   "variantId": 8192,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2001
  },
  {
-  "name": "Legendary Ranger",
+  "name": "Legendary Free Ranger",
   "charId": 1001,
   "variantId": 9219,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2001
  },
  {
-  "name": "Rouser",
+  "name": "Rubble Rouser",
   "charId": 1002,
   "variantId": 8192,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2002
  },
  {
-  "name": "Stone",
+  "name": "Doom Stone",
   "charId": 1003,
   "variantId": 8192,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2003
  },
  {
-  "name": "Zone",
+  "name": "Blast Zone",
   "charId": 1004,
   "variantId": 8192,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2004
  },
  {
-  "name": "Dark Zone",
+  "name": "Dark Blast Zone",
   "charId": 1004,
   "variantId": 9218,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2004
  },
  {
-  "name": "Kraken",
+  "name": "Fire Kraken",
   "charId": 1005,
   "variantId": 8192,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2005
  },
  {
-  "name": "Kraken (Gold)",
+  "name": "Gold Fire Kraken",
   "charId": 1005,
   "variantId": 8196,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2005
  },
  {
-  "name": "Jade Kraken",
+  "name": "Jade Fire Kraken",
   "charId": 1005,
   "variantId": 9218,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2005
  },
  {
-  "name": "Bomb",
+  "name": "Stink Bomb",
   "charId": 1006,
   "variantId": 8192,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2006
  },
  {
-  "name": "Drilla",
+  "name": "Grilla Drilla",
   "charId": 1007,
   "variantId": 8192,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2007
  },
  {
-  "name": "Loop",
+  "name": "Hoot Loop",
   "charId": 1008,
   "variantId": 8192,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2008
  },
  {
-  "name": "Enchanted Loop",
+  "name": "Enchanted Hoot Loop",
   "charId": 1008,
   "variantId": 9218,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2008
  },
  {
-  "name": "Shadow",
+  "name": "Trap Shadow",
   "charId": 1009,
   "variantId": 8192,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2009
  },
  {
-  "name": "Charge",
+  "name": "Magna Charge",
   "charId": 1010,
   "variantId": 8192,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2010
  },
  {
-  "name": "Nitro Charge",
+  "name": "Nitro Magna Charge",
   "charId": 1010,
   "variantId": 9218,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2010
  },
  {
-  "name": "Rise",
+  "name": "Spy Rise",
   "charId": 1011,
   "variantId": 8192,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2011
  },
  {
-  "name": "Shift",
+  "name": "Night Shift",
   "charId": 1012,
   "variantId": 8192,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2012
  },
  {
-  "name": "Legendary Shift",
+  "name": "Legendary Night Shift",
   "charId": 1012,
   "variantId": 9219,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2012
  },
  {
-  "name": "Shake",
+  "name": "Rattle Shake",
   "charId": 1013,
   "variantId": 8192,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2013
  },
  {
-  "name": "Quickdraw Shake",
+  "name": "Quick Draw Rattle Shake",
   "charId": 1013,
   "variantId": 9218,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2013
  },
  {
-  "name": "Blade",
+  "name": "Freeze Blade",
   "charId": 1014,
   "variantId": 8192,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2014
  },
  {
-  "name": "Nitro Blade",
+  "name": "Nitro Freeze Blade",
   "charId": 1014,
   "variantId": 9218,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2014
  },
  {
-  "name": "Buckler",
+  "name": "Wash Buckler",
   "charId": 1015,
   "variantId": 8192,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2015
  },
  {
-  "name": "Dark Buckler",
+  "name": "Dark Wash Buckler",
   "charId": 1015,
   "variantId": 9218,
-  "section": "SWAP Force"
- },
- {
-  "name": "Boom",
-  "charId": 2000,
-  "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Free",
-  "charId": 2001,
-  "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Legendary Free",
-  "charId": 2001,
-  "variantId": 9219,
-  "section": "SWAP Force"
- },
- {
-  "name": "Rubble",
-  "charId": 2002,
-  "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Doom",
-  "charId": 2003,
-  "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Blast",
-  "charId": 2004,
-  "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Dark Blast",
-  "charId": 2004,
-  "variantId": 9218,
-  "section": "SWAP Force"
- },
- {
-  "name": "Fire",
-  "charId": 2005,
-  "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Fire (Gold)",
-  "charId": 2005,
-  "variantId": 8196,
-  "section": "SWAP Force"
- },
- {
-  "name": "Jade Fire",
-  "charId": 2005,
-  "variantId": 9218,
-  "section": "SWAP Force"
- },
- {
-  "name": "Stink",
-  "charId": 2006,
-  "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Stink (Silver)",
-  "charId": 2006,
-  "variantId": 8214,
-  "section": "SWAP Force"
- },
- {
-  "name": "Grilla",
-  "charId": 2007,
-  "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Hoot",
-  "charId": 2008,
-  "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Enchanted Hoot",
-  "charId": 2008,
-  "variantId": 9218,
-  "section": "SWAP Force"
- },
- {
-  "name": "Trap",
-  "charId": 2009,
-  "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Trap (Bronze?)",
-  "charId": 2009,
-  "variantId": 8214,
-  "section": "SWAP Force"
- },
- {
-  "name": "Magna",
-  "charId": 2010,
-  "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Nitro Magna",
-  "charId": 2010,
-  "variantId": 9218,
-  "section": "SWAP Force"
- },
- {
-  "name": "Spy",
-  "charId": 2011,
-  "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Night",
-  "charId": 2012,
-  "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Legendary Night",
-  "charId": 2012,
-  "variantId": 9219,
-  "section": "SWAP Force"
- },
- {
-  "name": "Rattle",
-  "charId": 2013,
-  "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Quickdraw Rattle",
-  "charId": 2013,
-  "variantId": 9218,
-  "section": "SWAP Force"
- },
- {
-  "name": "Freeze",
-  "charId": 2014,
-  "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Nitro Freeze",
-  "charId": 2014,
-  "variantId": 9218,
-  "section": "SWAP Force"
- },
- {
-  "name": "Wash",
-  "charId": 2015,
-  "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Wash (Color Shift)",
-  "charId": 2015,
-  "variantId": 8216,
-  "section": "SWAP Force"
- },
- {
-  "name": "Dark Wash",
-  "charId": 2015,
-  "variantId": 9218,
-  "section": "SWAP Force"
+  "section": "SWAP Force",
+  "altCharId": 2015
  },
  {
   "name": "Scratch",

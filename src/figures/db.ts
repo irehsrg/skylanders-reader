@@ -8,6 +8,13 @@ export interface Figure {
   charId: number;
   variantId: number;
   section: string;
+  /**
+   * Secondary charId that also identifies this figure. SWAP Force figures have
+   * two tags (top + bottom) sharing one variantId; we keep a single combined
+   * entry (keyed on one half) and alias the other half's charId here so a scan
+   * of either tag resolves to it.
+   */
+  altCharId?: number;
 }
 
 const figures = rawFigures as Figure[];
@@ -31,11 +38,15 @@ export const visibleFigures: readonly Figure[] = figures.filter((f) => !isHidden
 
 const byKey = new Map<number, Figure>();
 const byCharId = new Map<number, Figure[]>();
-for (const f of figures) {
-  byKey.set((f.charId << 16) | f.variantId, f);
-  let list = byCharId.get(f.charId);
-  if (!list) byCharId.set(f.charId, (list = []));
+function indexCharId(charId: number, variantId: number, f: Figure) {
+  byKey.set((charId << 16) | variantId, f);
+  let list = byCharId.get(charId);
+  if (!list) byCharId.set(charId, (list = []));
   list.push(f);
+}
+for (const f of figures) {
+  indexCharId(f.charId, f.variantId, f);
+  if (f.altCharId != null) indexCharId(f.altCharId, f.variantId, f);
 }
 
 export interface LookupResult {
