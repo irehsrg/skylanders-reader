@@ -504,12 +504,18 @@ const helperEvents = {
   },
   status: renderSlots,
   figure: (f: HelperFigure) => {
-    // Swap Force figures present a SECOND tag — the swappable base half (e.g.
-    // char 2004 for Blast Zone) — whose id isn't a catalogue figure. Ignore
-    // unrecognized tags entirely: don't show them on the portal or record them.
     const rec = lookupFigure(f.charId, f.variantId);
-    if (!rec.figure && !rec.baseMatch) {
-      log(`Ignoring unrecognized tag on slot ${f.slot + 1} (char ${f.charId}) — likely a Swap Force base.`);
+    const fig = rec.figure ?? rec.baseMatch;
+    // Truly unrecognized tag → ignore (don't show or record).
+    if (!fig) {
+      log(`Ignoring unrecognized tag on slot ${f.slot + 1} (char ${f.charId}).`);
+      return;
+    }
+    // Swap Force figures have two tags. The second resolves (via altCharId) to a
+    // figure whose primary charId differs from the scanned one — the primary
+    // half already represents the figure, so skip this secondary half entirely.
+    if (fig.charId !== f.charId) {
+      log(`Slot ${f.slot + 1}: second tag of ${fig.name} — already counted via its main tag.`);
       return;
     }
     slotFigures.set(f.slot, {
