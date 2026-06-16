@@ -883,5 +883,8 @@ footer {
   .tab {
     flex: 1;
     text-align: center;
+    padding: 8px 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
   }
 }
