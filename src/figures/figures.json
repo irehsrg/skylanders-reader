@@ -2930,12 +2930,6 @@
   "section": "Vicarious Visions Items/Vehicles"
  },
  {
-  "name": "Instant Hot Streak",
-  "charId": 3224,
-  "variantId": 17423,
-  "section": "Vicarious Visions Items/Vehicles"
- },
- {
   "name": "Golden Hot Streak",
   "charId": 3224,
   "variantId": 17438,
@@ -2972,12 +2966,6 @@
   "section": "Vicarious Visions Items/Vehicles"
  },
  {
-  "name": "Instant Stealth Stinger",
-  "charId": 3228,
-  "variantId": 17423,
-  "section": "Vicarious Visions Items/Vehicles"
- },
- {
   "name": "Dive Bomber",
   "charId": 3231,
   "variantId": 16384,
@@ -2990,21 +2978,9 @@
   "section": "Vicarious Visions Items/Vehicles"
  },
  {
-  "name": "Instant Dive Bomber",
-  "charId": 3231,
-  "variantId": 17423,
-  "section": "Vicarious Visions Items/Vehicles"
- },
- {
   "name": "Sky Slicer",
   "charId": 3232,
   "variantId": 16384,
-  "section": "Vicarious Visions Items/Vehicles"
- },
- {
-  "name": "Instant Sky Slicer (Imaginators)",
-  "charId": 3232,
-  "variantId": 17423,
   "section": "Vicarious Visions Items/Vehicles"
  },
  {
@@ -3065,12 +3041,6 @@
   "name": "Dark Sea Shadow",
   "charId": 3237,
   "variantId": 17410,
-  "section": "Vicarious Visions Items/Vehicles"
- },
- {
-  "name": "Instant Sea Shadow (Imaginators)",
-  "charId": 3237,
-  "variantId": 17423,
   "section": "Vicarious Visions Items/Vehicles"
  },
  {
@@ -3212,12 +3182,6 @@
   "section": "SuperChargers"
  },
  {
-  "name": "Instant Spitfire",
-  "charId": 3412,
-  "variantId": 17679,
-  "section": "SuperChargers"
- },
- {
   "name": "Hurricane Jet-Vac",
   "charId": 3413,
   "variantId": 16640,
@@ -3251,12 +3215,6 @@
   "name": "Dark Super Shot Stealth Elf",
   "charId": 3415,
   "variantId": 17666,
-  "section": "SuperChargers"
- },
- {
-  "name": "Instant Super Shot Stealth Elf",
-  "charId": 3415,
-  "variantId": 17679,
   "section": "SuperChargers"
  },
  {
@@ -3347,12 +3305,6 @@
   "name": "Missile-Tow Dive-Clops",
   "charId": 3425,
   "variantId": 17678,
-  "section": "SuperChargers"
- },
- {
-  "name": "Instant Dive-Clops",
-  "charId": 3425,
-  "variantId": 17679,
   "section": "SuperChargers"
  },
  {
