@@ -302,7 +302,7 @@ button:disabled {
 .dash-ring::before {
   content: '';
   position: absolute;
-  inset: 10px;
+  inset: 9px;
   border-radius: 50%;
   background: var(--panel);
 }
@@ -310,14 +310,7 @@ button:disabled {
   position: relative;
   font-size: 1.5rem;
   font-weight: 800;
-}
-.dash-pct-label {
-  position: relative;
-  font-size: 0.68rem;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-top: -2px;
+  line-height: 1;
 }
 .dash-meta {
   display: flex;
