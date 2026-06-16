@@ -1488,12 +1488,6 @@
   "section": "Toys For Bob Expansions"
  },
  {
-  "name": "Midnight Museum (non-LightCore)",
-  "charId": 308,
-  "variantId": 12288,
-  "section": "Toys For Bob Expansions"
- },
- {
   "name": "Midnight Museum",
   "charId": 308,
   "variantId": 12806,
@@ -1644,12 +1638,6 @@
   "section": "Trap Team"
  },
  {
-  "name": "Instant Snap Shot",
-  "charId": 462,
-  "variantId": 13327,
-  "section": "Trap Team"
- },
- {
   "name": "Lob-Star",
   "charId": 463,
   "variantId": 12288,
@@ -1773,12 +1761,6 @@
   "name": "Dark Food Fight",
   "charId": 476,
   "variantId": 13314,
-  "section": "Trap Team"
- },
- {
-  "name": "Instant Food Fight",
-  "charId": 476,
-  "variantId": 13327,
   "section": "Trap Team"
  },
  {
@@ -2124,7 +2106,7 @@
   "section": "Imaginators"
  },
  {
-  "name": "Taw Kwon Crow",
+  "name": "Tae Kwon Crow",
   "charId": 612,
   "variantId": 20480,
   "section": "Imaginators"
@@ -2304,48 +2286,6 @@
   "section": "Imaginators"
  },
  {
-  "name": "Create Your Own Skylander (Card)",
-  "charId": 661,
-  "variantId": 20481,
-  "section": "Imaginators"
- },
- {
-  "name": "Create Your Own Skylander (Foil Card)",
-  "charId": 661,
-  "variantId": 20482,
-  "section": "Imaginators"
- },
- {
-  "name": "Create Your Own Skylander (Special Card)",
-  "charId": 661,
-  "variantId": 20483,
-  "section": "Imaginators"
- },
- {
-  "name": "Create Your Own Skylander (3D Print)",
-  "charId": 661,
-  "variantId": 20484,
-  "section": "Imaginators"
- },
- {
-  "name": "Create Your Own Skylander (Medium 3D Print)",
-  "charId": 661,
-  "variantId": 20485,
-  "section": "Imaginators"
- },
- {
-  "name": "Create Your Own Skylander (Large 3D Print)",
-  "charId": 661,
-  "variantId": 20486,
-  "section": "Imaginators"
- },
- {
-  "name": "Create Your Own Skylander (Unique 3D Print)",
-  "charId": 661,
-  "variantId": 20487,
-  "section": "Imaginators"
- },
- {
   "name": "Magic Creation Crystal (Pyramid)",
   "charId": 680,
   "variantId": 20996,
@@ -2520,12 +2460,6 @@
   "section": "Imaginators"
  },
  {
-  "name": "Goldie",
-  "charId": 699,
-  "variantId": 20480,
-  "section": "Imaginators"
- },
- {
   "name": "Jet",
   "charId": 1000,
   "variantId": 8192,
@@ -2553,12 +2487,6 @@
   "name": "Stone",
   "charId": 1003,
   "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Stone (Bronze?)",
-  "charId": 1003,
-  "variantId": 8214,
   "section": "SWAP Force"
  },
  {
@@ -2598,12 +2526,6 @@
   "section": "SWAP Force"
  },
  {
-  "name": "Bomb (Gold?)",
-  "charId": 1006,
-  "variantId": 8214,
-  "section": "SWAP Force"
- },
- {
   "name": "Drilla",
   "charId": 1007,
   "variantId": 8192,
@@ -2625,12 +2547,6 @@
   "name": "Shadow",
   "charId": 1009,
   "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Shadow (Silver?)",
-  "charId": 1009,
-  "variantId": 8214,
   "section": "SWAP Force"
  },
  {
@@ -2694,12 +2610,6 @@
   "section": "SWAP Force"
  },
  {
-  "name": "Buckler (Color Shift)",
-  "charId": 1015,
-  "variantId": 8216,
-  "section": "SWAP Force"
- },
- {
   "name": "Dark Buckler",
   "charId": 1015,
   "variantId": 9218,
@@ -2733,12 +2643,6 @@
   "name": "Doom",
   "charId": 2003,
   "variantId": 8192,
-  "section": "SWAP Force"
- },
- {
-  "name": "Doom (Gold?)",
-  "charId": 2003,
-  "variantId": 8214,
   "section": "SWAP Force"
  },
  {
