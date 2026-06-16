@@ -132,6 +132,13 @@
           </div>
           <p id="catalog-count" class="muted"></p>
           <div id="catalog-grid" class="catalog-grid"></div>
+          <p class="suggest">
+            Missing a figure?
+            <a
+              href="mailto:skylanderreader@gmail.com?subject=Missing%20Skylander%20suggestion&body=Figure%20name%3A%0AGame%3A%0AVariant%20or%20notes%3A"
+              >Suggest it →</a
+            >
+          </p>
         </div>
 
         <!-- ===================== SCAN & EDIT ===================== -->
@@ -140,11 +147,28 @@
             <span id="portal-status" class="portal-status">No portal connected</span>
             <button id="connect" type="button" class="ghost sm">Connect portal</button>
           </div>
-          <p id="scan-help" class="scan-help" hidden>
-            <strong>To scan or edit figures,</strong> run the free <strong>Portal Station</strong> app — it talks
-            to your USB portal (browsers can’t reach toy portals directly) — then open it at
-            <code>http://localhost:8777</code>. Browsing and your collection work right here without it.
-          </p>
+          <div id="scan-help" class="scan-cta" hidden>
+            <h3>Scan &amp; edit your figures</h3>
+            <p>
+              Portals connect over USB, which browsers can’t read directly — so scanning runs through a small
+              free desktop app, the <strong>Portal Station</strong>. Browsing and your collection work right
+              here without it.
+            </p>
+            <a
+              class="download-btn"
+              href="https://github.com/irehsrg/skylanders-reader/releases/latest/download/portal-station-win-x64.zip"
+              >Download Portal Station (Windows)</a
+            >
+            <ol class="scan-steps">
+              <li>Unzip it, then plug in your Portal of Power.</li>
+              <li>Double-click <strong>Start Portal.bat</strong>.</li>
+              <li>It opens <code>http://localhost:8777</code> — scan from there.</li>
+            </ol>
+            <p class="muted">
+              Windows may warn “Windows protected your PC” (the app isn’t code-signed) — click
+              <strong>More info → Run anyway</strong>. It’s open source.
+            </p>
+          </div>
           <p id="unsupported" class="unsupported" hidden></p>
 
           <section id="slots-section" hidden>

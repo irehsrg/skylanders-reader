@@ -691,7 +691,7 @@ async function init() {
   helperClient = new HelperClient(helperEvents);
   if (await helperClient.connect()) return;
   log('No local portal helper found — browse mode. Run the Portal Station to scan.');
-  document.querySelector<HTMLParagraphElement>('#scan-help')!.hidden = false;
+  document.querySelector<HTMLElement>('#scan-help')!.hidden = false;
 
   if (!Portal.isSupported()) {
     unsupportedMsg.hidden = false;

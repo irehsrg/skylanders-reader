@@ -568,6 +568,50 @@ img.figure-art {
 .scan-help strong {
   color: var(--text);
 }
+.scan-cta {
+  margin-top: 12px;
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--panel);
+}
+.scan-cta h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+.scan-cta p {
+  color: var(--muted);
+  line-height: 1.55;
+  margin: 0 0 12px;
+}
+.download-btn {
+  display: inline-block;
+  background: linear-gradient(180deg, var(--accent2), var(--accent));
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 11px 20px;
+  border-radius: 9px;
+  box-shadow: 0 6px 20px -8px var(--accent);
+}
+.download-btn:hover {
+  filter: brightness(1.1);
+}
+.scan-steps {
+  margin: 14px 0 4px;
+  padding-left: 20px;
+  color: var(--text);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.suggest {
+  margin-top: 18px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.suggest a {
+  color: var(--accent2);
+}
 .unsupported {
   border: 1px solid var(--warn);
   color: var(--warn);
