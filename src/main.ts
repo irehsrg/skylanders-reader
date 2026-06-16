@@ -510,7 +510,12 @@ const helperEvents = {
       meta: `${f.section || 'slot ' + (f.slot + 1)} · char ${f.charId} · variant ${f.variantId}`,
     });
     renderSlotFigures();
-    void recordScan(f);
+    // Only add figures we can identify. Swap Force figures present a second tag
+    // (the other swappable half) whose id isn't a catalogue figure — don't add
+    // it to the collection as "Unknown".
+    const rec = lookupFigure(f.charId, f.variantId);
+    if (rec.figure || rec.baseMatch) void recordScan(f);
+    else log(`Unrecognized tag on slot ${f.slot + 1} (char ${f.charId}) — not added to collection.`);
   },
   removed: (slot: number) => {
     slotFigures.delete(slot);
