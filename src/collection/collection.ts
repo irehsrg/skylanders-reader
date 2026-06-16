@@ -10,6 +10,7 @@ import {
   wishlistGetAll,
   wishlistPut,
   wishlistDelete,
+  wishlistClear,
   type OwnedEntry,
   type WishlistEntry,
   type TagCopy,
@@ -79,6 +80,18 @@ export class Collection {
   /** Attach (or detach with null) a cloud write-through target. */
   setCloud(adapter: CloudAdapter | null): void {
     this.cloud = adapter;
+  }
+
+  /**
+   * Clear the on-device collection (in-memory + IndexedDB) only. Does NOT touch
+   * the cloud — used when switching/leaving an account so one user's local
+   * cache can't bleed into the next on a shared browser.
+   */
+  async clearLocal(): Promise<void> {
+    this.owned.clear();
+    this.wishlist.clear();
+    await ownedClear();
+    await wishlistClear();
   }
 
   async load(): Promise<void> {

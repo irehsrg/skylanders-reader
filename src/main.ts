@@ -649,12 +649,25 @@ async function init() {
   initAuth(async (user) => {
     signedIn = Boolean(user);
     updateWelcomeCta();
+    const newId = user?.id ?? null;
+
+    // Leaving a signed-in account (sign-out OR switching accounts) → drop this
+    // device's local cache so it can't merge into the next account. We do NOT
+    // clear when going anonymous→signed-in (syncedUser is null there), so a
+    // collection built while logged out is still merged up on first sign-in.
+    if (syncedUser !== null && syncedUser !== newId) {
+      await collection.clearLocal();
+      renderCollection();
+      catalog.render();
+    }
+
     if (!user) {
       collection.setCloud(null);
       syncedUser = null;
-      log('Signed out — collection is local-only.');
+      log('Signed out — local copy cleared from this device (your collection is safe in the cloud).');
       return;
     }
+
     collection.setCloud(makeCloudAdapter());
     if (syncedUser === user.id) return;
     syncedUser = user.id;
