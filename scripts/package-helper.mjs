@@ -66,8 +66,10 @@ async function main() {
   await copyFile(process.execPath, join(out, 'node.exe'));
 
   console.log('Copying helper code + native modules…');
-  await copyFile(join(root, 'helper', 'server.mjs'), join(out, 'helper', 'server.mjs'));
-  await copyFile(join(root, 'helper', 'portal.mjs'), join(out, 'helper', 'portal.mjs'));
+  // Copy every helper module (server, portal, figure, crypto, …) so we never
+  // miss one as the helper grows.
+  const helperMjs = (await readdir(join(root, 'helper'))).filter((f) => f.endsWith('.mjs'));
+  for (const f of helperMjs) await copyFile(join(root, 'helper', f), join(out, 'helper', f));
   await cp(join(root, 'helper', 'node_modules'), join(out, 'helper', 'node_modules'), { recursive: true });
 
   console.log('Trimming non-Windows native binaries…');
