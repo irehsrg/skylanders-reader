@@ -2792,12 +2792,6 @@
   "section": "SWAP Force"
  },
  {
-  "name": "VVind-Up (Gear Head)",
-  "charId": 3011,
-  "variantId": 9220,
-  "section": "SWAP Force"
- },
- {
   "name": "Roller Brawl",
   "charId": 3012,
   "variantId": 8192,
@@ -2918,12 +2912,6 @@
   "section": "Vicarious Visions Items/Vehicles"
  },
  {
-  "name": "Hot Streak (Mobile Starter Pack)",
-  "charId": 3224,
-  "variantId": 16415,
-  "section": "Vicarious Visions Items/Vehicles"
- },
- {
   "name": "Dark Hot Streak",
   "charId": 3224,
   "variantId": 17410,
@@ -2984,13 +2972,13 @@
   "section": "Vicarious Visions Items/Vehicles"
  },
  {
-  "name": "Clown Crusier",
+  "name": "Clown Cruiser",
   "charId": 3233,
   "variantId": 16384,
   "section": "Vicarious Visions Items/Vehicles"
  },
  {
-  "name": "Dark Clown Crusier",
+  "name": "Dark Clown Cruiser",
   "charId": 3233,
   "variantId": 17410,
   "section": "Vicarious Visions Items/Vehicles"
@@ -3344,144 +3332,6 @@
   "section": "SuperChargers"
  },
  {
-  "name": "Stratosphere",
-  "charId": 3441,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Toaster Bomber",
-  "charId": 3470,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Storm Striker",
-  "charId": 3471,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Sky Scrambler",
-  "charId": 3472,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Sub Woofer",
-  "charId": 3473,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Threatpack Vehicle",
-  "charId": 3474,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Hood Sickle Vehicle",
-  "charId": 3475,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Bad Juju Vehicle",
-  "charId": 3476,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Steam Roller",
-  "charId": 3480,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Scale Biter",
-  "charId": 3481,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Spirit Dragster",
-  "charId": 3482,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Chompy Buster",
-  "charId": 3483,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Dr. Krankcase Vehicle",
-  "charId": 3484,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Pain-Yatta Vehicle",
-  "charId": 3485,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Broccoli Guy Vehicle",
-  "charId": 3486,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Wave Singer",
-  "charId": 3490,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "The Lil' Phantom Tide",
-  "charId": 3491,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Glitter Glider",
-  "charId": 3492,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Rune Slider",
-  "charId": 3493,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Chill Bill Vehicle",
-  "charId": 3494,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "The Gulper Vehicle",
-  "charId": 3495,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Noodles Vehicle",
-  "charId": 3496,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
-  "name": "Doom Jet",
-  "charId": 3497,
-  "variantId": 16384,
-  "section": "Villain Drivers/Vehicles"
- },
- {
   "name": "Sky Trophy",
   "charId": 3500,
   "variantId": 16384,
@@ -3504,23 +3354,5 @@
   "charId": 3503,
   "variantId": 16384,
   "section": "SuperChargers Trophies"
- },
- {
-  "name": "Fusion",
-  "charId": 4500,
-  "variantId": 20480,
-  "section": "Skylanders 2016"
- },
- {
-  "name": "Synergy",
-  "charId": 4501,
-  "variantId": 20480,
-  "section": "Skylanders 2016"
- },
- {
-  "name": "Unity",
-  "charId": 4502,
-  "variantId": 20480,
-  "section": "Skylanders 2016"
  }
 ]
