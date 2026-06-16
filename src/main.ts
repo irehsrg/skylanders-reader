@@ -7,6 +7,7 @@ import { Collection, type ScanInput } from './collection/collection';
 import { CatalogView } from './catalog';
 import { initAuth } from './auth-ui';
 import { makeCloudAdapter, fullSync } from './cloud/sync';
+import { cloudEnabled } from './cloud/supabase';
 
 const $ = <T extends HTMLElement>(sel: string) => document.querySelector<T>(sel)!;
 
@@ -641,50 +642,69 @@ async function init() {
   log(`Figure database loaded: ${figureCount} figures.`);
   renderShowcase();
   await collection.load();
-  renderCollection();
   catalog.render();
-  const owned = collection.stats().ownedFigures;
-  if (owned > 0) log(`Collection restored: ${owned} figures.`);
 
-  // Cloud accounts + sync (only active when Supabase is configured).
-  // Supabase fires the auth listener more than once per load (INITIAL_SESSION
-  // then SIGNED_IN), so sync only once per user.
+  if (!cloudEnabled) {
+    // No backend: local-only collection (no accounts to keep separate).
+    renderCollection();
+    const owned = collection.stats().ownedFigures;
+    if (owned > 0) log(`Collection restored: ${owned} figures.`);
+  } else {
+    // With a backend, the collection belongs to the signed-in account. Show the
+    // welcome immediately and let auth decide what to display — never flash a
+    // previous user's cached data.
+    welcomeEl.hidden = false;
+    dashboardEl.hidden = true;
+  }
+
+  // Cloud accounts + sync. The on-device cache is tagged with its owner so it
+  // is only ever shown to that account; signing out (or in as someone else)
+  // clears it. Supabase fires the listener more than once, so sync once per user.
   let syncedUser: string | null = null;
   initAuth(async (user) => {
     signedIn = Boolean(user);
     updateWelcomeCta();
     const newId = user?.id ?? null;
-
-    // Leaving a signed-in account (sign-out OR switching accounts) → drop this
-    // device's local cache so it can't merge into the next account. We do NOT
-    // clear when going anonymous→signed-in (syncedUser is null there), so a
-    // collection built while logged out is still merged up on first sign-in.
-    if (syncedUser !== null && syncedUser !== newId) {
-      await collection.clearLocal();
-      renderCollection();
-      catalog.render();
-    }
+    const owner = collection.getOwner();
 
     if (!user) {
+      // Signed out: never show an account's collection. Clear any cached data.
+      if (owner || collection.stats().ownedFigures > 0) {
+        await collection.clearLocal();
+        collection.setOwner(null);
+      }
       collection.setCloud(null);
       syncedUser = null;
-      log('Signed out — local copy cleared from this device (your collection is safe in the cloud).');
+      renderCollection();
+      catalog.render();
       return;
     }
 
     collection.setCloud(makeCloudAdapter());
-    if (syncedUser === user.id) return;
-    syncedUser = user.id;
+    // If the local cache belongs to a different account (or none), start clean
+    // for this user before pulling their cloud data.
+    if (owner !== newId) {
+      await collection.clearLocal();
+      collection.setOwner(newId);
+    }
+    if (syncedUser === newId) {
+      renderCollection();
+      catalog.render();
+      return;
+    }
+    syncedUser = newId;
+    renderCollection(); // show their cached data immediately (responsive)
     log(`Signed in as ${user.email ?? 'user'} — syncing…`);
     try {
       const r = await fullSync(collection);
+      collection.setOwner(newId);
       log(`Sync complete: ${r.owned} figures, ${r.wishlist} wishlist.`);
-      renderCollection();
-      catalog.render();
     } catch (err) {
       log(`Sync failed: ${(err as Error).message}`);
       syncedUser = null; // allow a retry on the next auth event
     }
+    renderCollection();
+    catalog.render();
   });
 
   // Prefer the local helper (full identification on any portal/OS).

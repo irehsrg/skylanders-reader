@@ -94,6 +94,15 @@ export class Collection {
     await wishlistClear();
   }
 
+  /** Which account the on-device cache belongs to (user id), or null. */
+  getOwner(): string | null {
+    return localStorage.getItem('pt-collection-owner');
+  }
+  setOwner(userId: string | null): void {
+    if (userId) localStorage.setItem('pt-collection-owner', userId);
+    else localStorage.removeItem('pt-collection-owner');
+  }
+
   async load(): Promise<void> {
     for (const e of await ownedGetAll()) this.owned.set(e.key, e);
     for (const w of await wishlistGetAll()) this.wishlist.set(w.key, w);
