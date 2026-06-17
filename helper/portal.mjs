@@ -222,9 +222,18 @@ export class PortalHelper extends EventEmitter {
       const hex = [...block1].map((b) => b.toString(16).padStart(2, '0')).join(' ');
       this.emit('log', `slot ${slot + 1} block1 [${hex}] char=${charId} vBE=${variantBE} vLE=${variantLE}`);
       // Block 0 holds the MIFARE manufacturer block; bytes 0-3 are the tag's
-      // unique ID, which distinguishes two physical copies of the same figure.
-      const block0 = await this.#query(slot, 0);
-      const uid = block0 ? [...block0.subarray(0, 4)].map((b) => b.toString(16).padStart(2, '0')).join('') : null;
+      // unique ID (never all-zero), which distinguishes two physical copies of
+      // the same figure. Block-0 reads occasionally come back all zeros — retry
+      // until we get a real UID so we don't record phantom duplicate copies.
+      let uid = null;
+      for (let attempt = 0; attempt < 4; attempt++) {
+        const block0 = await this.#query(slot, 0);
+        if (block0 && [...block0.subarray(0, 4)].some((b) => b !== 0)) {
+          uid = [...block0.subarray(0, 4)].map((b) => b.toString(16).padStart(2, '0')).join('');
+          break;
+        }
+        await sleep(40);
+      }
       this.emit('added', { slot, charId, variantId, uid, name: fig.name, section: fig.section, unknown: fig.unknown });
     } finally {
       this.#busy = false;

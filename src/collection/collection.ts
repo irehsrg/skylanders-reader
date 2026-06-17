@@ -56,7 +56,10 @@ export interface CloudAdapter {
   deleteWishlist(key: string): Promise<void>;
 }
 
-/** Union two copy lists by UID, keeping earliest firstSeen / latest lastSeen. */
+const badUid = (u: string) => !u || u === 'no-uid' || /^0+$/.test(u);
+
+/** Union two copy lists by UID, keeping earliest firstSeen / latest lastSeen.
+ *  Drops failed-read (all-zero / placeholder) UIDs when a real copy exists. */
 function mergeCopies(a: TagCopy[], b: TagCopy[]): TagCopy[] {
   const byUid = new Map(a.map((c) => [c.uid, { ...c }]));
   for (const c of b) {
@@ -69,7 +72,9 @@ function mergeCopies(a: TagCopy[], b: TagCopy[]): TagCopy[] {
       byUid.set(c.uid, { ...c });
     }
   }
-  return [...byUid.values()];
+  const all = [...byUid.values()];
+  const real = all.filter((c) => !badUid(c.uid));
+  return real.length > 0 ? real : all.slice(0, 1);
 }
 
 export class Collection {
@@ -126,15 +131,33 @@ export class Collection {
       this.owned.set(key, entry);
     }
 
-    // Identify the physical copy. When no UID is available (browser
-    // detect-only), fold into a single synthetic copy so the figure still
-    // counts as owned without inflating duplicates.
-    const uid = scan.uid ?? 'no-uid';
-    let copy = entry.copies.find((c) => c.uid === uid);
-    const isNewCopy = !copy;
-    if (!copy) {
-      copy = { uid, firstSeen: now, lastSeen: now, scans: 0 };
-      entry.copies.push(copy);
+    // Identify the physical copy by its tag UID. A UID that's missing or all
+    // zeros is a failed/glitchy read (the MIFARE UID is never all-zero) — it
+    // must NOT create a phantom duplicate. Fold those into one placeholder copy
+    // and upgrade the placeholder once a real UID is read.
+    const validUid = scan.uid && scan.uid !== 'no-uid' && /[^0]/.test(scan.uid) ? scan.uid : null;
+    let copy: TagCopy | undefined;
+    let isNewCopy = false;
+    if (validUid) {
+      copy = entry.copies.find((c) => c.uid === validUid);
+      if (!copy) {
+        const placeholder = entry.copies.find((c) => c.uid === 'no-uid');
+        if (placeholder) {
+          placeholder.uid = validUid; // a real read replaces the placeholder
+          copy = placeholder;
+        } else {
+          copy = { uid: validUid, firstSeen: now, lastSeen: now, scans: 0 };
+          entry.copies.push(copy);
+          isNewCopy = true;
+        }
+      }
+    } else {
+      copy = entry.copies[0];
+      if (!copy) {
+        copy = { uid: 'no-uid', firstSeen: now, lastSeen: now, scans: 0 };
+        entry.copies.push(copy);
+        isNewCopy = true;
+      }
     }
     copy.lastSeen = now;
     copy.scans++;
