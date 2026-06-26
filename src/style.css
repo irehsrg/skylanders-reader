@@ -865,6 +865,238 @@ footer {
   line-height: 1.55;
 }
 
+/* ---- request dialog extras ---- */
+.auth-form textarea,
+.auth-form select {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.92rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+/* ---- community requests ---- */
+.requests {
+  margin-top: 30px;
+  padding-top: 4px;
+}
+.requests-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.requests-head .section-label {
+  margin: 0;
+}
+.requests-list {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.request-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+.vote-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  min-width: 46px;
+  padding: 6px 4px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  line-height: 1;
+}
+.vote-btn:hover {
+  border-color: var(--accent);
+  filter: none;
+}
+.vote-btn.on {
+  border-color: var(--accent);
+  color: var(--accent2);
+  background: color-mix(in srgb, var(--accent) 14%, var(--bg2));
+}
+.vote-caret {
+  font-size: 0.7rem;
+}
+.vote-count {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.request-body {
+  min-width: 0;
+}
+.request-name {
+  font-weight: 600;
+}
+.request-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 3px;
+}
+.request-note {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.req-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: var(--panel2);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.req-badge-planned {
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+  color: var(--accent2);
+}
+
+/* ---- footer feedback ---- */
+.foot-actions {
+  margin: 0 0 14px;
+}
+
+/* ---- admin ---- */
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.stat-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+}
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+}
+.admin-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0 14px;
+}
+.admin-subtabs {
+  display: flex;
+  gap: 6px;
+}
+.subtab {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-weight: 600;
+  padding: 7px 14px;
+}
+.subtab:hover {
+  filter: none;
+  border-color: var(--accent);
+}
+.subtab.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.admin-bar-right {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.admin-bar-right select {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-size: 0.85rem;
+}
+.admin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.admin-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+}
+.admin-card-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+.admin-card-title {
+  font-weight: 700;
+}
+.admin-card-sub {
+  margin-top: 2px;
+}
+.admin-card-notes {
+  margin: 8px 0 0;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+.admin-card-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+  align-items: center;
+}
+.admin-card-controls select {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-size: 0.85rem;
+}
+.admin-note-input {
+  flex: 1;
+  min-width: 160px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-size: 0.85rem;
+  font-family: inherit;
+}
+
 @media (max-width: 540px) {
   .hero-title {
     font-size: 1.7rem;

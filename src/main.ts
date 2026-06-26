@@ -8,6 +8,7 @@ import { CatalogView } from './catalog';
 import { initAuth } from './auth-ui';
 import { makeCloudAdapter, fullSync } from './cloud/sync';
 import { cloudEnabled } from './cloud/supabase';
+import { RequestsUI } from './requests-ui';
 
 const $ = <T extends HTMLElement>(sel: string) => document.querySelector<T>(sel)!;
 
@@ -38,6 +39,7 @@ const welcomeShowcase = $<HTMLDivElement>('#welcome-showcase');
 
 const collection = new Collection();
 const catalog = new CatalogView(collection, () => renderCollection());
+const requestsUI = new RequestsUI(() => $<HTMLButtonElement>('#signin-btn').click());
 const figureDetailsEl = $<HTMLDivElement>('#figure-details');
 
 let helperClient: HelperClient | null = null;
@@ -456,6 +458,7 @@ const tabPanels: Record<string, HTMLElement> = {
   collection: $<HTMLElement>('#tab-collection'),
   catalog: $<HTMLElement>('#tab-catalog'),
   scan: $<HTMLElement>('#tab-scan'),
+  admin: $<HTMLElement>('#tab-admin'),
 };
 function activateTab(target: string) {
   document
@@ -660,6 +663,9 @@ async function init() {
 
   if (!cloudEnabled) {
     // No backend: local-only collection (no accounts to keep separate).
+    // Requests/feedback need the cloud, so hide those entry points entirely.
+    document.querySelector<HTMLElement>('.requests')?.style.setProperty('display', 'none');
+    document.querySelector<HTMLElement>('.foot-actions')?.style.setProperty('display', 'none');
     renderCollection();
     const owned = collection.stats().ownedFigures;
     if (owned > 0) log(`Collection restored: ${owned} figures.`);
@@ -678,6 +684,7 @@ async function init() {
   initAuth(async (user) => {
     signedIn = Boolean(user);
     updateWelcomeCta();
+    void requestsUI.setUser(user);
     const newId = user?.id ?? null;
     const owner = collection.getOwner();
 

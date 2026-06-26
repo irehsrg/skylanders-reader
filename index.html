@@ -55,10 +55,36 @@
         </form>
       </dialog>
 
+      <dialog id="request-dialog" class="auth-dialog">
+        <form method="dialog" class="auth-form" id="request-form">
+          <h3 id="request-title">Request a missing figure</h3>
+          <p class="muted" id="request-sub">
+            Tell us which figure is missing from the catalog and we’ll add it.
+          </p>
+          <input type="text" id="request-name" maxlength="120" placeholder="Figure name (e.g. Dark Spyro)" />
+          <select id="request-section" class="request-section">
+            <option value="">Game / set (optional)</option>
+          </select>
+          <textarea
+            id="request-notes"
+            maxlength="1000"
+            rows="3"
+            placeholder="Variant, edition, or other notes (optional)"
+          ></textarea>
+          <p class="auth-message" id="request-message"></p>
+          <p class="muted" id="request-signin-note" hidden>Sign in to submit — it takes a second with Google.</p>
+          <div class="auth-buttons">
+            <button type="button" class="btn-primary" id="request-submit">Submit</button>
+            <button type="button" class="ghost" id="request-cancel">Cancel</button>
+          </div>
+        </form>
+      </dialog>
+
       <nav class="tabs" id="tabs">
         <button type="button" class="tab active" data-tab="collection">My Collection</button>
         <button type="button" class="tab" data-tab="catalog">Browse Figures</button>
         <button type="button" class="tab" data-tab="scan">Scan &amp; Edit</button>
+        <button type="button" class="tab admin-tab" data-tab="admin" id="admin-tab-btn" hidden>Admin</button>
       </nav>
 
       <main>
@@ -132,13 +158,46 @@
           </div>
           <p id="catalog-count" class="muted"></p>
           <div id="catalog-grid" class="catalog-grid"></div>
-          <p class="suggest">
-            Missing a figure?
-            <a
-              href="mailto:skylanderreader@gmail.com?subject=Missing%20Skylander%20suggestion&body=Figure%20name%3A%0AGame%3A%0AVariant%20or%20notes%3A"
-              >Suggest it →</a
-            >
-          </p>
+
+          <section class="requests">
+            <div class="requests-head">
+              <h2 class="section-label">Missing a figure?</h2>
+              <button id="request-open" type="button" class="btn-primary sm">Request a figure</button>
+            </div>
+            <p class="muted">
+              Most-wanted figures from the community — upvote to push them up the list.
+            </p>
+            <p id="requests-empty" class="muted" hidden>
+              No open requests yet. Spot something missing? Be the first to request it.
+            </p>
+            <ul id="requests-list" class="requests-list"></ul>
+          </section>
+        </div>
+
+        <!-- ===================== ADMIN ===================== -->
+        <div id="tab-admin" hidden>
+          <h2 class="section-label">Site overview</h2>
+          <div id="admin-stats" class="admin-stats"></div>
+
+          <div class="admin-bar">
+            <div class="admin-subtabs" id="admin-subtabs">
+              <button type="button" class="subtab active" data-kind="figure">Figure requests</button>
+              <button type="button" class="subtab" data-kind="feedback">Feedback</button>
+            </div>
+            <div class="admin-bar-right">
+              <select id="admin-filter" title="Filter by status">
+                <option value="all">All statuses</option>
+                <option value="pending">Pending</option>
+                <option value="planned">Planned</option>
+                <option value="added">Added</option>
+                <option value="rejected">Rejected</option>
+                <option value="duplicate">Duplicate</option>
+              </select>
+              <button id="admin-refresh" type="button" class="ghost sm">Refresh</button>
+            </div>
+          </div>
+          <p id="admin-empty" class="muted" hidden>Nothing here yet.</p>
+          <div id="admin-list" class="admin-list"></div>
         </div>
 
         <!-- ===================== SCAN & EDIT ===================== -->
@@ -205,6 +264,9 @@
             always backed up and verified before writing.
           </p>
         </details>
+        <p class="foot-actions">
+          <button id="feedback-open" type="button" class="ghost sm">Report a bug or send feedback</button>
+        </p>
         <p>
           Free &amp; open source. Not affiliated with or endorsed by Activision.
           Skylanders is a trademark of Activision Publishing, Inc.

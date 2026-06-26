@@ -16,6 +16,10 @@ for you). It takes about 5–10 minutes.
 - Paste the contents of [`supabase/schema.sql`](supabase/schema.sql) and **Run**.
 - This creates the `owned` and `wishlist` tables (row-level secured to each
   user) and a public `figure-images` storage bucket.
+- Then run [`supabase/requests.sql`](supabase/requests.sql) in a new query. This
+  adds the community **figure-requests / feedback** table, voting, and the
+  admin-only stats function. The admin account is set at the top of that file
+  (`is_admin()` — currently `ajoines03@gmail.com`); change it there if needed.
 
 ## 3. Enable sign-in methods
 Dashboard → **Authentication** → **Providers**:
