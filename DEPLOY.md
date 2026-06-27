@@ -29,7 +29,7 @@ Redeploy after adding them (env vars bake in at build time).
 
 ## 4. Point Supabase at the deployed URL
 Supabase → Authentication → URL Configuration:
-- **Site URL**: your Vercel production URL (e.g. `https://skylanders-reader.vercel.app`).
+- **Site URL**: your Vercel production URL (e.g. `https://skylander-reader.vercel.app`).
 - **Redirect URLs**: add the production URL and `https://*.vercel.app/**` so
   preview deploys can sign in too.
 
