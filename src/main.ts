@@ -658,7 +658,14 @@ connectBtn.addEventListener('click', async () => {
 async function init() {
   log(`Figure database loaded: ${figureCount} figures.`);
   renderShowcase();
-  await collection.load();
+  // Loading the local cache must never block startup. If IndexedDB is denied
+  // (InPrivate / strict tracking prevention), the store falls back to memory;
+  // catch anything else so auth and browsing still come up.
+  try {
+    await collection.load();
+  } catch (err) {
+    log(`Local collection cache unavailable: ${(err as Error).message}`);
+  }
   catalog.render();
 
   if (!cloudEnabled) {

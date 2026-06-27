@@ -99,13 +99,22 @@ export class Collection {
     await wishlistClear();
   }
 
-  /** Which account the on-device cache belongs to (user id), or null. */
+  /** Which account the on-device cache belongs to (user id), or null.
+   *  localStorage can throw under strict privacy modes — degrade to null. */
   getOwner(): string | null {
-    return localStorage.getItem('pt-collection-owner');
+    try {
+      return localStorage.getItem('pt-collection-owner');
+    } catch {
+      return null;
+    }
   }
   setOwner(userId: string | null): void {
-    if (userId) localStorage.setItem('pt-collection-owner', userId);
-    else localStorage.removeItem('pt-collection-owner');
+    try {
+      if (userId) localStorage.setItem('pt-collection-owner', userId);
+      else localStorage.removeItem('pt-collection-owner');
+    } catch {
+      /* storage blocked — nothing to persist */
+    }
   }
 
   async load(): Promise<void> {
