@@ -62,7 +62,6 @@ export class CatalogView {
 
   private card(f: Figure): HTMLElement {
     const owned = this.collection.isOwned(f.charId, f.variantId);
-    const copies = this.collection.copiesOf(f.charId, f.variantId);
     const wished = this.collection.isWishlisted(f.charId, f.variantId);
 
     const card = document.createElement('div');
@@ -88,7 +87,7 @@ export class CatalogView {
     const state = document.createElement('span');
     if (owned) {
       state.className = 'cat-state owned';
-      state.textContent = copies > 1 ? `Owned ×${copies}` : 'Owned';
+      state.textContent = 'Owned';
     } else {
       state.className = 'cat-state';
       state.textContent = 'Missing';

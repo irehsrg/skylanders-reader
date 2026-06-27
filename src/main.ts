@@ -303,7 +303,7 @@ async function recordScan(scan: ScanInput) {
     if (canon) scan = { ...scan, charId: canon.charId, variantId: canon.variantId };
     const result = await collection.recordScan(scan);
     if (result.isNewFigure) log(`Added to collection: ${scan.name}`);
-    else if (result.isNewCopy) log(`Duplicate copy of ${scan.name} (now ${result.entry.copies.length}).`);
+    else log(`${scan.name} is already in your collection.`);
     renderCollection();
     catalog.render();
   } catch (err) {
@@ -328,10 +328,7 @@ function renderCollection() {
   dashRing.style.setProperty('--pct', String(stats.overallPct));
   dashOwned.textContent = String(stats.ownedFigures);
   dashTotal.textContent = String(stats.catalogTotal);
-  const dupes = stats.totalCopies - stats.ownedFigures;
-  dashCopies.textContent =
-    `${stats.totalCopies} physical ${stats.totalCopies === 1 ? 'copy' : 'copies'}` +
-    (dupes > 0 ? ` · ${dupes} duplicate${dupes === 1 ? '' : 's'}` : '');
+  dashCopies.textContent = '';
 
   // Completeness bars for sections the user owns at least one figure in.
   completenessEl.replaceChildren();
@@ -376,12 +373,6 @@ function renderCollection() {
       const card = document.createElement('div');
       card.className = 'fig-card';
       card.appendChild(figureThumb({ name: e.name, charId: e.charId, variantId: e.variantId }));
-      if (e.copies.length > 1) {
-        const badge = document.createElement('span');
-        badge.className = 'fig-badge';
-        badge.textContent = `×${e.copies.length}`;
-        card.appendChild(badge);
-      }
       const remove = document.createElement('button');
       remove.type = 'button';
       remove.className = 'fig-remove';

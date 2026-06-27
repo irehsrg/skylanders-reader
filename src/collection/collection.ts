@@ -58,23 +58,18 @@ export interface CloudAdapter {
 
 const badUid = (u: string) => !u || u === 'no-uid' || /^0+$/.test(u);
 
-/** Union two copy lists by UID, keeping earliest firstSeen / latest lastSeen.
- *  Drops failed-read (all-zero / placeholder) UIDs when a real copy exists. */
-function mergeCopies(a: TagCopy[], b: TagCopy[]): TagCopy[] {
-  const byUid = new Map(a.map((c) => [c.uid, { ...c }]));
-  for (const c of b) {
-    const prev = byUid.get(c.uid);
-    if (prev) {
-      prev.firstSeen = Math.min(prev.firstSeen, c.firstSeen);
-      prev.lastSeen = Math.max(prev.lastSeen, c.lastSeen);
-      prev.scans += c.scans;
-    } else {
-      byUid.set(c.uid, { ...c });
-    }
-  }
-  const all = [...byUid.values()];
-  const real = all.filter((c) => !badUid(c.uid));
-  return real.length > 0 ? real : all.slice(0, 1);
+/** Reduce a copy list to a single representative copy. This app tracks each
+ *  figure as owned-or-not, never as multiple physical copies — so duplicates
+ *  (including indistinguishable variants that share an identity) collapse into
+ *  one record, keeping the earliest firstSeen, latest lastSeen, and total scans. */
+function collapseCopies(copies: TagCopy[]): TagCopy[] {
+  if (!copies || copies.length <= 1) return copies ?? [];
+  const real = copies.filter((c) => !badUid(c.uid));
+  const pool = real.length ? real : copies;
+  const pick = pool.reduce((a, b) => (a.firstSeen <= b.firstSeen ? a : b));
+  const scans = copies.reduce((s, c) => s + c.scans, 0);
+  const lastSeen = copies.reduce((m, c) => Math.max(m, c.lastSeen), 0);
+  return [{ ...pick, scans, lastSeen }];
 }
 
 export class Collection {
@@ -118,7 +113,15 @@ export class Collection {
   }
 
   async load(): Promise<void> {
-    for (const e of await ownedGetAll()) this.owned.set(e.key, e);
+    for (const e of await ownedGetAll()) {
+      // One-time migration to single-ownership: collapse any previously-counted
+      // duplicate copies into one and persist the cleaned entry.
+      if (e.copies && e.copies.length > 1) {
+        e.copies = collapseCopies(e.copies);
+        await ownedPut(e);
+      }
+      this.owned.set(e.key, e);
+    }
     for (const w of await wishlistGetAll()) this.wishlist.set(w.key, w);
   }
 
@@ -140,36 +143,21 @@ export class Collection {
       this.owned.set(key, entry);
     }
 
-    // Identify the physical copy by its tag UID. A UID that's missing or all
-    // zeros is a failed/glitchy read (the MIFARE UID is never all-zero) — it
-    // must NOT create a phantom duplicate. Fold those into one placeholder copy
-    // and upgrade the placeholder once a real UID is read.
+    // Single ownership per figure: scanning a figure you already own never adds
+    // another copy (two physical Gill Grunts, or a variant that shares the same
+    // identity, both count as the one figure). We keep one copy record for
+    // first/last-seen, upgrading its placeholder UID once a real tag is read.
     const validUid = scan.uid && scan.uid !== 'no-uid' && /[^0]/.test(scan.uid) ? scan.uid : null;
-    let copy: TagCopy | undefined;
-    let isNewCopy = false;
-    if (validUid) {
-      copy = entry.copies.find((c) => c.uid === validUid);
-      if (!copy) {
-        const placeholder = entry.copies.find((c) => c.uid === 'no-uid');
-        if (placeholder) {
-          placeholder.uid = validUid; // a real read replaces the placeholder
-          copy = placeholder;
-        } else {
-          copy = { uid: validUid, firstSeen: now, lastSeen: now, scans: 0 };
-          entry.copies.push(copy);
-          isNewCopy = true;
-        }
-      }
-    } else {
-      copy = entry.copies[0];
-      if (!copy) {
-        copy = { uid: 'no-uid', firstSeen: now, lastSeen: now, scans: 0 };
-        entry.copies.push(copy);
-        isNewCopy = true;
-      }
+    let copy = entry.copies[0];
+    if (!copy) {
+      copy = { uid: validUid ?? 'no-uid', firstSeen: now, lastSeen: now, scans: 0 };
+      entry.copies = [copy];
+    } else if (validUid && badUid(copy.uid)) {
+      copy.uid = validUid; // a real read replaces the placeholder
     }
     copy.lastSeen = now;
     copy.scans++;
+    const isNewCopy = false;
 
     // Scanning something resolves any wishlist entry for it.
     if (this.wishlist.delete(key)) {
@@ -223,10 +211,6 @@ export class Collection {
     return true;
   }
 
-  copiesOf(charId: number, variantId: number): number {
-    return this.owned.get(keyOf(charId, variantId))?.copies.length ?? 0;
-  }
-
   /** Remove an owned figure entirely (local + cloud). */
   async removeOwned(charId: number, variantId: number): Promise<void> {
     const key = keyOf(charId, variantId);
@@ -270,12 +254,12 @@ export class Collection {
     for (const e of entries) {
       const existing = this.owned.get(e.key);
       if (existing) {
-        existing.copies = mergeCopies(existing.copies, e.copies ?? []);
+        existing.copies = collapseCopies([...existing.copies, ...(e.copies ?? [])]);
         existing.name = e.name || existing.name;
         existing.section = e.section || existing.section;
         await ownedPut(existing);
       } else {
-        this.owned.set(e.key, { ...e, copies: e.copies ?? [] });
+        this.owned.set(e.key, { ...e, copies: collapseCopies(e.copies ?? []) });
         await ownedPut(this.owned.get(e.key)!);
       }
     }
