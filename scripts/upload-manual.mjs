@@ -75,7 +75,7 @@ async function main() {
       const bytes = await bytesFor(entry);
       const { error } = await supabase.storage
         .from('figure-images')
-        .upload(`${entry.key}.jpg`, bytes, { contentType: contentType(bytes), upsert: true });
+        .upload(`${entry.key}.jpg`, bytes, { contentType: contentType(bytes), upsert: true, cacheControl: '31536000' });
       if (error) throw error;
       done++;
       console.log(`  ✓ ${entry.key}  ${entry.label}`);

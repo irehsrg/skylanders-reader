@@ -109,7 +109,7 @@ for (const m of matches) {
     const bytes = new Uint8Array(await res.arrayBuffer());
     const { error } = await supabase.storage
       .from('figure-images')
-      .upload(`${m.key}.jpg`, bytes, { contentType: ctype(bytes), upsert: true });
+      .upload(`${m.key}.jpg`, bytes, { contentType: ctype(bytes), upsert: true, cacheControl: '31536000' });
     if (error) throw error;
     done++;
     await sleep(150);

@@ -49,6 +49,18 @@ If it's blocked, the reliable options are:
 - Or have the helper also serve the built UI on `http://localhost:8777` (same
   origin as the socket — no mixed-content / PNA issue). Not yet implemented.
 
+## Image egress (watch this before a traffic spike)
+Figure images are served from the public Supabase Storage bucket, and the catalog
+loads hundreds of them. Supabase's free tier caps monthly egress (~5 GB), and a
+launch spike (Show HN / Reddit) can burn through it — at which point images stop
+loading. Mitigations, cheapest first:
+- Uploads now set a 1-year `Cache-Control` so Supabase's CDN serves repeat views
+  from cache instead of origin. To apply it to the **already-uploaded** images,
+  re-run once: `node --env-file=.env scripts/sync-images.mjs --upload --force`.
+- Watch **Supabase → Reports → Storage egress** around launch.
+- If it's climbing fast, put a free **Cloudflare** proxy in front of the bucket
+  domain (or move images to a CDN) so repeat requests never hit Supabase.
+
 ## Note on distributing the helper
 Today the helper needs Node + `npm install`. For other users, it should be
 packaged as a single executable (e.g. with `pkg`/`node --sea`) so they don't

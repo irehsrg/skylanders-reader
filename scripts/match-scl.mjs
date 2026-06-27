@@ -165,7 +165,7 @@ for (const m of pool) {
     const bytes = new Uint8Array(await res.arrayBuffer());
     const { error } = await supabase.storage
       .from('figure-images')
-      .upload(`${m.key}.jpg`, bytes, { contentType: ctype(bytes), upsert: true });
+      .upload(`${m.key}.jpg`, bytes, { contentType: ctype(bytes), upsert: true, cacheControl: '31536000' });
     if (error) throw error;
     done++;
     if (done % 50 === 0) console.log(`  uploaded ${done}/${pool.length}…`);

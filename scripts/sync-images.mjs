@@ -209,7 +209,7 @@ async function upload(matched) {
       const bytes = new Uint8Array(await res.arrayBuffer());
       const { error } = await supabase.storage
         .from('figure-images')
-        .upload(path, bytes, { contentType: 'image/jpeg', upsert: true });
+        .upload(path, bytes, { contentType: 'image/jpeg', upsert: true, cacheControl: '31536000' });
       if (error) throw error;
       done++;
       if (done % 50 === 0) console.log(`  uploaded ${done}…`);

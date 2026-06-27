@@ -9,6 +9,11 @@ import { initAuth } from './auth-ui';
 import { makeCloudAdapter, fullSync } from './cloud/sync';
 import { cloudEnabled } from './cloud/supabase';
 import { RequestsUI } from './requests-ui';
+import { inject as injectAnalytics } from '@vercel/analytics';
+
+// Cookieless, privacy-friendly page analytics. No-ops off Vercel (the insights
+// script only exists on the deployment), so local dev is unaffected.
+injectAnalytics();
 
 const $ = <T extends HTMLElement>(sel: string) => document.querySelector<T>(sel)!;
 
